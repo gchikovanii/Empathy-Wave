@@ -1,0 +1,17 @@
+D:\EmphatyWave\EmphatyWave\bin\Debug\net8.0\EmphatyWave.Persistence.deps.json
+D:\EmphatyWave\EmphatyWave\bin\Debug\net8.0\EmphatyWave.Persistence.dll
+D:\EmphatyWave\EmphatyWave\bin\Debug\net8.0\EmphatyWave.Persistence.pdb
+D:\EmphatyWave\EmphatyWave\bin\Debug\net8.0\EmphatyWave.Domain.dll
+D:\EmphatyWave\EmphatyWave\bin\Debug\net8.0\EmphatyWave.Domain.pdb
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.csproj.AssemblyReference.cache
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.AssemblyInfoInputs.cache
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.AssemblyInfo.cs
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.csproj.CoreCompileInputs.cache
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyW.27FF71C1.Up2Date
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.dll
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\refint\EmphatyWave.Persistence.dll
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.pdb
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\ref\EmphatyWave.Persistence.dll
+D:\EmphatyWave\EmphatyWave\bin\Debug\net8.0\EmphatyWave.Persistence.runtimeconfig.json
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.genruntimeconfig.cache
