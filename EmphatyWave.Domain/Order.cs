@@ -1,4 +1,6 @@
-﻿namespace EmphatyWave.Domain
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EmphatyWave.Domain
 {
     public class Order
     {
@@ -6,6 +8,8 @@
         public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
         public DateTimeOffset UpdatedAt { get; set; } = DateTimeOffset.UtcNow;
         public List<OrderItem> OrderItems { get; set; }
+
+        [Range(0, 50000, ErrorMessage = "Max price is 50K")]
         public decimal TotalAmount { get; set; }
         public ShippingDetail ShippingDetails { get; set; }
         public Status Status { get; set; }
