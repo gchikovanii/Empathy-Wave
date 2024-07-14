@@ -4,14 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmphatyWave.ApiService.Controllers
 {
-    public class AccountController : BaseController
+    public class AccountController(IAccountService accountService) : BaseController
     {
-        private readonly IAccountService _accountService;
-
-        public AccountController(IAccountService accountService)
-        {
-            _accountService = accountService;
-        }
+        private readonly IAccountService _accountService = accountService;
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDto dto)
