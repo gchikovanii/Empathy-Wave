@@ -10,3 +10,4 @@ D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\EmphatyWave.Domain.dll
 D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\refint\EmphatyWave.Domain.dll
 D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\EmphatyWave.Domain.pdb
 D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\ref\EmphatyWave.Domain.dll
+D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\EmphatyWave.Domain.sourcelink.json

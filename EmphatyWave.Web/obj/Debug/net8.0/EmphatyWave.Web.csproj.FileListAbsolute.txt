@@ -66,3 +66,4 @@ D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\refint\EmphatyWave.Web.dll
 D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\EmphatyWave.Web.pdb
 D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\EmphatyWave.Web.genruntimeconfig.cache
 D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\ref\EmphatyWave.Web.dll
+D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\EmphatyWave.Web.sourcelink.json

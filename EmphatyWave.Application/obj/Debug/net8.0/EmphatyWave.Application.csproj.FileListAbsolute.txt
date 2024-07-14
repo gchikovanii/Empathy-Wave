@@ -1,0 +1,12 @@
+D:\EmphatyWave\EmphatyWave.Application\bin\Debug\net8.0\EmphatyWave.Application.deps.json
+D:\EmphatyWave\EmphatyWave.Application\bin\Debug\net8.0\EmphatyWave.Application.dll
+D:\EmphatyWave\EmphatyWave.Application\bin\Debug\net8.0\EmphatyWave.Application.pdb
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyWave.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyWave.Application.AssemblyInfoInputs.cache
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyWave.Application.AssemblyInfo.cs
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyWave.Application.csproj.CoreCompileInputs.cache
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyWave.Application.sourcelink.json
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyWave.Application.dll
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\refint\EmphatyWave.Application.dll
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyWave.Application.pdb
+D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\ref\EmphatyWave.Application.dll

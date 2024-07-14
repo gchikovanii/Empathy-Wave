@@ -1,47 +1,87 @@
+using EmphatyWave.Domain;
 using EmphatyWave.Persistence.DataContext;
+using EmphatyWave.Persistence.DataSeeding;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(opt =>
+{
+    opt.SwaggerDoc("v1", new OpenApiInfo { Title = "MyAPI", Version = "v1" });
+    opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter token",
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        BearerFormat = "JWT",
+        Scheme = "Bearer"
+    });
 
-// Add service defaults & Aspire components.
+    opt.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type=ReferenceType.SecurityScheme,
+                    Id="Bearer"
+                }
+            },
+            new string[]{}
+        }
+    });
+}); 
+
+
+
 builder.AddServiceDefaults();
-
-
-// Add services to the container.
+builder.Services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme);
+builder.Services.AddAuthorizationBuilder();
+builder.Services.AddAuthorization();
+builder.Services.AddIdentityCore<User>().AddRoles<IdentityRole>().AddEntityFrameworkStores<UserDataContext>().AddApiEndpoints();
 builder.Services.AddProblemDetails();
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+{
+    options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+}); ;
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddDbContext<UserDataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnectionString"));
+});
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("Connection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnectionString"));
 });
 
 var app = builder.Build();
+#region SeedData
+SeedData.Initialize(app.Services, new SuperAdminDto { Email = builder.Configuration["SuperAdmin:Email"],
+    UserName = builder.Configuration["SuperAdmin:UserName"], Password = builder.Configuration["SuperAdmin:Password"]});
+#endregion
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-// Configure the HTTP request pipeline.
 app.UseExceptionHandler();
-
-var summaries = new[]
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapIdentityApi<User>();
+//Mapping controllers(pointing to controllers that are created in project)
+app.UseEndpoints(endpoints =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
+    endpoints.MapControllers();
 });
 
 app.MapDefaultEndpoints();
-
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

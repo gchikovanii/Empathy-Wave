@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EmphatyWave.ApiService\EmphatyWave.ApiService.csproj" />
+    <ProjectReference Include="..\EmphatyWave.Domain\EmphatyWave.Domain.csproj" />
     <ProjectReference Include="..\EmphatyWave.Web\EmphatyWave.Web.csproj" />
     <ProjectReference Include="..\EmphatyWave\EmphatyWave.Persistence.csproj" />
   </ItemGroup>

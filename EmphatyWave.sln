@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmphatyWave.AppHost", "EmphatyWave.AppHost\EmphatyWave.AppHost.csproj", "{30745526-0382-4874-A941-355A276772AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmphatyWave.AppHost", "EmphatyWave.AppHost\EmphatyWave.AppHost.csproj", "{30745526-0382-4874-A941-355A276772AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmphatyWave.ServiceDefaults", "EmphatyWave.ServiceDefaults\EmphatyWave.ServiceDefaults.csproj", "{63486D4A-8AE8-4502-AE92-A7D4F8FEA822}"
 EndProject
@@ -16,9 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Back-End", "Back-End", "{085BAD47-1CB5-4ECB-8E98-700541880708}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmphatyWave.Domain", "EmphatyWave.Domain\EmphatyWave.Domain.csproj", "{54885E21-2089-41F6-AB5A-5F4234432B79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmphatyWave.Domain", "EmphatyWave.Domain\EmphatyWave.Domain.csproj", "{54885E21-2089-41F6-AB5A-5F4234432B79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmphatyWave.Persistence", "EmphatyWave\EmphatyWave.Persistence.csproj", "{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmphatyWave.Persistence", "EmphatyWave\EmphatyWave.Persistence.csproj", "{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmphatyWave.Application", "EmphatyWave.Application\EmphatyWave.Application.csproj", "{78717C26-58C6-42CF-9C07-40D1D7B7FA40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78717C26-58C6-42CF-9C07-40D1D7B7FA40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78717C26-58C6-42CF-9C07-40D1D7B7FA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78717C26-58C6-42CF-9C07-40D1D7B7FA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78717C26-58C6-42CF-9C07-40D1D7B7FA40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{085BAD47-1CB5-4ECB-8E98-700541880708} = {E51EB42F-7E1A-4FBB-A48D-B9F4CCF63BCE}
 		{54885E21-2089-41F6-AB5A-5F4234432B79} = {085BAD47-1CB5-4ECB-8E98-700541880708}
 		{F937CBD0-D90F-4E2E-AE40-337D37FF9C74} = {085BAD47-1CB5-4ECB-8E98-700541880708}
+		{78717C26-58C6-42CF-9C07-40D1D7B7FA40} = {085BAD47-1CB5-4ECB-8E98-700541880708}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5032FB0-5C2A-430C-B8D1-001D38B1209C}

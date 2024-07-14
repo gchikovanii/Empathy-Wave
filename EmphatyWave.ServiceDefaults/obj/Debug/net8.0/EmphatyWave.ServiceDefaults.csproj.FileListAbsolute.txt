@@ -10,3 +10,4 @@ D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmphatyWave.ServiceD
 D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\refint\EmphatyWave.ServiceDefaults.dll
 D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmphatyWave.ServiceDefaults.pdb
 D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\ref\EmphatyWave.ServiceDefaults.dll
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmphatyWave.ServiceDefaults.sourcelink.json

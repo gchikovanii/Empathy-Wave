@@ -122,3 +122,5 @@ D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Wo
 D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\EmphatyWave_Persistence.ProjectMetadata.g.cs
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\EmphatyWave.AppHost.sourcelink.json
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\EmphatyWave_Domain.ProjectMetadata.g.cs
