@@ -10,10 +10,10 @@ namespace EmphatyWave.Application.Services.Account
     public interface IAccountService
     {
         Task<string> Register(RegisterDto dto);
-        Task<bool> ConfirmEmail(string token);
+        Task<bool> ConfirmEmail(CancellationToken cancellationToken, string token);
         Task<string> Login(LoginDto dto);
         Task<bool> RequestPasswordRecovery(string email);
-        Task<bool> RecoverPassword(RecoveryDto dto);
+        Task<bool> ResetPassword(RecoveryDto dto);
 
     }
 }

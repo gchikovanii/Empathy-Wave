@@ -30,7 +30,7 @@ namespace EmphatyWave.Persistence.DataSeeding
         }
         private static void SeedRoles(UserDataContext context, ref bool seeded)
         {
-            var roles = new List<string> { "Admin", "User" };
+            var roles = new List<string> { RoleType.Admin.ToString(), RoleType.User.ToString() };
             int counter = 0;
             foreach (var role in roles)
             {
@@ -62,7 +62,7 @@ namespace EmphatyWave.Persistence.DataSeeding
                 if (result.Succeeded)
                 {
                     var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context), null, null, null, null);
-                    var roleToStore = "Admin";
+                    var roleToStore = RoleType.Admin.ToString();
                     if (!context.Roles.Any(i => i.Name == roleToStore))
                     {
                         var adminRole = new IdentityRole(roleToStore);

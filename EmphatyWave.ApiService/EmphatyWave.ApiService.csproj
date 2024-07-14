@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EmphatyWave.Application\EmphatyWave.Application.csproj" />
     <ProjectReference Include="..\EmphatyWave.ServiceDefaults\EmphatyWave.ServiceDefaults.csproj" />
     <ProjectReference Include="..\EmphatyWave\EmphatyWave.Persistence.csproj" />
   </ItemGroup>
