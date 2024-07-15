@@ -197,6 +197,10 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "NCrontab": {
+              "target": "Package",
+              "version": "[3.3.3, )"
+            },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
               "version": "[6.6.2, )"

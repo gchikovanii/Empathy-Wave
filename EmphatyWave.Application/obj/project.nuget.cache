@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XCzX+A5IFxw=",
+  "dgSpecHash": "ewYKm5kqfX0=",
   "success": true,
   "projectFilePath": "D:\\EmphatyWave\\EmphatyWave.Application\\EmphatyWave.Application.csproj",
   "expectedPackageFiles": [
@@ -53,6 +53,7 @@
     "C:\\Users\\gchik\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\ncrontab\\3.3.3\\ncrontab.3.3.3.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\npgsql.dependencyinjection\\8.0.3\\npgsql.dependencyinjection.8.0.3.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",

@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\jobs\\expiredverificationtokenworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\jobs\\expiredverificationtokenworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\jobs\\expiredpasswordrecoverytokenworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\jobs\\expiredpasswordrecoverytokenworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\services\\account\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\services\\account\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\services\\account\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\services\\account\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\extensions\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\extensions\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +46,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\Account\\IAccountService.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\Account\\IAccountService.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\Account\\IAccountService.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Services\\Account\\IAccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:29:51.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceExtension.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Extensions\\ServiceExtension.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Extensions\\ServiceExtension.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Extensions\\ServiceExtension.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Extensions\\ServiceExtension.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:26:35.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\Account\\AccountService.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\Account\\AccountService.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\Account\\AccountService.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Services\\Account\\AccountService.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAuwGcAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:04:38.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExpiredVerificationTokenWorker.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Jobs\\ExpiredVerificationTokenWorker.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Jobs\\ExpiredVerificationTokenWorker.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Jobs\\ExpiredVerificationTokenWorker.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Jobs\\ExpiredVerificationTokenWorker.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwB4AAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:04:15.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ExpiredPasswordRecoveryTokenWorker.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Jobs\\ExpiredPasswordRecoveryTokenWorker.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Jobs\\ExpiredPasswordRecoveryTokenWorker.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Jobs\\ExpiredPasswordRecoveryTokenWorker.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Jobs\\ExpiredPasswordRecoveryTokenWorker.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAIwCAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:02:33.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AdminPanelService.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\AdminPanel\\AdminPanelService.cs",
               "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\AdminPanel\\AdminPanelService.cs",
@@ -43,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "IAdminPanelService.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\AdminPanel\\IAdminPanelService.cs",
               "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\AdminPanel\\IAdminPanelService.cs",
@@ -56,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "AdminPanelController.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\AdminPanelController.cs",
               "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\AdminPanelController.cs",
@@ -69,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\AccountController.cs",

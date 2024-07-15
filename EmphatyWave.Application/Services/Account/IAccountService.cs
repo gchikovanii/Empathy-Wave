@@ -14,6 +14,6 @@ namespace EmphatyWave.Application.Services.Account
         Task<string> Login(LoginDto dto);
         Task<bool> RequestPasswordRecovery(string email);
         Task<bool> ResetPassword(RecoveryDto dto);
-
+        Task RemoveExpiredTokensAsync(CancellationToken token, string option);
     }
 }

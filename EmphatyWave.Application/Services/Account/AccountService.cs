@@ -63,7 +63,7 @@ namespace EmphatyWave.Application.Services.Account
             var user = await _userManager.Users.FirstOrDefaultAsync(i => i.VerificationToken == token, cancellationToken).ConfigureAwait(false);
             if (user == null)
                 throw new Exception("Bad Token");
-            if(user.VerificationTokenExp <= DateTimeOffset.UtcNow)
+            if (user.VerificationTokenExp <= DateTimeOffset.UtcNow)
                 throw new Exception("Verification Time is up");
             user.VerificationToken = string.Empty;
             user.VerifiedAt = DateTimeOffset.UtcNow;
@@ -91,7 +91,7 @@ namespace EmphatyWave.Application.Services.Account
             if (user.ResetTokenExp <= DateTimeOffset.UtcNow)
                 throw new Exception("Token Time Expired");
             var resetToken = await _userManager.GeneratePasswordResetTokenAsync(user).ConfigureAwait(false);
-            var resetPasswordResult = await _userManager.ResetPasswordAsync(user,resetToken,dto.NewPassword).ConfigureAwait(false);
+            var resetPasswordResult = await _userManager.ResetPasswordAsync(user, resetToken, dto.NewPassword).ConfigureAwait(false);
             if (!resetPasswordResult.Succeeded)
             {
                 throw new Exception("Failed to reset password");
@@ -100,6 +100,33 @@ namespace EmphatyWave.Application.Services.Account
             user.ResetPasswordToken = string.Empty;
             var result = await _userManager.UpdateAsync(user).ConfigureAwait(false);
             return result.Succeeded;
+        }
+        public async Task RemoveExpiredTokensAsync(CancellationToken token, string option)
+        {
+            if (option == "Verification")
+            {
+                var usersTable = await _userManager.Users.Where(i => i.VerificationTokenExp <= DateTimeOffset.UtcNow).ToListAsync(token).ConfigureAwait(false);
+                if (usersTable.Any())
+                {
+                    foreach (var user in usersTable)
+                    {
+                        user.VerificationTokenExp = null;
+                        await _userManager.UpdateAsync(user).ConfigureAwait(false);
+                    }
+                }
+            }
+            else if (option == "ResetPassword")
+            {
+                var usersTable = await _userManager.Users.Where(i => i.ResetTokenExp <= DateTimeOffset.UtcNow).ToListAsync(token).ConfigureAwait(false);
+                if (usersTable.Any())
+                {
+                    foreach (var user in usersTable)
+                    {
+                        user.ResetTokenExp = null;
+                        await _userManager.UpdateAsync(user).ConfigureAwait(false);
+                    }
+                }
+            }
         }
         private async Task<User> GetUserByEmail(string email)
         {

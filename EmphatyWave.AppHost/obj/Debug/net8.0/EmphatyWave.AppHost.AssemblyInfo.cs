@@ -24,7 +24,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmphatyWave.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c52ff6c7aa192315af24819c514e7506d81827a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22d00bcfd59798bce68e88b709dd33e5436ba8f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmphatyWave.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmphatyWave.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

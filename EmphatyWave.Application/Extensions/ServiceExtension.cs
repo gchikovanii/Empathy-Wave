@@ -1,4 +1,5 @@
 ﻿using EmphatyWave.Application.Helpers;
+using EmphatyWave.Application.Jobs;
 using EmphatyWave.Application.Services.Account;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.Repositories.Implementation;
@@ -23,6 +24,8 @@ namespace EmphatyWave.Application.Extensions
             services.AddTransient(provider =>
               new TokenGenerator(config["TokenGenerator:Key"], 5));
             services.AddScoped<JwtProvider>();
+            services.AddHostedService<ExpiredPasswordRecoveryTokenWorker>();
+            services.AddHostedService<ExpiredVerificationTokenWorker>();
         }
     }
 }

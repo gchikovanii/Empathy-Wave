@@ -1688,6 +1688,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "NCrontab/3.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NCrontab.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NCrontab.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -2637,6 +2650,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.7",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
+          "NCrontab": "3.3.3",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.6.2"
         },
         "compile": {
@@ -5046,6 +5060,24 @@
         "lib/netstandard2.0/Mono.TextTemplating.dll",
         "mono.texttemplating.2.2.1.nupkg.sha512",
         "mono.texttemplating.nuspec"
+      ]
+    },
+    "NCrontab/3.3.3": {
+      "sha512": "2yzZXZLI0YpxrNgWnW/4xoo7ErLgWJIwTljRVEJ3hyjc7Kw9eGdjbFZGP1AhBuTUEZQ443PgZifG1yox6Qo1/A==",
+      "type": "package",
+      "path": "ncrontab/3.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING.txt",
+        "lib/net35/NCrontab.dll",
+        "lib/net35/NCrontab.pdb",
+        "lib/netstandard1.0/NCrontab.dll",
+        "lib/netstandard1.0/NCrontab.pdb",
+        "lib/netstandard2.0/NCrontab.dll",
+        "lib/netstandard2.0/NCrontab.pdb",
+        "ncrontab.3.3.3.nupkg.sha512",
+        "ncrontab.nuspec"
       ]
     },
     "Newtonsoft.Json/13.0.3": {
