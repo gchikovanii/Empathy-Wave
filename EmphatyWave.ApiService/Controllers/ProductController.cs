@@ -23,8 +23,7 @@ namespace EmphatyWave.ApiService.Controllers
             }
             catch (Exception ex)
             {
-
-                throw;
+                throw new Exception(ex.Message);
             }
         }
         [HttpGet]
@@ -37,8 +36,7 @@ namespace EmphatyWave.ApiService.Controllers
             }
             catch (Exception ex)
             {
-
-                throw;
+                throw new Exception(ex.Message);
             }
         }
         [HttpPost]

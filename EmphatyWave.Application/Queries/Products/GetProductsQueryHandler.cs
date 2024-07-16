@@ -1,6 +1,5 @@
 ﻿using EmphatyWave.Application.Queries.Products.DTOs;
 using EmphatyWave.Persistence.Repositories.Abstraction;
-using EmphatyWave.Persistence.Repositories.Implementation;
 using Mapster;
 using MediatR;
 

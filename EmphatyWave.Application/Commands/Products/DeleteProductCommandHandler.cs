@@ -1,5 +1,4 @@
 ﻿using EmphatyWave.Persistence.Repositories.Abstraction;
-using EmphatyWave.Persistence.Repositories.Implementation;
 using EmphatyWave.Persistence.UOW;
 using MediatR;
 

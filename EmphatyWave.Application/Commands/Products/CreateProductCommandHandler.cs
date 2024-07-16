@@ -9,17 +9,14 @@ using MediatR;
 
 namespace EmphatyWave.Application.Commands.Products
 {
-    public class CreateProductCommandHandler(IProductRepository repository, 
-        IUnitOfWork unitOfWork) : IRequestHandler<CreateProductCommand, bool>
+    public class CreateProductCommandHandler(IProductRepository repository) : IRequestHandler<CreateProductCommand, bool>
     {
         private readonly IProductRepository _repository = repository;
-        private readonly IUnitOfWork _unitOfWork= unitOfWork;
 
         public async Task<bool> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-           
-            await _repository.CreateProductAsync(cancellationToken, request.Adapt<Product>()).ConfigureAwait(false);
-            return await _unitOfWork.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
+            var result = await _repository.CreateProductAsync(cancellationToken, request.Adapt<Product>()).ConfigureAwait(false);
+            return result;
         }
     }
 }

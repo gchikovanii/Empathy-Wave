@@ -1,4 +1,5 @@
 using EmphatyWave.ApiService;
+using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Extensions;
 using EmphatyWave.Application.Queries.Products;
@@ -27,12 +28,9 @@ builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
     cfg.RegisterServicesFromAssembly(typeof(CreateProductCommandHandler).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(CreateCategoryCommandHandler).Assembly);
 
 });
-
-//builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
-//builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
-
 
 //builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidator>();
 //builder.Services.AddValidatorsFromAssemblyContaining<UpdateProductValidator>();
