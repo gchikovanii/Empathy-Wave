@@ -199,3 +199,8 @@ D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\EmphatyWave.Application.d
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\EmphatyWave.Application.pdb
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\NCrontab.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\MediatR.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

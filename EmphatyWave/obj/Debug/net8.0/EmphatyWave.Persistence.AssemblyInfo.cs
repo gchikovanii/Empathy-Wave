@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmphatyWave.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bbf73ec1545e45eb6e055f6addaa230fea100e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a8d567b3a87cf96af0b4fed0c052e634843e58b")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmphatyWave.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmphatyWave.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

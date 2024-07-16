@@ -1,4 +1,5 @@
-﻿using EmphatyWave.Application.Helpers;
+﻿using EmphatyWave.Application.Commands.Products;
+using EmphatyWave.Application.Helpers;
 using EmphatyWave.Application.Jobs;
 using EmphatyWave.Application.Services.Account;
 using EmphatyWave.Persistence.Repositories.Abstraction;
