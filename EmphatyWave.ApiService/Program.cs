@@ -23,14 +23,21 @@ builder.Services.AddJwtConfiguration(builder.Configuration);
 builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
 
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(CreateProductCommandHandler).Assembly);
+
+});
+
 //builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 //builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
 
 
-builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidator>();
-builder.Services.AddValidatorsFromAssemblyContaining<UpdateProductValidator>();
-builder.Services.AddScoped<IValidator<CreateProductCommand>, CreateProductValidator>();
-builder.Services.AddScoped<IValidator<UpdateProductCommand>, UpdateProductValidator>();
+//builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidator>();
+//builder.Services.AddValidatorsFromAssemblyContaining<UpdateProductValidator>();
+//builder.Services.AddScoped<IValidator<CreateProductCommand>, CreateProductValidator>();
+//builder.Services.AddScoped<IValidator<UpdateProductCommand>, UpdateProductValidator>();
 
 
 

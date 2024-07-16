@@ -15,7 +15,7 @@ namespace EmphatyWave.Application.Extensions
         public static void AddServiceExtension(this IServiceCollection services, IConfiguration config)
         {
             services.AddScoped<IAccountService, AccountService>();
-
+            
             services.AddScoped(typeof(IBaseRepository<>),typeof(BaseRepository<>));
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();

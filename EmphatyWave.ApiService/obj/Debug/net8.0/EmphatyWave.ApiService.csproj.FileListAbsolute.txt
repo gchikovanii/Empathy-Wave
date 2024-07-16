@@ -192,7 +192,6 @@ D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\EmphatyWave\EmphatyWave.ApiService\obj\Debug\net8.0\EmphatyWave.ApiService.MvcApplicationPartsAssemblyInfo.cs
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Mapster.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Mapster.Core.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\EmphatyWave.Application.dll
@@ -204,3 +203,4 @@ D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\MediatR.Contracts.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\EmphatyWave\EmphatyWave.ApiService\obj\Debug\net8.0\EmphatyWave.ApiService.MvcApplicationPartsAssemblyInfo.cs

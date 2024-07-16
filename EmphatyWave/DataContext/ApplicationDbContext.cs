@@ -1,9 +1,10 @@
 ﻿using EmphatyWave.Domain;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmphatyWave.Persistence.DataContext
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -15,11 +16,6 @@ namespace EmphatyWave.Persistence.DataContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Order>().Property(i => i.Status).HasConversion<string>();
-            modelBuilder.Entity<Product>()
-                    .HasMany(p => p.Images)
-                    .WithOne(i => i.Product)
-                    .HasForeignKey(i => i.ProductId)
-                    .OnDelete(DeleteBehavior.Cascade);
             base.OnModelCreating(modelBuilder);
         }
     }

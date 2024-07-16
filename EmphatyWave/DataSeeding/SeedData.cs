@@ -12,23 +12,23 @@ namespace EmphatyWave.Persistence.DataSeeding
         public static void Initialize(IServiceProvider serviceProvider, SuperAdminDto dto)
         {
             using var scope = serviceProvider.CreateScope();
-            var db = scope.ServiceProvider.GetRequiredService<UserDataContext>();
+            var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
 
             Migrate(db);
             Seed(userManager,db, dto);
         }
-        private static void Migrate(UserDataContext context)
+        private static void Migrate(ApplicationDbContext context)
         {
             context.Database.Migrate();
         }
-        public static void Seed(UserManager<User> userManager, UserDataContext context, SuperAdminDto dto)
+        public static void Seed(UserManager<User> userManager, ApplicationDbContext context, SuperAdminDto dto)
         {
             var seeded = false;
             SeedRoles(context, ref seeded);
             SeedSuperAdmin(userManager,context, dto, ref seeded);
         }
-        private static void SeedRoles(UserDataContext context, ref bool seeded)
+        private static void SeedRoles(ApplicationDbContext context, ref bool seeded)
         {
             var roles = new List<string> { RoleType.Admin.ToString(), RoleType.User.ToString() };
             int counter = 0;

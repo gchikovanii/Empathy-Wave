@@ -19,13 +19,13 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             return await _repository.GetQuery(i => i.ProductId == productId).ToListAsync(token).ConfigureAwait(false);
         }
-        public async Task<bool> CreateOrderImageAsync(CancellationToken token,ProductImage productImage)
+        public async Task<bool> CreateProductImageAsync(CancellationToken token,ProductImage productImage)
         {
             await _repository.CreateData(token, productImage).ConfigureAwait(false);
             return await _unitOfWork.SaveChangesAsync(token).ConfigureAwait(false);
         }
 
-        public async Task DeleteOrderImage(CancellationToken token,Guid id)
+        public async Task DeleteProductImage(CancellationToken token,Guid id)
         {
             var productImage = await _repository.GetDataById(token, id);
             if (productImage != null)

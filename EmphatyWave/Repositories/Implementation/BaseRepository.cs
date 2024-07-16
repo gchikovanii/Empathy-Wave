@@ -20,7 +20,8 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         }
         public async Task<ICollection<T>> GetPaginatedData(CancellationToken token,int pageNumber, int pageSize)
         {
-            return await _context.Set<T>().AsNoTracking().Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync(token).ConfigureAwait(false);
+            var result = await _context.Set<T>().AsNoTracking().Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync(token).ConfigureAwait(false);
+            return result;
         }
         public async Task<T> GetDataById(CancellationToken token, Guid id)
         {
