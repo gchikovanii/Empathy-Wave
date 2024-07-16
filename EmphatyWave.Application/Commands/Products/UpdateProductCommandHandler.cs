@@ -10,17 +10,18 @@ using MediatR;
 
 namespace EmphatyWave.Application.Commands.Products
 {
-    public class UpdateProductCommandHandler(IProductRepository repo) : IRequestHandler<UpdateProductCommand, bool>
+    public class UpdateProductCommandHandler(IProductRepository repo, IValidator<UpdateProductCommand> validator
+        ) : IRequestHandler<UpdateProductCommand, bool>
     {
         private readonly IProductRepository _repo = repo;
-        //private readonly IValidator<UpdateProductCommand> _validator = validator; 
+        private readonly IValidator<UpdateProductCommand> _validator = validator;
         public async Task<bool> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
         {
-            //ValidationResult result = await _validator.ValidateAsync(request,cancellationToken).ConfigureAwait(false);
-            //if (!result.IsValid)
-            //    throw new ValidationException(result.Errors);
-            var result = await _repo.UpdateProduct(cancellationToken,request.Adapt<Product>()).ConfigureAwait(false); 
-            return result;
+            ValidationResult result = await _validator.ValidateAsync(request, cancellationToken).ConfigureAwait(false);
+            if (!result.IsValid)
+                throw new ValidationException(result.Errors);
+            var res = await _repo.UpdateProduct(cancellationToken,request.Adapt<Product>()).ConfigureAwait(false); 
+            return res;
         }
     }
 }

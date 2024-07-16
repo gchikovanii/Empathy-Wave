@@ -12,10 +12,6 @@ namespace EmphatyWave.Application.Extensions
         public static IServiceCollection AddIdentityConfiguration(this IServiceCollection services, IConfiguration config)
         {
             services.AddIdentityCore<User>().AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddApiEndpoints();
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //{
-            //    options.UseSqlServer(config.GetConnectionString("SqlConnectionString"), b => b.MigrationsAssembly("EmphatyWave.Persistence"));
-            //});
             services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(config.GetConnectionString("SqlConnectionString"));

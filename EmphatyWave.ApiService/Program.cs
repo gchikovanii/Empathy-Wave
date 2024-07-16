@@ -32,10 +32,8 @@ builder.Services.AddMediatR(cfg =>
 
 });
 
-//builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidator>();
-//builder.Services.AddValidatorsFromAssemblyContaining<UpdateProductValidator>();
-//builder.Services.AddScoped<IValidator<CreateProductCommand>, CreateProductValidator>();
-//builder.Services.AddScoped<IValidator<UpdateProductCommand>, UpdateProductValidator>();
+builder.Services.AddScoped<IValidator<CreateProductCommand>, CreateProductValidator>();
+builder.Services.AddScoped<IValidator<UpdateProductCommand>, UpdateProductValidator>();
 
 
 
