@@ -13,6 +13,8 @@ namespace EmphatyWave.Application.Commands.Orders
             var order = await _repo.GetOrderById(cancellationToken, request.Id).ConfigureAwait(false);
             if (order == null)
                 throw new Exception("Order not found");
+            if(order.UserId != request.UserId)
+                throw new Exception("Error while updating user");
             order.Status = request.Status;
             order.UpdatedAt = DateTimeOffset.UtcNow;    
             _repo.UpdateOrder(order);

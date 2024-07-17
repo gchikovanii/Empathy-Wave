@@ -1,6 +1,7 @@
 ﻿using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 
 namespace EmphatyWave.Application.Commands.Orders
 {
@@ -12,6 +13,9 @@ namespace EmphatyWave.Application.Commands.Orders
         private readonly IUnitOfWork _unit = unit;
         public async Task<bool> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
         {
+            var order = await _repo.GetOrderById(cancellationToken, request.Id).ConfigureAwait(false);
+            if (order.UserId != request.UserId)
+                throw new Exception("Tried to remove inaccessible order");
             await _repo.DeleteOrder(cancellationToken,request.Id).ConfigureAwait(false);
             var orderItems = await _orderItemrepo.GetOrderItems(cancellationToken,request.Id).ConfigureAwait(false);
             foreach (var item in orderItems)

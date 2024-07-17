@@ -7,5 +7,6 @@ namespace EmphatyWave.Application.Commands.Orders
     {
         public Status Status { get; set; }
         public Guid Id { get; set; }
+        public string UserId { get; set; }
     }
 }

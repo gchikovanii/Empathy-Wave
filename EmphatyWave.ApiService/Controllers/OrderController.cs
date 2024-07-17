@@ -1,16 +1,20 @@
-﻿using EmphatyWave.Application.Commands.Orders;
-using EmphatyWave.Application.Commands.Products;
+﻿using EmphatyWave.ApiService.Extensions;
+using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Queries.Orders;
-using EmphatyWave.Application.Queries.Products;
+using EmphatyWave.Domain;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace EmphatyWave.ApiService.Controllers
 {
-    public class OrderController(IMediator mediator) : BaseController
+    public class OrderController(IMediator mediator, UserManager<User> userManager) : BaseController
     {
         private readonly IMediator _mediator = mediator;
+        private readonly UserManager<User> _userManager = userManager;
+
         [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOrder(Guid id)
@@ -64,6 +68,8 @@ namespace EmphatyWave.ApiService.Controllers
         {
             try
             {
+                var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
+                command.UserId = user.Id;
                 var success = await _mediator.Send(command).ConfigureAwait(false);
                 return Ok(success);
             }
@@ -73,23 +79,22 @@ namespace EmphatyWave.ApiService.Controllers
             }
         }
         [Authorize]
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateOrder(Guid id, UpdateOrderCommand command)
+        [HttpPut]
+        public async Task<IActionResult> UpdateOrder(UpdateOrderCommand command)
         {
-            if (id != command.Id)
-            {
-                return BadRequest("Order ID mismatch.");
-            }
+            var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
+            command.UserId = user.Id;
             var success = await _mediator.Send(command).ConfigureAwait(false);
             return Ok(success);
         }
         [Authorize]
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOrder(Guid id)
+        public async Task<IActionResult> DeleteOrder(Guid id, string userId)
         {
-            var success = await _mediator.Send(new DeleteOrderCommand { Id = id });
+            var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
+            userId = user.Id;
+            var success = await _mediator.Send(new DeleteOrderCommand { Id = id ,UserId = userId });
             if (!success)
             {
                 return NotFound();

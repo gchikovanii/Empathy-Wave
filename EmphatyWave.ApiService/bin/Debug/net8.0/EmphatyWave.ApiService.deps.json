@@ -15,6 +15,7 @@
           "FluentValidation": "11.9.2",
           "FluentValidation.AspNetCore": "11.3.0",
           "MediatR": "12.3.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.7",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.7",
           "Microsoft.EntityFrameworkCore": "8.0.7",
           "Microsoft.EntityFrameworkCore.Design": "8.0.7",
