@@ -8,6 +8,7 @@ namespace EmphatyWave.Persistence.Repositories.Abstraction
         Task<ICollection<T>> GetPaginatedData(CancellationToken token,int pageNumber, int pageSize);
         Task<T> GetDataById(CancellationToken token,Guid id);
         Task CreateData(CancellationToken token, T entity);
+        Task AddRange(CancellationToken token, List<T> entity);
         void UpdateData(T entity);
         void DeleteData(T entity);
     }

@@ -3,28 +3,68 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\orders\\makeordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\orders\\makeordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\extensions\\identityconfigurationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\extensions\\identityconfigurationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|solutionrelative:emphatywave.domain\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\products\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\products\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|d:\\emphatywave\\emphatywave\\repositories\\abstraction\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|solutionrelative:emphatywave\\repositories\\abstraction\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|solutionrelative:emphatywave.domain\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|solutionrelative:emphatywave.domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|solutionrelative:emphatywave.domain\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmphatyWave.Domain.csproj|solutionrelative:emphatywave.domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\queries\\orders\\getordersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\queries\\orders\\getordersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\products\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\products\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\products\\deleteproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\products\\deleteproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\products\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\products\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\products\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\products\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\products\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\products\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\categories\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\categories\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\categories\\createcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\categories\\createcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +74,215 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IdentityConfigurationExtension.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Extensions\\IdentityConfigurationExtension.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application\\Extensions\\IdentityConfigurationExtension.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Extensions\\IdentityConfigurationExtension.cs",
-              "RelativeToolTip": "EmphatyWave.Application\\Extensions\\IdentityConfigurationExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T15:55:55.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwC4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T15:53:03.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Program.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Program.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Program.cs",
-              "RelativeToolTip": "EmphatyWave.ApiService\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAABsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T15:48:11.986Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\appsettings.json",
+              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\appsettings.json",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\appsettings.json",
+              "RelativeToolTip": "EmphatyWave.ApiService\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-17T06:12:57.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave\\Repositories\\Abstraction\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "EmphatyWave\\Repositories\\Abstraction\\IOrderRepository.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave\\Repositories\\Abstraction\\IOrderRepository.cs",
+              "RelativeToolTip": "EmphatyWave\\Repositories\\Abstraction\\IOrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:59:52.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAtwDAAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:53:04.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Status.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\Status.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\Status.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\Status.cs",
+              "RelativeToolTip": "EmphatyWave.Domain\\Status.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:59:16.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\ProductImage.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\ProductImage.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\ProductImage.cs",
+              "RelativeToolTip": "EmphatyWave.Domain\\ProductImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:59:15.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MakeOrderCommandHandler.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Orders\\MakeOrderCommandHandler.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Orders\\MakeOrderCommandHandler.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Orders\\MakeOrderCommandHandler.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Commands\\Orders\\MakeOrderCommandHandler.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAD8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:31:24.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\Product.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\Product.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\Product.cs",
+              "RelativeToolTip": "EmphatyWave.Domain\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:58:57.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\OrderItem.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\OrderItem.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\OrderItem.cs",
+              "RelativeToolTip": "EmphatyWave.Domain\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:56:30.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\Order.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\Order.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\Order.cs",
+              "RelativeToolTip": "EmphatyWave.Domain\\Order.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:58:59.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetOrdersQuery.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Queries\\Orders\\GetOrdersQuery.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Queries\\Orders\\GetOrdersQuery.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Queries\\Orders\\GetOrdersQuery.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Queries\\Orders\\GetOrdersQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:35:32.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UpdateProductCommandHandler.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\UpdateProductCommandHandler.cs",
               "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Products\\UpdateProductCommandHandler.cs",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\UpdateProductCommandHandler.cs",
               "RelativeToolTip": "EmphatyWave.Application\\Commands\\Products\\UpdateProductCommandHandler.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAApwBAAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T15:46:05.52Z"
+              "WhenOpened": "2024-07-17T05:29:18.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeleteProductCommandHandler.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\DeleteProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Products\\DeleteProductCommandHandler.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\DeleteProductCommandHandler.cs",
-              "RelativeToolTip": "EmphatyWave.Application\\Commands\\Products\\DeleteProductCommandHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "UpdateProductCommand.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\UpdateProductCommand.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Products\\UpdateProductCommand.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\UpdateProductCommand.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Commands\\Products\\UpdateProductCommand.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T15:45:59.072Z"
+              "WhenOpened": "2024-07-17T05:29:09.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "CreateProductCommandHandler.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\CreateProductCommandHandler.cs",
               "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Products\\CreateProductCommandHandler.cs",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\CreateProductCommandHandler.cs",
               "RelativeToolTip": "EmphatyWave.Application\\Commands\\Products\\CreateProductCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T15:45:32.399Z"
+              "WhenOpened": "2024-07-17T05:26:59.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateProductCommand.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\CreateProductCommand.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Products\\CreateProductCommand.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\CreateProductCommand.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Commands\\Products\\CreateProductCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:26:52.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateCategoryCommandHandler.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommandHandler.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommandHandler.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommandHandler.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:26:28.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateCategoryCommand.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommand.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommand.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommand.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T05:26:23.353Z",
+              "EditorCaption": ""
             }
           ]
         }

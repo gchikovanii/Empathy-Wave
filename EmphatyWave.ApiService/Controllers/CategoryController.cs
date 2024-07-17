@@ -1,10 +1,12 @@
 ﻿using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Queries.Categories;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmphatyWave.ApiService.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CategoryController(IMediator mediator) : BaseController
     {
         private readonly IMediator _mediator = mediator;

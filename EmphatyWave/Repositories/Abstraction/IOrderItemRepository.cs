@@ -6,8 +6,9 @@ namespace EmphatyWave.Persistence.Repositories.Abstraction
     {
         Task<ICollection<OrderItem>> GetOrderItems(CancellationToken token, Guid orderId);
         Task<OrderItem> GetOrderItemsById(CancellationToken token, Guid id);
-        Task<bool> CreateOrderItemsAsync(CancellationToken token, OrderItem order);
-        Task<bool> UpdateOrderItem(CancellationToken token, OrderItem order);
+        Task AddOrderItems(CancellationToken token, List<OrderItem> orderItems);
+        Task CreateOrderItemsAsync(CancellationToken token, OrderItem order);
+        void UpdateOrderItem(OrderItem order);
         Task DeleteOrderItem(CancellationToken token, Guid id);
     }
 }

@@ -13,7 +13,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmphatyWave.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240716145726_InitialCreate")]
+    [Migration("20240717060303_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

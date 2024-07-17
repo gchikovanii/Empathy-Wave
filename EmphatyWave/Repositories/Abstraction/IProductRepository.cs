@@ -6,8 +6,8 @@ namespace EmphatyWave.Persistence.Repositories.Abstraction
     {
         Task<ICollection<Product>> GetProducts(CancellationToken token, int pageNumber, int pageSize);
         Task<Product> GetProductById(CancellationToken token, Guid productId);
-        Task<bool> CreateProductAsync(CancellationToken token, Product product);
-        Task<bool> UpdateProduct(CancellationToken token, Product product);
+        Task CreateProductAsync(CancellationToken token, Product product);
+        void UpdateProduct(Product product);
         Task DeleteProduct(CancellationToken token, Guid productId);
     }
 }

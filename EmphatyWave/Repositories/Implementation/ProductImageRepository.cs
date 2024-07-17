@@ -1,28 +1,20 @@
 ﻿using EmphatyWave.Domain;
 using EmphatyWave.Persistence.Repositories.Abstraction;
-using EmphatyWave.Persistence.UOW;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmphatyWave.Persistence.Repositories.Implementation
 {
-    public class ProductImageRepository : IProductImageRepository
+    public class ProductImageRepository(IBaseRepository<ProductImage> repository) : IProductImageRepository
     {
-        private readonly IBaseRepository<ProductImage> _repository;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IBaseRepository<ProductImage> _repository =repository;
 
-        public ProductImageRepository(IBaseRepository<ProductImage> repository, IUnitOfWork unitOfWork)
-        {
-            _repository = repository;
-            _unitOfWork = unitOfWork;
-        }
         public async Task<ICollection<ProductImage>> GetImages(CancellationToken token, Guid productId)
         {
             return await _repository.GetQuery(i => i.ProductId == productId).ToListAsync(token).ConfigureAwait(false);
         }
-        public async Task<bool> CreateProductImageAsync(CancellationToken token,ProductImage productImage)
+        public async Task CreateProductImageAsync(CancellationToken token,ProductImage productImage)
         {
             await _repository.CreateData(token, productImage).ConfigureAwait(false);
-            return await _unitOfWork.SaveChangesAsync(token).ConfigureAwait(false);
         }
 
         public async Task DeleteProductImage(CancellationToken token,Guid id)
@@ -31,7 +23,6 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
             if (productImage != null)
             {
                 _repository.DeleteData(productImage);
-                await _unitOfWork.SaveChangesAsync(token).ConfigureAwait(false);
             }
         }
     }

@@ -1,19 +1,13 @@
-﻿using EmphatyWave.Domain;
-using EmphatyWave.Persistence.DataContext;
+﻿using EmphatyWave.Persistence.DataContext;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace EmphatyWave.Persistence.Repositories.Implementation
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : class
+    public class BaseRepository<T>(ApplicationDbContext context) : IBaseRepository<T> where T : class
     {
-        private readonly ApplicationDbContext _context;
-
-        public BaseRepository(ApplicationDbContext context)
-        {
-            _context = context;
-        }
+        private readonly ApplicationDbContext _context = context;
         public IQueryable<T> GetQuery(Expression<Func<T, bool>> expression = null)
         {
             return expression == null ? _context.Set<T>() : _context.Set<T>().AsNoTracking().Where(expression);
@@ -27,10 +21,13 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             return await _context.Set<T>().FindAsync(id,token).ConfigureAwait(false);
         }
-
         public async Task CreateData(CancellationToken token,T entity)
         {
             await _context.AddAsync(entity,token).ConfigureAwait(false);
+        }
+        public async Task AddRange(CancellationToken token,List<T> entity)
+        {
+            await _context.Set<T>().AddRangeAsync(entity, token).ConfigureAwait(false);
         }
         public void UpdateData(T entity)
         {
@@ -40,5 +37,7 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             _context.Remove(entity);
         }
+
+       
     }
 }

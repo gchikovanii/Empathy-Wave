@@ -1,5 +1,6 @@
 using EmphatyWave.ApiService;
 using EmphatyWave.Application.Commands.Categories;
+using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Extensions;
 using EmphatyWave.Application.Queries.Products;
@@ -29,11 +30,13 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
     cfg.RegisterServicesFromAssembly(typeof(CreateProductCommandHandler).Assembly);
     cfg.RegisterServicesFromAssembly(typeof(CreateCategoryCommandHandler).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(MakeOrderCommandHandler).Assembly);
 
 });
 
 builder.Services.AddScoped<IValidator<CreateProductCommand>, CreateProductValidator>();
 builder.Services.AddScoped<IValidator<UpdateProductCommand>, UpdateProductValidator>();
+builder.Services.AddScoped<IValidator<MakeOrderCommand>, MakeOrderValidator>();
 
 
 
