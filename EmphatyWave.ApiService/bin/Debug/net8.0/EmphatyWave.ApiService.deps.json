@@ -9,6 +9,7 @@
       "EmphatyWave.ApiService/1.0.0": {
         "dependencies": {
           "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Aspire.StackExchange.Redis.OutputCaching": "8.0.2",
           "EmphatyWave.Application": "1.0.0",
           "EmphatyWave.Persistence": "1.0.0",
           "EmphatyWave.ServiceDefaults": "1.0.0",
@@ -46,6 +47,46 @@
           "lib/net8.0/Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "assemblyVersion": "8.0.2.0",
             "fileVersion": "8.0.224.32604"
+          }
+        }
+      },
+      "Aspire.StackExchange.Redis/8.0.2": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.Redis": "8.0.1",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.1",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.6",
+          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
+          "OpenTelemetry.Extensions.Hosting": "1.8.1",
+          "StackExchange.Redis": "2.7.33"
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.StackExchange.Redis.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.224.32604"
+          }
+        }
+      },
+      "Aspire.StackExchange.Redis.OutputCaching/8.0.2": {
+        "dependencies": {
+          "Aspire.StackExchange.Redis": "8.0.2",
+          "Microsoft.AspNetCore.OutputCaching.StackExchangeRedis": "8.0.6"
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.StackExchange.Redis.OutputCaching.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.224.32604"
+          }
+        }
+      },
+      "AspNetCore.HealthChecks.Redis/8.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.6",
+          "StackExchange.Redis": "2.7.33"
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.Redis.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.0"
           }
         }
       },
@@ -268,6 +309,19 @@
           "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.31402"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OutputCaching.StackExchangeRedis/8.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Options": "8.0.2",
+          "StackExchange.Redis": "2.7.33"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.OutputCaching.StackExchangeRedis.dll": {
+            "assemblyVersion": "8.0.6.0",
+            "fileVersion": "8.0.624.26909"
           }
         }
       },
@@ -1350,6 +1404,17 @@
           }
         }
       },
+      "Pipelines.Sockets.Unofficial/2.2.8": {
+        "dependencies": {
+          "System.IO.Pipelines": "6.0.3"
+        },
+        "runtime": {
+          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "2.2.8.1080"
+          }
+        }
+      },
       "Polly.Core/8.3.0": {
         "runtime": {
           "lib/net8.0/Polly.Core.dll": {
@@ -1381,6 +1446,18 @@
           "lib/net8.0/Polly.RateLimiting.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.3.0.3097"
+          }
+        }
+      },
+      "StackExchange.Redis/2.7.33": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Pipelines.Sockets.Unofficial": "2.2.8"
+        },
+        "runtime": {
+          "lib/net6.0/StackExchange.Redis.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.7.33.41805"
           }
         }
       },
@@ -1730,6 +1807,27 @@
       "path": "aspire.npgsql.entityframeworkcore.postgresql/8.0.2",
       "hashPath": "aspire.npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512"
     },
+    "Aspire.StackExchange.Redis/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iQ37P8Hwiqc3rNLxNcBOod5bTbkmKylrLMa95gfKWuf7JHC0G2W6Sf009TRq+RBquS6KgV/jxDHvtZVr4DjWwQ==",
+      "path": "aspire.stackexchange.redis/8.0.2",
+      "hashPath": "aspire.stackexchange.redis.8.0.2.nupkg.sha512"
+    },
+    "Aspire.StackExchange.Redis.OutputCaching/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WA1Vfxv5JNG9qLCZ8/i0prTUFHthbXx8zH68quC4eD/tWkWwjkMFnDqfYFIA5i75tlqZbzhuVwtCkxT3C+99xg==",
+      "path": "aspire.stackexchange.redis.outputcaching/8.0.2",
+      "hashPath": "aspire.stackexchange.redis.outputcaching.8.0.2.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.Redis/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-45jqq4ydvmm7yKpTf0jEpUuYloe2vlytN9dasmqwmQyorpNbjdvWuyvSmjVZM5nBa5e5ryF5MU+F7bXv6Zp2vQ==",
+      "path": "aspnetcore.healthchecks.redis/8.0.1",
+      "hashPath": "aspnetcore.healthchecks.redis.8.0.1.nupkg.sha512"
+    },
     "Azure.Core/1.35.0": {
       "type": "package",
       "serviceable": true,
@@ -1869,6 +1967,13 @@
       "sha512": "sha512-Y8v0z0Zrc28wKxY98sGBwjnHqXeSDFh3VQ5ZEsIxGHD/1g9z2zulDJ8ue6Vww1F4gcUkY9XCQUHljNQu3my35A==",
       "path": "microsoft.aspnetcore.mvc.newtonsoftjson/8.0.7",
       "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.8.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OutputCaching.StackExchangeRedis/8.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y7Hy8kjex1v0lkIo3vITj42PbKNTFo9U668pPHqiXHiHd6StUWXm/huY+oExQio11ObBNb+FkPDPgJCvmIpcoQ==",
+      "path": "microsoft.aspnetcore.outputcaching.stackexchangeredis/8.0.6",
+      "hashPath": "microsoft.aspnetcore.outputcaching.stackexchangeredis.8.0.6.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "type": "package",
@@ -2451,6 +2556,13 @@
       "path": "opentelemetry.instrumentation.runtime/1.8.0",
       "hashPath": "opentelemetry.instrumentation.runtime.1.8.0.nupkg.sha512"
     },
+    "Pipelines.Sockets.Unofficial/2.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
+      "path": "pipelines.sockets.unofficial/2.2.8",
+      "hashPath": "pipelines.sockets.unofficial.2.2.8.nupkg.sha512"
+    },
     "Polly.Core/8.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2471,6 +2583,13 @@
       "sha512": "sha512-vxymhXDbWQ37C/qEs0WcuWHZmedYmhWyg0JcUPW5kwk/YTQIzFecn2jyg8s6fiuTZv5q/ISWw1RzCTB7LcRuYg==",
       "path": "polly.ratelimiting/8.3.0",
       "hashPath": "polly.ratelimiting.8.3.0.nupkg.sha512"
+    },
+    "StackExchange.Redis/2.7.33": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2kCX5fvhEE824a4Ab5Imyi8DRuGuTxyklXV01kegkRpsWJcPmO6+GAQ+HegKxvXAxlXZ8yaRspvWJ8t3mMClfQ==",
+      "path": "stackexchange.redis/2.7.33",
+      "hashPath": "stackexchange.redis.2.7.33.nupkg.sha512"
     },
     "Stripe.net/45.3.0": {
       "type": "package",

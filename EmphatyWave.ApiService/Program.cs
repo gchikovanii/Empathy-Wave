@@ -3,16 +3,12 @@ using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Extensions;
-using EmphatyWave.Application.Queries.Products;
-using EmphatyWave.Application.Validators.ProductValidators;
 using EmphatyWave.Persistence.DataSeeding;
-using FluentValidation;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
-using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
+builder.AddRedisOutputCache("cache");
 
 builder.Services.AddControllers();
 builder.AddServiceDefaults();
@@ -54,12 +50,13 @@ app.UseExceptionHandler();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseOutputCache();
+
 //Mapping controllers(pointing to controllers that are created in project)
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
 });
-
 app.MapDefaultEndpoints();
 app.Run();
 

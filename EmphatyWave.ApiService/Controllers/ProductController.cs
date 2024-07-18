@@ -1,7 +1,9 @@
-﻿using EmphatyWave.Application.Commands.Products;
+﻿using EmphatyWave.ApiService.Extensions;
+using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Queries.Products;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 
 namespace EmphatyWave.ApiService.Controllers
 {
@@ -26,6 +28,7 @@ namespace EmphatyWave.ApiService.Controllers
                 throw new Exception(ex.Message);
             }
         }
+        [OutputCache(Duration = 7200)]
         [HttpGet]
         public async Task<IActionResult> GetAllProducts(int pageSize, int pageNumber)
         {

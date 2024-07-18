@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmphatyWave.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e5d2e153a4cbd7e37d917f01f9039e64977cceb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2abaa6aab82262198797fb84b9388bc6e0e822d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmphatyWave.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmphatyWave.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

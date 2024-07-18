@@ -21,7 +21,6 @@ D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Json
 D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\Polly.Core.dll
-D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\Prometheus.NetStandard.dll
 D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\YamlDotNet.dll
 D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\cs\Aspire.Hosting.resources.dll
@@ -124,3 +123,4 @@ D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalys
 D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\EmphatyWave_Persistence.ProjectMetadata.g.cs
 D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\EmphatyWave.AppHost.sourcelink.json
 D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\EmphatyWave_Domain.ProjectMetadata.g.cs
+D:\EmphatyWave\EmphatyWave.AppHost\bin\Debug\net8.0\Aspire.Hosting.Redis.dll

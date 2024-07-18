@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "Aspire.StackExchange.Redis.OutputCaching": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.2, )"
