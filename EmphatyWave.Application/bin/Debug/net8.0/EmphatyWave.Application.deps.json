@@ -17,6 +17,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
           "NCrontab": "3.3.3",
+          "Stripe.net": "45.3.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.6.2"
         },
         "runtime": {
@@ -591,6 +592,14 @@
           }
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
       "Npgsql/8.0.3": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.1"
@@ -685,6 +694,18 @@
           "lib/net8.0/OpenTelemetry.Extensions.Hosting.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.8.1.1251"
+          }
+        }
+      },
+      "Stripe.net/45.3.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "assemblyVersion": "45.3.0.0",
+            "fileVersion": "45.3.0.0"
           }
         }
       },
@@ -1265,6 +1286,13 @@
       "path": "ncrontab/3.3.3",
       "hashPath": "ncrontab.3.3.3.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "Npgsql/8.0.3": {
       "type": "package",
       "serviceable": true,
@@ -1320,6 +1348,13 @@
       "sha512": "sha512-vAiiKFPGDUkCUu+edSZf95n33AC7VdynDG+wF+KolTQL+8YphlvQ5wn06PDegD0CJVqk8imwqN+LCb/JjsGxKA==",
       "path": "opentelemetry.extensions.hosting/1.8.1",
       "hashPath": "opentelemetry.extensions.hosting.1.8.1.nupkg.sha512"
+    },
+    "Stripe.net/45.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sd8w2pUn7bfz4u0WOM++KZ+Sl9jKKYptF1rzAuQQ0KFUw/9PZmAUIWs6eDNOWMrBwC0SsiwXxSEymDsCzjXxRw==",
+      "path": "stripe.net/45.3.0",
+      "hashPath": "stripe.net.45.3.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore.Swagger/6.6.2": {
       "type": "package",

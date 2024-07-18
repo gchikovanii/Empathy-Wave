@@ -112,6 +112,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[45.3.0, )"
+            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -228,6 +232,10 @@
             "NCrontab": {
               "target": "Package",
               "version": "[3.3.3, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[45.3.0, )"
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",

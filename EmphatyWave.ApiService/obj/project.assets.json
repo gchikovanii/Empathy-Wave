@@ -1737,7 +1737,7 @@
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
@@ -2068,6 +2068,23 @@
           }
         }
       },
+      "Stripe.net/45.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/6.6.2": {
         "type": "package",
         "dependencies": {
@@ -2260,7 +2277,7 @@
           "System.Security.Permissions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
@@ -2295,7 +2312,7 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
@@ -2555,7 +2572,7 @@
           "System.Windows.Extensions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
@@ -2704,7 +2721,7 @@
           "System.Drawing.Common": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         },
@@ -2733,6 +2750,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
           "NCrontab": "3.3.3",
+          "Stripe.net": "45.3.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.6.2"
         },
         "compile": {
@@ -5635,6 +5653,30 @@
         "polly.ratelimiting.nuspec"
       ]
     },
+    "Stripe.net/45.3.0": {
+      "sha512": "Sd8w2pUn7bfz4u0WOM++KZ+Sl9jKKYptF1rzAuQQ0KFUw/9PZmAUIWs6eDNOWMrBwC0SsiwXxSEymDsCzjXxRw==",
+      "type": "package",
+      "path": "stripe.net/45.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net461/Stripe.net.dll",
+        "lib/net461/Stripe.net.xml",
+        "lib/net5.0/Stripe.net.dll",
+        "lib/net5.0/Stripe.net.xml",
+        "lib/net6.0/Stripe.net.dll",
+        "lib/net6.0/Stripe.net.xml",
+        "lib/netcoreapp3.1/Stripe.net.dll",
+        "lib/netcoreapp3.1/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.45.3.0.nupkg.sha512",
+        "stripe.net.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore.Swagger/6.6.2": {
       "sha512": "ovgPTSYX83UrQUWiS5vzDcJ8TEX1MAxBgDFMK45rC24MorHEPQlZAHlaXj/yth4Zf6xcktpUgTEBvffRQVwDKA==",
       "type": "package",
@@ -6809,6 +6851,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
+      "Stripe.net >= 45.3.0",
       "Swashbuckle.AspNetCore.Swagger >= 6.6.2",
       "Swashbuckle.AspNetCore.SwaggerGen >= 6.6.2",
       "Swashbuckle.AspNetCore.SwaggerUI >= 6.6.2"
@@ -6925,6 +6968,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[45.3.0, )"
           },
           "Swashbuckle.AspNetCore.Swagger": {
             "target": "Package",

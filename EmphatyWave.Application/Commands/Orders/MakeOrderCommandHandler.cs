@@ -1,4 +1,5 @@
-﻿using EmphatyWave.Domain;
+﻿using EmphatyWave.Application.Services.Stripe.Abstraction;
+using EmphatyWave.Domain;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
 using FluentValidation;
@@ -9,10 +10,11 @@ using MediatR;
 namespace EmphatyWave.Application.Commands.Orders
 {
     public class MakeOrderCommandHandler(IOrderRepository orderRepo, IProductRepository productRepo, IValidator<MakeOrderCommand> validator,
-        IOrderItemRepository orderItemRepo, IUnitOfWork unit) 
+        IOrderItemRepository orderItemRepo, IUnitOfWork unit, IPaymentService paymentService) 
         : IRequestHandler<MakeOrderCommand, bool>
     {
         private readonly IOrderRepository _orderRepository = orderRepo;
+        private readonly IPaymentService _paymentService = paymentService;
         private readonly IOrderItemRepository _orderItemRepository = orderItemRepo;
         private readonly IProductRepository _productRepo = productRepo;
         private readonly IValidator<MakeOrderCommand> _validator = validator;
@@ -68,6 +70,27 @@ namespace EmphatyWave.Application.Commands.Orders
 
             await _orderRepository.CreateOrderAsync(cancellationToken, order);
             await _orderItemRepository.AddOrderItems(cancellationToken,orderItems).ConfigureAwait(false);
+
+            var charge = await _paymentService.ProcessPayment(totalAmount,"gel","Payment of Order",
+                request.PaymentDetails.StripeToken).ConfigureAwait(false);
+            if (charge.Status != "succeeded")
+            {
+                throw new Exception("Payment failed: " + charge.FailureMessage);
+            }
+            switch (charge.Status)
+            {
+                case "succeeded":
+                    order.Status = Status.PaymentSucceeded;
+                    break;
+                case "pending":
+                    order.Status = Status.PaymentPending;
+                    order.StripeToken = request.PaymentDetails.StripeToken;
+                    break;
+                default:
+                    throw new Exception("Payment failed: " + charge.FailureMessage);
+            }
+            await _orderItemRepository.AddOrderItems(cancellationToken, orderItems).ConfigureAwait(false);
+
             return await _unit.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
         }
     }

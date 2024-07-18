@@ -204,3 +204,4 @@ D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\EmphatyWave\EmphatyWave.ApiService\obj\Debug\net8.0\EmphatyWave.ApiService.MvcApplicationPartsAssemblyInfo.cs
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Stripe.net.dll

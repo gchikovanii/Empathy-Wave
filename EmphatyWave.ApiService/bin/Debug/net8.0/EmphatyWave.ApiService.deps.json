@@ -23,6 +23,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.7",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
           "Newtonsoft.Json": "13.0.3",
+          "Stripe.net": "45.3.0",
           "Swashbuckle.AspNetCore.Swagger": "6.6.2",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.6.2",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.6.2"
@@ -1383,6 +1384,18 @@
           }
         }
       },
+      "Stripe.net/45.3.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "assemblyVersion": "45.3.0.0",
+            "fileVersion": "45.3.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/6.6.2": {
         "dependencies": {
           "Microsoft.OpenApi": "1.6.14"
@@ -1662,6 +1675,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
           "NCrontab": "3.3.3",
+          "Stripe.net": "45.3.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.6.2"
         },
         "runtime": {
@@ -2457,6 +2471,13 @@
       "sha512": "sha512-vxymhXDbWQ37C/qEs0WcuWHZmedYmhWyg0JcUPW5kwk/YTQIzFecn2jyg8s6fiuTZv5q/ISWw1RzCTB7LcRuYg==",
       "path": "polly.ratelimiting/8.3.0",
       "hashPath": "polly.ratelimiting.8.3.0.nupkg.sha512"
+    },
+    "Stripe.net/45.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sd8w2pUn7bfz4u0WOM++KZ+Sl9jKKYptF1rzAuQQ0KFUw/9PZmAUIWs6eDNOWMrBwC0SsiwXxSEymDsCzjXxRw==",
+      "path": "stripe.net/45.3.0",
+      "hashPath": "stripe.net.45.3.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore.Swagger/6.6.2": {
       "type": "package",

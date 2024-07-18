@@ -2,6 +2,8 @@
 using EmphatyWave.Application.Helpers;
 using EmphatyWave.Application.Jobs;
 using EmphatyWave.Application.Services.Account;
+using EmphatyWave.Application.Services.Stripe.Abstraction;
+using EmphatyWave.Application.Services.Stripe.Implementation;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.Repositories.Implementation;
 using EmphatyWave.Persistence.UOW;
@@ -22,6 +24,7 @@ namespace EmphatyWave.Application.Extensions
             services.AddScoped<IOrderItemRepository, OrderItemRepository>();
             services.AddScoped<IProductImageRepository, ProductImageRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IPaymentService, PaymentService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient(provider =>
               new TokenGenerator(config["TokenGenerator:Key"], 5));

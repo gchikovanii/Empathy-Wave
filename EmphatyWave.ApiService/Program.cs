@@ -9,6 +9,7 @@ using EmphatyWave.Persistence.DataSeeding;
 using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
@@ -17,14 +18,15 @@ builder.Services.AddControllers();
 builder.AddServiceDefaults();
 builder.Services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme);
 builder.Services.AddAuthorization();
-
 builder.Services.AddServiceExtension(builder.Configuration);
 builder.Services.AddSwaggerConfiguration();
 builder.Services.AddIdentityConfiguration(builder.Configuration);
 builder.Services.AddJwtConfiguration(builder.Configuration);
+builder.Services.AddStripeSettings(builder.Configuration);
+builder.Services.AddFluentValidation();
 builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
-
+#region MediatR
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
@@ -34,10 +36,7 @@ builder.Services.AddMediatR(cfg =>
 
 });
 
-builder.Services.AddScoped<IValidator<CreateProductCommand>, CreateProductValidator>();
-builder.Services.AddScoped<IValidator<UpdateProductCommand>, UpdateProductValidator>();
-builder.Services.AddScoped<IValidator<MakeOrderCommand>, MakeOrderValidator>();
-
+#endregion
 
 
 var app = builder.Build();

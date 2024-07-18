@@ -14,6 +14,7 @@ namespace EmphatyWave.Domain
         public ShippingDetail ShippingDetails { get; set; }
         public Status Status { get; set; }
         public string UserId { get; set; }
+        public string? StripeToken { get; set; }
         public User User { get; set; }
     }
 }

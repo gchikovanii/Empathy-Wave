@@ -23,7 +23,10 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
                 .ToListAsync(token).ConfigureAwait(false);
             return result;
         }
-
+        public async Task<ICollection<Order>> GetPendingOrdersAsync(CancellationToken token)
+        {
+            return await _repository.GetQuery(i => i.Status == Status.PaymentPending).ToListAsync(token).ConfigureAwait(false) ?? [];
+        }
         public async Task CreateOrderAsync(CancellationToken token, Order order)
         {
             await _repository.CreateData(token, order).ConfigureAwait(false);
@@ -42,5 +45,7 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
             else
                 throw new Exception("Order Not found!");
         }
+
+      
     }
 }
