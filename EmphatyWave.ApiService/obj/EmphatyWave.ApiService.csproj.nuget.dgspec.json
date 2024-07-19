@@ -116,6 +116,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Stripe.net": {
               "target": "Package",
               "version": "[45.3.0, )"

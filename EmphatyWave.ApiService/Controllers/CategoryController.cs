@@ -3,13 +3,15 @@ using EmphatyWave.Application.Queries.Categories;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace EmphatyWave.ApiService.Controllers
 {
-    [Authorize(Roles = "Admin")]
-    public class CategoryController(IMediator mediator) : BaseController
+    //[Authorize(Roles = "Admin")]
+    public class CategoryController(IMediator mediator, ILogger<CategoryController> logger) : BaseController
     {
         private readonly IMediator _mediator = mediator;
+        private readonly ILogger<CategoryController> _logger = logger;
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategory(Guid id)
@@ -57,19 +59,14 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(Guid id)
         {
-            try
+            var success = await _mediator.Send(new DeleteCategoryCommand { Id = id });
+            if (success.IsFailure)
             {
-                var success = await _mediator.Send(new DeleteCategoryCommand { Id = id });
-                if (success.IsFailure)
-                {
-                    return NotFound();
-                }
-                return Ok();
+                _logger.LogWarning("Failed to create category with command {@Command}", id);
+
+                return NotFound();
             }
-            catch (Exception ex)
-            {
-                throw new Exception();
-            }
+            return Ok();
         }
     }
 }

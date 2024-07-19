@@ -1,0 +1,1 @@
+2024-07-19 11:20:27.543 +04:00 [ERR] Request Failure: DeleteCategoryCommand - "2024-07-19T07:20:27.5393091Z" - {"code":"Unit.SaveChangesFailed","descripton":"Error occured while saving changes in database","$type":"Error"}

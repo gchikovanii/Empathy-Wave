@@ -211,3 +211,13 @@ D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\HealthChecks.Redis.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Microsoft.AspNetCore.OutputCaching.StackExchangeRedis.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\ka-GE\EmphatyWave.Persistence.resources.dll

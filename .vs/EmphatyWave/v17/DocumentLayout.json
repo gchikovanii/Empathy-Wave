@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\logs\\log-20240719.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\logs\\log-20240719.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\infrastructure\\globalexception\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\infrastructure\\globalexception\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\categories\\deletecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\categories\\deletecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\behaviours\\loggingpiplinebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\behaviours\\loggingpiplinebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GlobalExceptionHandler.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Infrastructure\\GlobalException\\GlobalExceptionHandler.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Infrastructure\\GlobalException\\GlobalExceptionHandler.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Infrastructure\\GlobalException\\GlobalExceptionHandler.cs",
-              "RelativeToolTip": "EmphatyWave.ApiService\\Infrastructure\\GlobalException\\GlobalExceptionHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T06:14:27.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Program.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Program.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Program.cs",
-              "RelativeToolTip": "EmphatyWave.ApiService\\Program.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAAADUAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T06:14:04.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "log-20240719.txt",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\logs\\log-20240719.txt",
+              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\logs\\log-20240719.txt",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\logs\\log-20240719.txt",
+              "RelativeToolTip": "EmphatyWave.ApiService\\logs\\log-20240719.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-19T07:20:58.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EmphatyWave.AppHost\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-19T07:15:07.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\Program.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\Program.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\Program.cs",
+              "RelativeToolTip": "EmphatyWave.AppHost\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T07:14:59.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\appsettings.json",
+              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\appsettings.json",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\appsettings.json",
+              "RelativeToolTip": "EmphatyWave.AppHost\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-19T07:14:58.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoggingPiplineBehaviour.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Behaviours\\LoggingPiplineBehaviour.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Behaviours\\LoggingPiplineBehaviour.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Behaviours\\LoggingPiplineBehaviour.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Behaviours\\LoggingPiplineBehaviour.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T06:39:50.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\CategoryController.cs",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAgwEUAAAANAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAmwD0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T06:13:06.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DeleteCategoryCommandHandler.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Categories\\DeleteCategoryCommandHandler.cs",
               "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Categories\\DeleteCategoryCommandHandler.cs",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Categories\\DeleteCategoryCommandHandler.cs",
               "RelativeToolTip": "EmphatyWave.Application\\Commands\\Categories\\DeleteCategoryCommandHandler.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABUAAAAFAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T05:56:56.867Z",
               "EditorCaption": ""

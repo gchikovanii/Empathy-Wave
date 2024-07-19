@@ -905,6 +905,11 @@
         },
         "runtime": {
           "EmphatyWave.Persistence.dll": {}
+        },
+        "resources": {
+          "ka-GE/EmphatyWave.Persistence.resources.dll": {
+            "locale": "ka-GE"
+          }
         }
       }
     }

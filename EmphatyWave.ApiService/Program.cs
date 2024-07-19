@@ -1,12 +1,15 @@
-using EmphatyWave.ApiService;
 using EmphatyWave.ApiService.Infrastructure.Extensions;
+using EmphatyWave.Application.Behaviours;
 using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Extensions;
 using EmphatyWave.Persistence.DataSeeding;
 using EmphatyWave.Persistence.Infrastructure.GlobalException;
+using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Serilog;
+using Serilog.Formatting.Compact;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
@@ -35,9 +38,16 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(MakeOrderCommandHandler).Assembly);
 
 });
-
+builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingPiplineBehaviour<,>));
 #endregion
-
+builder.Host.UseSerilog((context, config) =>
+ {
+     config
+         .ReadFrom.Configuration(context.Configuration)
+         .Enrich.FromLogContext()
+         .WriteTo.Console()
+         .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day);
+ });
 
 var app = builder.Build();
 #region SeedData
@@ -61,6 +71,7 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
 });
+app.UseSerilogRequestLogging();
 app.MapDefaultEndpoints();
 app.Run();
 

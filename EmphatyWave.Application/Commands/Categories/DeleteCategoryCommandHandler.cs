@@ -1,5 +1,4 @@
 ﻿using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
-using EmphatyWave.Persistence.Infrastructure.Localization.Errors;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
 using MediatR;
@@ -16,7 +15,9 @@ namespace EmphatyWave.Application.Commands.Categories
             await _repo.DeleteCategory(cancellationToken, request.Id).ConfigureAwait(false);
             var result = await _unit.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
             if (result == false)
+            {
                 return Result.Failure(UnitError.CantSaveChanges);
+            }
             return Result.Success();
         }
     }

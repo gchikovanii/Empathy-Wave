@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hd19DOR0ESU=",
+  "dgSpecHash": "bpxzx++ZdRY=",
   "success": true,
   "projectFilePath": "D:\\EmphatyWave\\EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj",
   "expectedPackageFiles": [
@@ -116,6 +116,15 @@
     "C:\\Users\\gchik\\.nuget\\packages\\polly.core\\8.3.0\\polly.core.8.3.0.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\polly.extensions\\8.3.0\\polly.extensions.8.3.0.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\polly.ratelimiting\\8.3.0\\polly.ratelimiting.8.3.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog.aspnetcore\\8.0.1\\serilog.aspnetcore.8.0.1.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog.extensions.hosting\\8.0.0\\serilog.extensions.hosting.8.0.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog.extensions.logging\\8.0.0\\serilog.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog.formatting.compact\\2.0.0\\serilog.formatting.compact.2.0.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog.settings.configuration\\8.0.0\\serilog.settings.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog.sinks.console\\5.0.0\\serilog.sinks.console.5.0.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\stackexchange.redis\\2.7.33\\stackexchange.redis.2.7.33.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\stripe.net\\45.3.0\\stripe.net.45.3.0.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
