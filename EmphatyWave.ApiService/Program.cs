@@ -9,7 +9,6 @@ using EmphatyWave.Persistence.Infrastructure.GlobalException;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Serilog;
-using Serilog.Formatting.Compact;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
@@ -73,5 +72,18 @@ app.UseEndpoints(endpoints =>
 });
 app.UseSerilogRequestLogging();
 app.MapDefaultEndpoints();
-app.Run();
+
+try
+{
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Fatal Exception, host is not responding!");
+    throw;
+}
+finally
+{
+    Log.CloseAndFlush(); 
+}
 
