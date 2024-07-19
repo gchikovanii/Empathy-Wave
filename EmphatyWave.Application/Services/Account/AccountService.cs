@@ -1,30 +1,42 @@
 ﻿using EmphatyWave.Application.Helpers;
 using EmphatyWave.Application.Services.Account.DTOs;
+using EmphatyWave.Application.Services.Account.Helper;
 using EmphatyWave.Domain;
+using EmphatyWave.Domain.Localization;
 using EmphatyWave.Persistence.DataSeeding;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 
 namespace EmphatyWave.Application.Services.Account
 {
-    public class AccountService(UserManager<User> userManager, JwtProvider jwtProvider, TokenGenerator tokenGenerator)
+    public class AccountService(UserManager<User> userManager, JwtProvider jwtProvider, TokenGenerator tokenGenerator, IValidator<RegisterDto> validator)
         : IAccountService
     {
         private readonly UserManager<User> _userManager = userManager;
         private readonly JwtProvider _jwtProvider = jwtProvider;
         private readonly TokenGenerator _tokenGenerator = tokenGenerator;
+        private readonly IValidator<RegisterDto> _validator = validator;
 
-        public async Task<string> Register(RegisterDto dto)
+        public async Task<ResultOrValue<string>> Register(RegisterDto dto)
         {
+            ValidationResult result = await _validator.ValidateAsync(dto, default).ConfigureAwait(false);
+            if (!result.IsValid)
+            {
+                var errorMessages = result.Errors.Select(e => e.ErrorMessage);
+                string errorMessage = string.Join("; ", errorMessages);
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("ValidationError", errorMessage)));
+            }
             var userName = await _userManager.FindByNameAsync(dto.UserName).ConfigureAwait(false);
             var userEmail = await _userManager.FindByEmailAsync(dto.Email).ConfigureAwait(false);
             if (userEmail != null)
-                throw new Exception("User already exists");
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("EmailAlreadyExists", ErrorMessages.EmailAlreadyExists)));
             if (userName != null)
-                throw new Exception("Username already exists");
-            if (userEmail != null)
-                throw new Exception("Email already exists");
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("UserNameAlreadyExists", ErrorMessages.UserNameAlreadyExists)));
+          
             var user = new User
             {
                 Email = dto.Email,
@@ -32,30 +44,30 @@ namespace EmphatyWave.Application.Services.Account
                 VerificationToken = _tokenGenerator.GenerateToken(dto.Email),
                 VerificationTokenExp = DateTime.UtcNow.Add(TimeSpan.FromHours(24))
             };
-            var result = await _userManager.CreateAsync(user, dto.Password).ConfigureAwait(false);
+            var res = await _userManager.CreateAsync(user, dto.Password).ConfigureAwait(false);
             var role = RoleType.User.ToString();
             var userRole = await _userManager.AddToRoleAsync(user, role).ConfigureAwait(false);
-            if (!userRole.Succeeded || !result.Succeeded)
+            if (!userRole.Succeeded || !res.Succeeded)
             {
-                return String.Empty;
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountIsNotActivated", ErrorMessages.AccountAct)));
             }
-            return _jwtProvider.CreateToken(user, role);
+            var token = _jwtProvider.CreateToken(user, role);
+            return ResultOrValue<string>.Success(token);
         }
-        public async Task<string> Login(LoginDto dto)
+        public async Task<ResultOrValue<string>> Login(LoginDto dto)
         {
             var user = await GetUserByEmail(dto.Email);
             var userRoles = await _userManager.GetRolesAsync(user).ConfigureAwait(false);
-            if (user == null)
-                throw new Exception("Incorrect data");
             var isPasswordValid = await _userManager.CheckPasswordAsync(user, dto.Password).ConfigureAwait(false);
-            if (!isPasswordValid)
-            {
-                return String.Empty;
-            }
+
             if (user.EmailConfirmed == false)
-                throw new Exception("Account is not activated!");
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountIsNotActivated", ErrorMessages.AccountAct)));
+            if (user == null || !isPasswordValid)
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountError", ErrorMessages.AccountError)));
+           
             //Restrictied to user or admin! Can be both!
-            return _jwtProvider.CreateToken(user, userRoles.First());
+            var token = _jwtProvider.CreateToken(user, userRoles.First());
+            return ResultOrValue<string>.Success(token);
         }
 
         public async Task<bool> ConfirmEmail(CancellationToken cancellationToken, string token)

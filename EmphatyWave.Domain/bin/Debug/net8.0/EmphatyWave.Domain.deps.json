@@ -12,6 +12,11 @@
         },
         "runtime": {
           "EmphatyWave.Domain.dll": {}
+        },
+        "resources": {
+          "ka-GE/EmphatyWave.Domain.resources.dll": {
+            "locale": "ka-GE"
+          }
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/8.0.7": {

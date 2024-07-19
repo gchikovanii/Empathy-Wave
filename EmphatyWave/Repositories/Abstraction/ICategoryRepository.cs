@@ -8,6 +8,6 @@ namespace EmphatyWave.Persistence.Repositories.Abstraction
         Task<ICollection<Category>> GetCategories(CancellationToken token);
         Task<Category> GetCategoryById(CancellationToken token, Guid categoryId);
         Task CreateCategoryAsync(CancellationToken token, Category category);
-        Task<Result> DeleteCategory(CancellationToken token, Guid categoryId);
+        void DeleteCategory(Category category);
     }
 }

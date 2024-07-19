@@ -1,6 +1,7 @@
 ﻿using EmphatyWave.Persistence.DataContext;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
+using System.Transactions;
 
 namespace EmphatyWave.Persistence.UOW
 {
@@ -13,7 +14,7 @@ namespace EmphatyWave.Persistence.UOW
             _context = context;
         }
 
-        public async Task<IDbTransaction> BeginTransaction(IsolationLevel level, CancellationToken token = default)
+        public async Task<IDbTransaction> BeginTransaction(System.Transactions.IsolationLevel level, CancellationToken token = default)
         {
             var transaction = await _context.Database.BeginTransactionAsync();
             return transaction.GetDbTransaction();

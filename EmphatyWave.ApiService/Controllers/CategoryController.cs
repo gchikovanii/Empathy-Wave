@@ -1,9 +1,7 @@
 ﻿using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Queries.Categories;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace EmphatyWave.ApiService.Controllers
 {
@@ -16,45 +14,23 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategory(Guid id)
         {
-            try
+            var result = await _mediator.Send(new GetCategoryByIdQuery { Id = id });
+            if (result == null)
             {
-                var result = await _mediator.Send(new GetCategoryByIdQuery { Id = id });
-                if (result == null)
-                {
-                    return NotFound();
-                }
-                return Ok(result);
+                return NotFound();
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return Ok(result);
         }
         [HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {
-            try
-            {
-                return Ok(await _mediator.Send(new GetCategoriesQuery()).ConfigureAwait(false));
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return Ok(await _mediator.Send(new GetCategoriesQuery()).ConfigureAwait(false));
         }
         [HttpPost]
         public async Task<IActionResult> CreateCategory(CreateCategoryCommand command)
         {
-            try
-            {
-                var success = await _mediator.Send(command).ConfigureAwait(false);
-                return Ok(success);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            var success = await _mediator.Send(command).ConfigureAwait(false);
+            return Ok(success);
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(Guid id)
@@ -62,8 +38,6 @@ namespace EmphatyWave.ApiService.Controllers
             var success = await _mediator.Send(new DeleteCategoryCommand { Id = id });
             if (success.IsFailure)
             {
-                _logger.LogWarning("Failed to create category with command {@Command}", id);
-
                 return NotFound();
             }
             return Ok();

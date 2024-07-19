@@ -35,15 +35,9 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             _repository.UpdateData(order);
         }
-        public async Task DeleteOrder(CancellationToken token, Guid id)
+        public void DeleteOrder(Order order)
         {
-            var order = await _repository.GetDataById(token,id);
-            if (order != null)
-            {
-                _repository.DeleteData(order);
-            }
-            else
-                throw new Exception("Order Not found!");
+            _repository.DeleteData(order);
         }
 
       

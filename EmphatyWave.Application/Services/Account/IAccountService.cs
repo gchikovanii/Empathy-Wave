@@ -1,4 +1,5 @@
 ﻿using EmphatyWave.Application.Services.Account.DTOs;
+using EmphatyWave.Application.Services.Account.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace EmphatyWave.Application.Services.Account
 {
     public interface IAccountService
     {
-        Task<string> Register(RegisterDto dto);
+        Task<ResultOrValue<string>> Register(RegisterDto dto);
         Task<bool> ConfirmEmail(CancellationToken cancellationToken, string token);
-        Task<string> Login(LoginDto dto);
+        Task<ResultOrValue<string>> Login(LoginDto dto);
         Task<bool> RequestPasswordRecovery(string email);
         Task<bool> ResetPassword(RecoveryDto dto);
         Task RemoveExpiredTokensAsync(CancellationToken token, string option);

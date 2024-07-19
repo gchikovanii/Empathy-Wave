@@ -13,46 +13,23 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(Guid id)
         {
-            try
+            var result = await _mediator.Send(new GetProductByIdQuery { Id = id });
+            if (result == null)
             {
-                var result = await _mediator.Send(new GetProductByIdQuery { Id = id });
-                if (result == null)
-                {
-                    return NotFound();
-                }
-                return Ok(result);
+                return NotFound(result);
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return Ok(result);
         }
         [OutputCache(Duration = 7200)]
         [HttpGet]
         public async Task<IActionResult> GetAllProducts(int pageSize, int pageNumber)
         {
-            try
-            {
-                return Ok(await _mediator.Send(new GetProductsQuery { PageNumber = pageNumber, PageSize = pageSize }).ConfigureAwait(false));
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return Ok(await _mediator.Send(new GetProductsQuery { PageNumber = pageNumber, PageSize = pageSize }).ConfigureAwait(false));
         }
         [HttpPost]
         public async Task<IActionResult> CreateProduct(CreateProductCommand command)
         {
-            try
-            {
-                var success = await _mediator.Send(command).ConfigureAwait(false);
-                return Ok(success);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return Ok(await _mediator.Send(command).ConfigureAwait(false));
         }
 
         [HttpPut("{id}")]
@@ -68,12 +45,7 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(Guid id)
         {
-            var success = await _mediator.Send(new DeleteProductCommand { Id = id });
-            if (!success)
-            {
-                return NotFound();
-            }
-            return Ok();
+            return Ok(await _mediator.Send(new DeleteProductCommand { Id = id }));
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using EmphatyWave.Persistence.Infrastructure.Localization.Errors;
+﻿
+using EmphatyWave.Domain.Localization;
 
 namespace EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common
 {
@@ -8,7 +9,7 @@ namespace EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common
         {
             if (isSuccess && error != Error.None || !isSuccess && error == Error.None)
             {
-                throw new ArgumentException($"{ErrrorMessages.InvalidError} - {nameof(error)}");
+                throw new ArgumentException($"{ErrorMessages.InvalidError} - {nameof(error)}");
             }
             IsSuccess = isSuccess;
             Error = error;

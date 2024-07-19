@@ -1,10 +1,9 @@
-﻿using EmphatyWave.Domain;
+﻿using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
 
 namespace EmphatyWave.Application.Commands.Products
 {
-    public class CreateProductCommand : IRequest<bool>
+    public class CreateProductCommand : IRequest<Result>
     {
         public string Name { get; set; }
         public string Title { get; set; }

@@ -11,6 +11,7 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDto dto)
         {
+
             return Ok(await _accountService.Login(dto).ConfigureAwait(false));
         }
         [HttpPost("register")]

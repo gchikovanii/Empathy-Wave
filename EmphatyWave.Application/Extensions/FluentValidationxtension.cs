@@ -1,14 +1,13 @@
 ﻿using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Commands.Products;
+using EmphatyWave.Application.Services.Account.DTOs;
+using EmphatyWave.Application.Validators.Categories;
 using EmphatyWave.Application.Validators.ProductValidators;
+using EmphatyWave.Application.Validators.UserValidators;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace EmphatyWave.Application.Extensions
 {
@@ -19,6 +18,8 @@ namespace EmphatyWave.Application.Extensions
             services.AddScoped<IValidator<CreateProductCommand>, CreateProductValidator>();
             services.AddScoped<IValidator<UpdateProductCommand>, UpdateProductValidator>();
             services.AddScoped<IValidator<MakeOrderCommand>, MakeOrderValidator>();
+            services.AddScoped<IValidator<CreateCategoryCommand>, CategoryValidator>();
+            services.AddScoped<IValidator<RegisterDto>, RegisterDtoValidator>();
             return services;
         }
     }

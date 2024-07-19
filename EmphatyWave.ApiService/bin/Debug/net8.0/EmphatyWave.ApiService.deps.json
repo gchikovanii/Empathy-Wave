@@ -1878,6 +1878,11 @@
         },
         "runtime": {
           "EmphatyWave.Domain.dll": {}
+        },
+        "resources": {
+          "ka-GE/EmphatyWave.Domain.resources.dll": {
+            "locale": "ka-GE"
+          }
         }
       },
       "EmphatyWave.Persistence/1.0.0": {
@@ -1889,11 +1894,6 @@
         },
         "runtime": {
           "EmphatyWave.Persistence.dll": {}
-        },
-        "resources": {
-          "ka-GE/EmphatyWave.Persistence.resources.dll": {
-            "locale": "ka-GE"
-          }
         }
       },
       "EmphatyWave.ServiceDefaults/1.0.0": {

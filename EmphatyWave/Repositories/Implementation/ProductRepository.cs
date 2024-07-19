@@ -9,7 +9,7 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
 
         public async Task<ICollection<Product>> GetProducts(CancellationToken token, int pageNumber, int pageSize)
         {
-           return await _repository.GetPaginatedData(token,pageNumber, pageSize).ConfigureAwait(false);
+            return await _repository.GetPaginatedData(token, pageNumber, pageSize).ConfigureAwait(false);
         }
 
         public async Task<Product> GetProductById(CancellationToken token, Guid productId)
@@ -27,13 +27,9 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             _repository.UpdateData(product);
         }
-        public async Task DeleteProduct(CancellationToken token, Guid productId)
+        public void DeleteProduct(Product product)
         {
-            var product = await _repository.GetDataById(token, productId).ConfigureAwait(false);
-            if(product != null)
-            {
-                _repository.DeleteData(product);
-            }
+            _repository.DeleteData(product);
         }
     }
 }

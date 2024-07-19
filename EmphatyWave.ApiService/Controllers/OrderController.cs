@@ -6,7 +6,6 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace EmphatyWave.ApiService.Controllers
 {
@@ -19,64 +18,36 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOrder(Guid id)
         {
-            try
+            var result = await _mediator.Send(new GetOrderByIdQuery { Id = id });
+            if (result == null)
             {
-                var result = await _mediator.Send(new GetOrderByIdQuery { Id = id });
-                if (result == null)
-                {
-                    return NotFound();
-                }
-                return Ok(result);
+                return NotFound();
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return Ok(result);
         }
 
         [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> GetAllOrders(int pageSize, int pageNumber)
         {
-            try
-            {
-                return Ok(await _mediator.Send(new GetOrdersQuery { PageNumber = pageNumber, PageSize = pageSize }).ConfigureAwait(false));
+            return Ok(await _mediator.Send(new GetOrdersQuery { PageNumber = pageNumber, PageSize = pageSize }).ConfigureAwait(false));
 
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
         }
         [Authorize]
         [HttpGet("GetAllOrdersForUser")]
         public async Task<IActionResult> GetAllOrdersForUser(int pageSize, int pageNumber, string UserId)
         {
-            try
-            {
-                return Ok(await _mediator.Send(new GetOrdersForUserQuery { PageNumber = pageNumber, PageSize = pageSize, UserId = UserId }).ConfigureAwait(false));
+            return Ok(await _mediator.Send(new GetOrdersForUserQuery { PageNumber = pageNumber, PageSize = pageSize, UserId = UserId }).ConfigureAwait(false));
 
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
         }
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> MakeOrder(MakeOrderCommand command)
         {
-            try
-            {
-                var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
-                command.UserId = user.Id;
-                var success = await _mediator.Send(command).ConfigureAwait(false);
-                return Ok(success);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
+            command.UserId = user.Id;
+            var success = await _mediator.Send(command).ConfigureAwait(false);
+            return Ok(success);
         }
         [Authorize]
         [HttpPut]
@@ -94,12 +65,7 @@ namespace EmphatyWave.ApiService.Controllers
         {
             var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
             userId = user.Id;
-            var success = await _mediator.Send(new DeleteOrderCommand { Id = id ,UserId = userId });
-            if (!success)
-            {
-                return NotFound();
-            }
-            return Ok();
+            return Ok(await _mediator.Send(new DeleteOrderCommand { Id = id, UserId = userId }));
         }
     }
 }

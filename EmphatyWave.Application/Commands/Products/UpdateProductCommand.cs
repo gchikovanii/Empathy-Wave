@@ -1,10 +1,10 @@
 ﻿using EmphatyWave.Domain;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
 
 namespace EmphatyWave.Application.Commands.Products
 {
-    public class UpdateProductCommand : IRequest<bool>
+    public class UpdateProductCommand : IRequest<Result>
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

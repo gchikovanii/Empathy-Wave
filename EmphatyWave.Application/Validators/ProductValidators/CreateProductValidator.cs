@@ -1,5 +1,6 @@
 ﻿using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Domain;
+using EmphatyWave.Domain.Localization;
 using FluentValidation;
 
 namespace EmphatyWave.Application.Validators.ProductValidators
@@ -8,21 +9,21 @@ namespace EmphatyWave.Application.Validators.ProductValidators
     {
         public CreateProductValidator()
         {
-            RuleFor(i => i.SKU).NotEmpty().WithMessage("SKU is Required").MinimumLength(5).WithMessage("Min lenght is 5");
+            RuleFor(i => i.SKU).NotEmpty().WithMessage(ErrorMessages.FieldIsRequired).MinimumLength(5).WithMessage($"{ErrorMessages.MinLengthIs} 5");
             RuleFor(x => x.Description)
-                .NotEmpty().WithMessage("Description is required.")
-                .MinimumLength(15).WithMessage("Description must contain at least 15 characters.");
+                .NotEmpty().WithMessage(ErrorMessages.FieldIsRequired)
+                .MinimumLength(15).WithMessage(ErrorMessages.DescriptionSize);
             RuleFor(i => i.Price)
-                .NotEmpty().WithMessage("Price is Required")
-                .InclusiveBetween(1, 35000).WithMessage("Price must be between 1 and 35K");
+                .NotEmpty().WithMessage(ErrorMessages.FieldIsRequired)
+                .InclusiveBetween(1, 35000).WithMessage(ErrorMessages.PriceRange);
             RuleFor(i => i.Discount).Must((command,discount) => discount.HasValue ? discount.Value >= 0 && discount.Value <= command.Price : true)
-                .WithMessage("Discount must be between 1 and the product price.");
+                .WithMessage(ErrorMessages.DiscountRange);
             RuleFor(i => i.Name)
-                .NotEmpty().WithMessage("Name is Required")
-                .MinimumLength(2).WithMessage("Min Length is two.");
+                .NotEmpty().WithMessage(ErrorMessages.FieldIsRequired)
+                .MinimumLength(3).WithMessage($"{ErrorMessages.MinLengthIs} 3");
             RuleFor(i => i.Title)
-                .NotEmpty().WithMessage("Title is Required")
-                .MaximumLength(35).WithMessage("Max Length is 35.");
+                .NotEmpty().WithMessage(ErrorMessages.FieldIsRequired)
+                .MaximumLength(35).WithMessage($"{ErrorMessages.MaxLengthIs} 35");
         }
     }
 }

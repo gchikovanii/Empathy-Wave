@@ -24,13 +24,9 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
             await _repo.CreateData(token, category);
         }
 
-        public async Task<Result> DeleteCategory(CancellationToken token, Guid categoryId)
+        public void DeleteCategory(Category category)
         {
-            var category = await _repo.GetDataById(token, categoryId);
-            if (category == null)
-                return CategoryErrors.CategoryNotExists;
             _repo.DeleteData(category);
-            return Result.Success();
         }
 
        

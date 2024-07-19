@@ -220,4 +220,4 @@ D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Settings.Configur
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Sinks.File.dll
-D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\ka-GE\EmphatyWave.Persistence.resources.dll
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\ka-GE\EmphatyWave.Domain.resources.dll

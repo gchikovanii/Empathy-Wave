@@ -117,13 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AccountAct" xml:space="preserve">
+    <value>ექაუნთი გააქტიურებული არ არის. გთხოვთ შეამოწმოთ ინბოქსი</value>
+  </data>
+  <data name="AccountError" xml:space="preserve">
+    <value>მეილი ან პაროლი არასწორია</value>
+  </data>
   <data name="CategoryNotExists" xml:space="preserve">
-    <value>მსგავსი კატეგორია არ არსებობს.</value>
+    <value>შეყვანილი კატეგორია არ არსებობს.</value>
+  </data>
+  <data name="DescriptionSize" xml:space="preserve">
+    <value>ჩანაწერი უნდა შეიცავდეს მინიმუმ 15 სიმბოლოს.</value>
+  </data>
+  <data name="DiscountRange" xml:space="preserve">
+    <value>ფასდაკლების არეალი არის 1იდან პროდუქტის ფასამდე</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>მეილი უნდა იყოს სწორ ფორმატში</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>მომხარებელი მსგავსი მეილით უკვე დარეგისტრირებულია</value>
+  </data>
+  <data name="FieldIsRequired" xml:space="preserve">
+    <value>ველი შევსება სავალდებულოა</value>
+  </data>
+  <data name="InaccessibleOrder" xml:space="preserve">
+    <value>მიუწვდომელია შეკვეთის ისტორია</value>
   </data>
   <data name="InvalidError" xml:space="preserve">
-    <value>მოხდა გაუთვალისწინებელი შეცდომა.</value>
+    <value>შეცდომა</value>
+  </data>
+  <data name="MaxLengthIs" xml:space="preserve">
+    <value>მაქსიმალური ზომა არის</value>
+  </data>
+  <data name="MinLengthIs" xml:space="preserve">
+    <value>მინიმალური ზომა არის</value>
+  </data>
+  <data name="OnlyNumbers" xml:space="preserve">
+    <value>მხოლოდ ციფრები, გთხოვთ შეიყვანოთ ინფორმაცია მოცემულ ფორმატში</value>
+  </data>
+  <data name="OrderItemsNotExists" xml:space="preserve">
+    <value>შეკვეთის ნაწილები არ არსებობს ბაზაში</value>
+  </data>
+  <data name="OrderNotExists" xml:space="preserve">
+    <value>შეკვეთა არ არსებობს</value>
+  </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>პროდუქტის მარაგი ამოწურულია</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>პაროლი უნდა იყოს მიმინუმ 8 სიგრძეში და შეიცავდეს პატარა ასოს, დიდ ასოს, ციფრსა და განსაკუთრებულ ჩანაწერს(@,!,_,-)...</value>
+  </data>
+  <data name="PaymentFailed" xml:space="preserve">
+    <value>გადახდა ვერ მოხერხდა</value>
+  </data>
+  <data name="PriceRange" xml:space="preserve">
+    <value>ფასი უნდა იყოს 1სა და 35 ათას შორის</value>
+  </data>
+  <data name="ProductNotFound" xml:space="preserve">
+    <value>პროდუქტი ვერ მოიძებნა</value>
   </data>
   <data name="SaveChanges" xml:space="preserve">
-    <value>მოხდა შეცდომა მონაცემების შენახვის დროს.</value>
+    <value>შენახვისას დაფიქსირდა შეცდომა</value>
+  </data>
+  <data name="TotalPriceRange" xml:space="preserve">
+    <value>ერთდჯერადად შესაძლებელია 150 000 ვალუტის პროდუქტის შეძენა</value>
+  </data>
+  <data name="UserNameAlreadyExists" xml:space="preserve">
+    <value>მომხარებელი მსგავსი სახელით უკვე დარეგისტრირებულია</value>
   </data>
 </root>

@@ -10,6 +10,7 @@ namespace EmphatyWave.Persistence.Repositories.Abstraction
         Task<Order> GetOrderById(CancellationToken token, Guid id);
         Task CreateOrderAsync(CancellationToken token, Order order);
         void UpdateOrder(Order order);
-        Task DeleteOrder(CancellationToken token, Guid id);
+        void DeleteOrder(Order order);
+
     }
 }

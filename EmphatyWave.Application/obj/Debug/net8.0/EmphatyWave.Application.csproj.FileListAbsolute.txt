@@ -16,4 +16,4 @@ D:\EmphatyWave\EmphatyWave.Application\bin\Debug\net8.0\EmphatyWave.Domain.pdb
 D:\EmphatyWave\EmphatyWave.Application\bin\Debug\net8.0\EmphatyWave.Persistence.pdb
 D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyWave.Application.csproj.AssemblyReference.cache
 D:\EmphatyWave\EmphatyWave.Application\obj\Debug\net8.0\EmphatyW.47035D08.Up2Date
-D:\EmphatyWave\EmphatyWave.Application\bin\Debug\net8.0\ka-GE\EmphatyWave.Persistence.resources.dll
+D:\EmphatyWave\EmphatyWave.Application\bin\Debug\net8.0\ka-GE\EmphatyWave.Domain.resources.dll

@@ -117,13 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AccountAct" xml:space="preserve">
+    <value>Account is not activated yet. Please check your inbox</value>
+  </data>
+  <data name="AccountError" xml:space="preserve">
+    <value>Email or Password is not correct!</value>
+  </data>
   <data name="CategoryNotExists" xml:space="preserve">
     <value>Inputed category doesn't exists!</value>
+  </data>
+  <data name="DescriptionSize" xml:space="preserve">
+    <value>Description must contain at least 15 characters.</value>
+  </data>
+  <data name="DiscountRange" xml:space="preserve">
+    <value>Discount must be between 1 and the product price.</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email Must be in correct format.</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>User with current email already exists</value>
+  </data>
+  <data name="FieldIsRequired" xml:space="preserve">
+    <value>Field is required, please fill it correctly</value>
+  </data>
+  <data name="InaccessibleOrder" xml:space="preserve">
+    <value>Inaccesisble order </value>
   </data>
   <data name="InvalidError" xml:space="preserve">
     <value>Invalid Error</value>
   </data>
+  <data name="MaxLengthIs" xml:space="preserve">
+    <value>Maximum length is </value>
+  </data>
+  <data name="MinLengthIs" xml:space="preserve">
+    <value>Minimum Length is </value>
+  </data>
+  <data name="OnlyNumbers" xml:space="preserve">
+    <value>Only numbers, please fill data in correct format</value>
+  </data>
+  <data name="OrderItemsNotExists" xml:space="preserve">
+    <value>Order Items does not exsit</value>
+  </data>
+  <data name="OrderNotExists" xml:space="preserve">
+    <value>Order does not exists</value>
+  </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>Product is out of stock</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.</value>
+  </data>
+  <data name="PaymentFailed" xml:space="preserve">
+    <value>Payment Failed</value>
+  </data>
+  <data name="PriceRange" xml:space="preserve">
+    <value>Price must be between 1 and 35K</value>
+  </data>
+  <data name="ProductNotFound" xml:space="preserve">
+    <value>Product was not found</value>
+  </data>
   <data name="SaveChanges" xml:space="preserve">
     <value>Error occured while saving changes in database</value>
+  </data>
+  <data name="TotalPriceRange" xml:space="preserve">
+    <value>Total Price range is from 1 to 150K</value>
+  </data>
+  <data name="UserNameAlreadyExists" xml:space="preserve">
+    <value>User with current user name already exists</value>
   </data>
 </root>
