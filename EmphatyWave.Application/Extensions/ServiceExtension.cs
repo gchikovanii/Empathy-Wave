@@ -2,6 +2,8 @@
 using EmphatyWave.Application.Helpers;
 using EmphatyWave.Application.Jobs;
 using EmphatyWave.Application.Services.Account;
+using EmphatyWave.Application.Services.PromoCodes.Abstraction;
+using EmphatyWave.Application.Services.PromoCodes.Implementation;
 using EmphatyWave.Application.Services.Stripe.Abstraction;
 using EmphatyWave.Application.Services.Stripe.Implementation;
 using EmphatyWave.Persistence.Repositories.Abstraction;
@@ -25,6 +27,9 @@ namespace EmphatyWave.Application.Extensions
             services.AddScoped<IProductImageRepository, ProductImageRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<IPromoCodeRepository, PromoCodeRepository>();
+            services.AddScoped<IUserPromoCodeRepository, UserPromoCodeRepository>();
+            services.AddScoped<IPromoCodeService, PromoCodeService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient(provider =>
               new TokenGenerator(config["TokenGenerator:Key"], 5));

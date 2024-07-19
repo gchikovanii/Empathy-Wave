@@ -13,6 +13,8 @@ namespace EmphatyWave.Persistence.DataContext
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<PromoCode> PromoCodes { get; set; }
+        public DbSet<UserPromoCode> UserPromoCodes { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Order>().Property(i => i.Status).HasConversion<string>();

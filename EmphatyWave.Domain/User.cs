@@ -10,5 +10,7 @@ namespace EmphatyWave.Domain
         public string? ResetPasswordToken { get; set; }
         public DateTimeOffset? ResetTokenExp { get; set; }
         public ICollection<Order> Orders { get; set; }
+        public ICollection<UserPromoCode> UserPromoCodes { get; set; }
+
     }
 }

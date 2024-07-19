@@ -1,0 +1,28 @@
+﻿using EmphatyWave.Domain;
+using EmphatyWave.Persistence.Repositories.Abstraction;
+using Microsoft.EntityFrameworkCore;
+
+namespace EmphatyWave.Persistence.Repositories.Implementation
+{
+    public class PromoCodeRepository(IBaseRepository<PromoCode> repo) : IPromoCodeRepository
+    {
+        private readonly IBaseRepository<PromoCode> _repo = repo;
+
+        public async Task<PromoCode> GetPromoCodeById(CancellationToken token, Guid productId)
+        {
+            return await _repo.GetDataById(token, productId).ConfigureAwait(false);
+        }
+        public async Task<ICollection<PromoCode>> GetPromoCodes(CancellationToken token)
+        {
+            return await _repo.GetQuery().ToListAsync(token).ConfigureAwait(false);
+        }
+        public async Task CreatePromoCodeAsync(CancellationToken token, PromoCode product)
+        {
+            await _repo.CreateData(token, product).ConfigureAwait(false);
+        }
+        public void DeletePromoCode(PromoCode promoCode)
+        {
+            _repo.DeleteData(promoCode);
+        }
+    }
+}

@@ -177,6 +177,12 @@
   <data name="ProductNotFound" xml:space="preserve">
     <value>პროდუქტი ვერ მოიძებნა</value>
   </data>
+  <data name="PromoAlreadyExists" xml:space="preserve">
+    <value>პრომო კოდი უკვე არსებობს</value>
+  </data>
+  <data name="PromoNotFound" xml:space="preserve">
+    <value>პრომო კოდი ვერ მოიძებნა</value>
+  </data>
   <data name="SaveChanges" xml:space="preserve">
     <value>შენახვისას დაფიქსირდა შეცდომა</value>
   </data>

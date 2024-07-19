@@ -241,6 +241,24 @@ namespace EmphatyWave.Domain.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Promo code already exists.
+        /// </summary>
+        public static string PromoAlreadyExists {
+            get {
+                return ResourceManager.GetString("PromoAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Promo Code was not found.
+        /// </summary>
+        public static string PromoNotFound {
+            get {
+                return ResourceManager.GetString("PromoNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error occured while saving changes in database.
         /// </summary>
         public static string SaveChanges {

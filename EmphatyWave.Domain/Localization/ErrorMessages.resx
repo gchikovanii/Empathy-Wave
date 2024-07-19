@@ -177,6 +177,12 @@
   <data name="ProductNotFound" xml:space="preserve">
     <value>Product was not found</value>
   </data>
+  <data name="PromoAlreadyExists" xml:space="preserve">
+    <value>Promo code already exists</value>
+  </data>
+  <data name="PromoNotFound" xml:space="preserve">
+    <value>Promo Code was not found</value>
+  </data>
   <data name="SaveChanges" xml:space="preserve">
     <value>Error occured while saving changes in database</value>
   </data>
