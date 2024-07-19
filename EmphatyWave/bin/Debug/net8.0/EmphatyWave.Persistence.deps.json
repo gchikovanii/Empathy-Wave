@@ -17,6 +17,11 @@
         },
         "runtime": {
           "EmphatyWave.Persistence.dll": {}
+        },
+        "resources": {
+          "ka-GE/EmphatyWave.Persistence.resources.dll": {
+            "locale": "ka-GE"
+          }
         }
       },
       "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL/8.0.2": {

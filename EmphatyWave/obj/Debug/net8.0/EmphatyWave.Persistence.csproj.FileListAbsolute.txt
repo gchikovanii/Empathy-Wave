@@ -16,3 +16,8 @@ D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\ref\EmphatyWave.Persistence.dll
 D:\EmphatyWave\EmphatyWave\bin\Debug\net8.0\EmphatyWave.Persistence.runtimeconfig.json
 D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.genruntimeconfig.cache
 D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.sourcelink.json
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.Localization.Errors.ErrrorMessages.resources
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.csproj.GenerateResource.cache
+D:\EmphatyWave\EmphatyWave\bin\Debug\net8.0\ka-GE\EmphatyWave.Persistence.resources.dll
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\EmphatyWave.Persistence.Localization.Errors.ErrorMessages.ka-GE.resources
+D:\EmphatyWave\EmphatyWave\obj\Debug\net8.0\ka-GE\EmphatyWave.Persistence.resources.dll

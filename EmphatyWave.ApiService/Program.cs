@@ -1,4 +1,5 @@
 using EmphatyWave.ApiService;
+using EmphatyWave.ApiService.Infrastructure.Extensions;
 using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Commands.Products;
@@ -45,7 +46,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCulture();
 app.UseExceptionHandler();
 app.UseRouting();
 app.UseAuthentication();

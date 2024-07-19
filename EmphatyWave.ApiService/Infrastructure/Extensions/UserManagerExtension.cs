@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
-namespace EmphatyWave.ApiService.Extensions
+namespace EmphatyWave.ApiService.Infrastructure.Extensions
 {
     public static class UserManagerExtension
     {

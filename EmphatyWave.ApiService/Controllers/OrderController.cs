@@ -1,4 +1,4 @@
-﻿using EmphatyWave.ApiService.Extensions;
+﻿using EmphatyWave.ApiService.Infrastructure.Extensions;
 using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Queries.Orders;
 using EmphatyWave.Domain;

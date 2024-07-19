@@ -1,4 +1,4 @@
-﻿namespace EmphatyWave.ApiService.Extensions
+﻿namespace EmphatyWave.ApiService.Infrastructure.Extensions
 {
     public static class CacheDurationExtensions
     {

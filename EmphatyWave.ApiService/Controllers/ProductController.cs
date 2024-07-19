@@ -1,5 +1,4 @@
-﻿using EmphatyWave.ApiService.Extensions;
-using EmphatyWave.Application.Commands.Products;
+﻿using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Queries.Products;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
