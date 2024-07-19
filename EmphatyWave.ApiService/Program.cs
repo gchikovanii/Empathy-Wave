@@ -5,11 +5,14 @@ using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Extensions;
 using EmphatyWave.Persistence.DataSeeding;
+using EmphatyWave.Persistence.Infrastructure.GlobalException;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.AddRedisOutputCache("cache");
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 builder.Services.AddControllers();
 builder.AddServiceDefaults();
@@ -52,7 +55,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseOutputCache();
-
+app.UseExceptionHandler();
 //Mapping controllers(pointing to controllers that are created in project)
 app.UseEndpoints(endpoints =>
 {

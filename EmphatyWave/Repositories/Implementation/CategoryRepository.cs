@@ -1,4 +1,6 @@
 ﻿using EmphatyWave.Domain;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Categories;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,12 +24,13 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
             await _repo.CreateData(token, category);
         }
 
-        public async Task DeleteCategory(CancellationToken token, Guid categoryId)
+        public async Task<Result> DeleteCategory(CancellationToken token, Guid categoryId)
         {
             var category = await _repo.GetDataById(token, categoryId);
             if (category == null)
-                throw new Exception("Category Doesnt exists with this id");
+                return CategoryErrors.CategoryNotExists;
             _repo.DeleteData(category);
+            return Result.Success();
         }
 
        

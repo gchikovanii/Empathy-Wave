@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EmphatyWave.Persistence.Localization.Errors {
+namespace EmphatyWave.Persistence.Infrastructure.Localization.Errors {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace EmphatyWave.Persistence.Localization.Errors {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EmphatyWave.Persistence.Localization.Errors.ErrrorMessages", typeof(ErrrorMessages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EmphatyWave.Persistence.Infrastructure.Localization.Errors.ErrrorMessages", typeof(ErrrorMessages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,11 +61,29 @@ namespace EmphatyWave.Persistence.Localization.Errors {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something Not Found.
+        ///   Looks up a localized string similar to Inputed category doesn&apos;t exists!.
         /// </summary>
-        public static string NotFound {
+        public static string CategoryNotExists {
             get {
-                return ResourceManager.GetString("NotFound", resourceCulture);
+                return ResourceManager.GetString("CategoryNotExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Error.
+        /// </summary>
+        public static string InvalidError {
+            get {
+                return ResourceManager.GetString("InvalidError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error occured while saving changes in database.
+        /// </summary>
+        public static string SaveChanges {
+            get {
+                return ResourceManager.GetString("SaveChanges", resourceCulture);
             }
         }
     }

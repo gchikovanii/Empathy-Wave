@@ -57,12 +57,19 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(Guid id)
         {
-            var success = await _mediator.Send(new DeleteCategoryCommand { Id = id });
-            if (!success)
+            try
             {
-                return NotFound();
+                var success = await _mediator.Send(new DeleteCategoryCommand { Id = id });
+                if (success.IsFailure)
+                {
+                    return NotFound();
+                }
+                return Ok();
             }
-            return Ok();
+            catch (Exception ex)
+            {
+                throw new Exception();
+            }
         }
     }
 }

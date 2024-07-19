@@ -117,7 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NotFound" xml:space="preserve">
-    <value>ვერ მოიძებნა</value>
+  <data name="CategoryNotExists" xml:space="preserve">
+    <value>მსგავსი კატეგორია არ არსებობს.</value>
+  </data>
+  <data name="InvalidError" xml:space="preserve">
+    <value>მოხდა გაუთვალისწინებელი შეცდომა.</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>მოხდა შეცდომა მონაცემების შენახვის დროს.</value>
   </data>
 </root>
