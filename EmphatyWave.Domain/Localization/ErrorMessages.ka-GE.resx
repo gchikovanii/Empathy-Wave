@@ -180,6 +180,12 @@
   <data name="PromoAlreadyExists" xml:space="preserve">
     <value>პრომო კოდი უკვე არსებობს</value>
   </data>
+  <data name="PromoCodeError" xml:space="preserve">
+    <value>მოხდა შეცდომა პრომო კოდთან მუშაობისას</value>
+  </data>
+  <data name="PromoCodeIncorrectTimeError" xml:space="preserve">
+    <value>თარიღი არასწორადაა შეყვანილი</value>
+  </data>
   <data name="PromoNotFound" xml:space="preserve">
     <value>პრომო კოდი ვერ მოიძებნა</value>
   </data>
@@ -188,6 +194,9 @@
   </data>
   <data name="TotalPriceRange" xml:space="preserve">
     <value>ერთდჯერადად შესაძლებელია 150 000 ვალუტის პროდუქტის შეძენა</value>
+  </data>
+  <data name="UnexcpectedError" xml:space="preserve">
+    <value>მოხდა გაუთვალისწინებელი შეცდომა</value>
   </data>
   <data name="UserNameAlreadyExists" xml:space="preserve">
     <value>მომხარებელი მსგავსი სახელით უკვე დარეგისტრირებულია</value>

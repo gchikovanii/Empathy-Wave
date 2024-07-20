@@ -180,6 +180,12 @@
   <data name="PromoAlreadyExists" xml:space="preserve">
     <value>Promo code already exists</value>
   </data>
+  <data name="PromoCodeError" xml:space="preserve">
+    <value>Error while working with promo codes</value>
+  </data>
+  <data name="PromoCodeIncorrectTimeError" xml:space="preserve">
+    <value>Incorrect data input, data can't be less </value>
+  </data>
   <data name="PromoNotFound" xml:space="preserve">
     <value>Promo Code was not found</value>
   </data>
@@ -188,6 +194,9 @@
   </data>
   <data name="TotalPriceRange" xml:space="preserve">
     <value>Total Price range is from 1 to 150K</value>
+  </data>
+  <data name="UnexcpectedError" xml:space="preserve">
+    <value>Unexcpected error</value>
   </data>
   <data name="UserNameAlreadyExists" xml:space="preserve">
     <value>User with current user name already exists</value>

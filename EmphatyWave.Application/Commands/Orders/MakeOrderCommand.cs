@@ -10,6 +10,7 @@ namespace EmphatyWave.Application.Commands.Orders
     {
         public List<OrderItemDto> OrderItems { get; set; }
         public string UserId { get; set; }
+        public string? PromoCodeName { get; set; }
         public PaymentDetails PaymentDetails { get; set; }
         public ShippingDetail ShippingDetails { get; set; }
     }

@@ -25,10 +25,23 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
             _repository.DeleteData(userPromo);
         }
 
-        public async Task<ICollection<UserPromoCode>> GetUserPromoCodes(CancellationToken token, Guid promoCodeId)
+        public async Task<ICollection<UserPromoCode>> GetUserPromoCodes(CancellationToken token, string userId)
         {
-            return await _repository.GetQuery(i => i.PromoCodeId == promoCodeId && !i.RedeemedAt.HasValue).ToListAsync(token).ConfigureAwait(false);
+            return await _repository.GetQuery(i => i.UserId == userId && !i.RedeemedAt.HasValue).ToListAsync(token).ConfigureAwait(false);
         }
+        public async Task<ICollection<UserPromoCode>> GetCurrentUserPromoCodes(CancellationToken token, string userId)
+        {
+            return await _repository.GetQuery(i => i.UserId == userId).ToListAsync(token).ConfigureAwait(false);
+        }
+        public async Task<ICollection<UserPromoCode>> GetPromoCodesById(CancellationToken token, Guid promoCodeId)
+        {
+            return await _repository.GetQuery(i => i.PromoCodeId == promoCodeId).ToListAsync(token).ConfigureAwait(false);
+        }
+        public async Task<UserPromoCode> GetUserPromoCode(CancellationToken token, Guid promoCodeId, string userId)
+        {
+            return await _repository.GetQuery(i => i.PromoCodeId == promoCodeId && i.UserId == userId).FirstOrDefaultAsync(token).ConfigureAwait(false);
+        }
+        
 
     }
 }

@@ -186,6 +186,34 @@ namespace EmphatyWave.Persistence.Migrations
                     b.ToTable("ProductImages");
                 });
 
+            modelBuilder.Entity("EmphatyWave.Domain.PromoCode", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("DiscountPercentage")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTimeOffset>("ExpirationDate")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PromoCodes");
+                });
+
             modelBuilder.Entity("EmphatyWave.Domain.User", b =>
                 {
                     b.Property<string>("Id")
@@ -264,6 +292,31 @@ namespace EmphatyWave.Persistence.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("EmphatyWave.Domain.UserPromoCode", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PromoCodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("RedeemedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PromoCodeId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserPromoCodes");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -451,6 +504,25 @@ namespace EmphatyWave.Persistence.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("EmphatyWave.Domain.UserPromoCode", b =>
+                {
+                    b.HasOne("EmphatyWave.Domain.PromoCode", "PromoCode")
+                        .WithMany("UserPromoCodes")
+                        .HasForeignKey("PromoCodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EmphatyWave.Domain.User", "User")
+                        .WithMany("UserPromoCodes")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PromoCode");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -517,9 +589,16 @@ namespace EmphatyWave.Persistence.Migrations
                     b.Navigation("Images");
                 });
 
+            modelBuilder.Entity("EmphatyWave.Domain.PromoCode", b =>
+                {
+                    b.Navigation("UserPromoCodes");
+                });
+
             modelBuilder.Entity("EmphatyWave.Domain.User", b =>
                 {
                     b.Navigation("Orders");
+
+                    b.Navigation("UserPromoCodes");
                 });
 #pragma warning restore 612, 618
         }

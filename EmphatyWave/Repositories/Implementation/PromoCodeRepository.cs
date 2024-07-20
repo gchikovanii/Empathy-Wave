@@ -12,6 +12,10 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             return await _repo.GetDataById(token, productId).ConfigureAwait(false);
         }
+        public async Task<PromoCode> GetPromoCodeByPromoCode(CancellationToken token, string promoCode)
+        {
+            return await _repo.GetQuery(i => i.Name == promoCode).FirstOrDefaultAsync(token).ConfigureAwait(false) ?? new PromoCode { };
+        }
         public async Task<ICollection<PromoCode>> GetPromoCodes(CancellationToken token)
         {
             return await _repo.GetQuery().ToListAsync(token).ConfigureAwait(false);

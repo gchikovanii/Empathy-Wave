@@ -250,6 +250,24 @@ namespace EmphatyWave.Domain.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error while working with promo codes.
+        /// </summary>
+        public static string PromoCodeError {
+            get {
+                return ResourceManager.GetString("PromoCodeError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect data input, data can&apos;t be less .
+        /// </summary>
+        public static string PromoCodeIncorrectTimeError {
+            get {
+                return ResourceManager.GetString("PromoCodeIncorrectTimeError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Promo Code was not found.
         /// </summary>
         public static string PromoNotFound {
@@ -273,6 +291,15 @@ namespace EmphatyWave.Domain.Localization {
         public static string TotalPriceRange {
             get {
                 return ResourceManager.GetString("TotalPriceRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unexcpected error.
+        /// </summary>
+        public static string UnexcpectedError {
+            get {
+                return ResourceManager.GetString("UnexcpectedError", resourceCulture);
             }
         }
         

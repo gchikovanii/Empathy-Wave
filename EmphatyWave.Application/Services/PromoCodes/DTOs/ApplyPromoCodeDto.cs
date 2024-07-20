@@ -4,7 +4,6 @@
     {
         public Guid PromoCodeId { get; set; }
         public string UserId { get; set; }
-        public DateTime? RedeemedAt { get; set; }
 
     }
 }

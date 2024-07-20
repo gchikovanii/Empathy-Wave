@@ -1,7 +1,9 @@
-﻿using EmphatyWave.Application.Services.Stripe.Abstraction;
+﻿using EmphatyWave.Application.Services.PromoCodes.Abstraction;
+using EmphatyWave.Application.Services.Stripe.Abstraction;
 using EmphatyWave.Domain;
 using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Products;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.PromoCodeErrors;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
 using FluentValidation;
@@ -13,9 +15,10 @@ using System.Data;
 namespace EmphatyWave.Application.Commands.Orders
 {
     public class MakeOrderCommandHandler(IOrderRepository orderRepo, IProductRepository productRepo, IValidator<MakeOrderCommand> validator,
-        IOrderItemRepository orderItemRepo, IUnitOfWork unit, IPaymentService paymentService)
+        IOrderItemRepository orderItemRepo, IUnitOfWork unit, IPaymentService paymentService, IPromoCodeService promoCodeService)
         : IRequestHandler<MakeOrderCommand, Result>
     {
+        private readonly IPromoCodeService _promoCodeService = promoCodeService;
         private readonly IOrderRepository _orderRepository = orderRepo;
         private readonly IPaymentService _paymentService = paymentService;
         private readonly IOrderItemRepository _orderItemRepository = orderItemRepo;
@@ -79,6 +82,14 @@ namespace EmphatyWave.Application.Commands.Orders
 
             try
             {
+
+                if (!string.IsNullOrEmpty(request.PromoCodeName))
+                {
+                    var promoCode = await ApplyPromoCodeAsync(request.PromoCodeName, request.UserId, totalAmount, cancellationToken);
+                    if (!promoCode.IsSuccess)
+                        return Result.Failure(PromoCodeErrors.PromoCodeError);
+                    totalAmount = promoCode.NewTotalAmount;
+                }
                 await _orderRepository.CreateOrderAsync(cancellationToken, order);
                 await _orderItemRepository.AddOrderItems(cancellationToken, orderItems).ConfigureAwait(false);
 
@@ -118,6 +129,26 @@ namespace EmphatyWave.Application.Commands.Orders
                 transaction.Rollback();
                 return Result.Failure(new Error("Unexpected Exception", ex.Message));
             }
+        }
+
+        private async Task<(bool IsSuccess, decimal NewTotalAmount, Result FailureResult)> ApplyPromoCodeAsync(string promoCodeName, string userId, decimal totalAmount, CancellationToken cancellationToken)
+        {
+            var promoCode = await _promoCodeService.GetPromoCodeByPromoName(cancellationToken, promoCodeName).ConfigureAwait(false);
+            if (promoCode == null)
+                return (false, totalAmount, Result.Failure(PromoCodeErrors.PromoCodeNotFound));
+
+            var userPromoCode = await _promoCodeService.GetPromoCode(cancellationToken, userId, promoCode.Id);
+            if (userPromoCode == null || userPromoCode.RedeemedAt.HasValue)
+                return (false, totalAmount, Result.Failure(PromoCodeErrors.PromoCodeNotFound));
+
+            var promoCodeInfo = await _promoCodeService.GetPromoCodeInfo(cancellationToken, promoCode.Id);
+            if (promoCodeInfo == null || !promoCodeInfo.IsActive)
+                return (false, totalAmount, Result.Failure(PromoCodeErrors.PromoCodeNotFound));
+
+            totalAmount = totalAmount * (1 - promoCodeInfo.DiscountPercentage / 100);
+            await _promoCodeService.RedeemPromoCodeAsync(cancellationToken, userId, userPromoCode.Id).ConfigureAwait(false);
+
+            return (true, totalAmount, Result.Success());
         }
     }
 }

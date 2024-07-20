@@ -8,6 +8,7 @@ namespace EmphatyWave.Persistence.Repositories.Abstraction
         Task<ICollection<PromoCode>> GetPromoCodes(CancellationToken token);
         Task<PromoCode> GetPromoCodeById(CancellationToken token, Guid promoCodeId);
         Task CreatePromoCodeAsync(CancellationToken token, PromoCode promoCode);
+        Task<PromoCode> GetPromoCodeByPromoCode(CancellationToken token, string promoCode);
         void DeletePromoCode(PromoCode promoCode);
     }
 }
