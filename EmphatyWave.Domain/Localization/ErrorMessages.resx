@@ -123,6 +123,9 @@
   <data name="AccountError" xml:space="preserve">
     <value>Email or Password is not correct!</value>
   </data>
+  <data name="AlreadyExists" xml:space="preserve">
+    <value>Already Exists</value>
+  </data>
   <data name="CategoryNotExists" xml:space="preserve">
     <value>Inputed category doesn't exists!</value>
   </data>

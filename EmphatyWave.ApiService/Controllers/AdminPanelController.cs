@@ -1,4 +1,5 @@
 ﻿using EmphatyWave.Application.Services.AdminPanel;
+using EmphatyWave.Application.Services.PromoCodeImages.Abstraction;
 using EmphatyWave.Application.Services.PromoCodes.Abstraction;
 using EmphatyWave.Application.Services.PromoCodes.DTOs;
 using Microsoft.AspNetCore.Authorization;
@@ -12,7 +13,6 @@ namespace EmphatyWave.ApiService.Controllers
     {
         private readonly IAdminPanelService _adminPanelService = adminPanelService;
         private readonly IPromoCodeService _promoCodeSerivice = promoCodeSerivice;
-
         
         [HttpGet("GetByEmail")]
         public async Task<IActionResult> GetUserByEmail(string email)

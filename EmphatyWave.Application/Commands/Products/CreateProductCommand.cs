@@ -1,5 +1,7 @@
-﻿using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
+﻿using EmphatyWave.Application.Extensions;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 
 namespace EmphatyWave.Application.Commands.Products
 {
@@ -13,5 +15,26 @@ namespace EmphatyWave.Application.Commands.Products
         public int Quantity { get; set; }
         public string SKU { get; set; }
         public Guid CategoryId { get; set; }
+        public List<string>? Images { get; set; }
+
+        public List<IFormFile>? GetImageFiles()
+        {
+            try
+            {
+                var imageFiles = new List<IFormFile>();
+                if (Images.Count == 0 || Images == null)
+                    return default;
+                foreach (var image in Images)
+                {
+                    imageFiles.Add(image.ConvertBase64ToImage());
+                }
+                return imageFiles;
+            }
+            catch (Exception)
+            {
+                return default;
+            }
+
+        }
     }
 }

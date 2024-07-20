@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmphatyWave.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7779a9c4d3a0f9c1751ca1eed8224389354eb49d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbebfecf9bdbdecdb331b6307ea3cb86dbf3eab1")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmphatyWave.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmphatyWave.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

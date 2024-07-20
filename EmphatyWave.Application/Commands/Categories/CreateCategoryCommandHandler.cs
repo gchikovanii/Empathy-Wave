@@ -1,4 +1,5 @@
 ﻿using EmphatyWave.Domain;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Categories;
 using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
@@ -18,7 +19,9 @@ namespace EmphatyWave.Application.Commands.Categories
         public async Task<Result> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
         {
             ValidationResult result = await _validator.ValidateAsync(request, cancellationToken).ConfigureAwait(false);
-
+            var category = await _repo.GetCategoryByName(cancellationToken, request.Name).ConfigureAwait(false);
+            if (category == null)
+                return Result.Failure(CategoryErrors.CategoryNotExists);
             if (!result.IsValid)
             {
                 var errorMessages = result.Errors.Select(e => e.ErrorMessage);

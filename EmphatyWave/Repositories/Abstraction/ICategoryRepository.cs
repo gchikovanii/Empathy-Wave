@@ -1,5 +1,4 @@
 ﻿using EmphatyWave.Domain;
-using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 
 namespace EmphatyWave.Persistence.Repositories.Abstraction
 {
@@ -7,7 +6,8 @@ namespace EmphatyWave.Persistence.Repositories.Abstraction
     {
         Task<ICollection<Category>> GetCategories(CancellationToken token);
         Task<Category> GetCategoryById(CancellationToken token, Guid categoryId);
+        Task<Category> GetCategoryByName(CancellationToken token, string categoryName);
         Task CreateCategoryAsync(CancellationToken token, Category category);
-        void DeleteCategory(Category category);
+        void DeleteCategory(Category category); 
     }
 }

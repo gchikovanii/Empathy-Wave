@@ -1,5 +1,6 @@
 ﻿using EmphatyWave.Domain;
 using EmphatyWave.Persistence.Repositories.Abstraction;
+using Microsoft.EntityFrameworkCore;
 
 namespace EmphatyWave.Persistence.Repositories.Implementation
 {
@@ -11,7 +12,10 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             return await _repository.GetPaginatedData(token, pageNumber, pageSize).ConfigureAwait(false);
         }
-
+        public async Task<Product> GetProductByName(CancellationToken token, string productName)
+        {
+            return await _repository.GetQuery(i => i.Name == productName).FirstOrDefaultAsync(token).ConfigureAwait(false) ?? new Product { };
+        }
         public async Task<Product> GetProductById(CancellationToken token, Guid productId)
         {
             var product = await _repository.GetDataById(token, productId).ConfigureAwait(false);
@@ -20,7 +24,6 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
 
         public async Task CreateProductAsync(CancellationToken token, Product product)
         {
-            product.Id = Guid.NewGuid();
             await _repository.CreateData(token, product).ConfigureAwait(false);
         }
         public void UpdateProduct(Product product)

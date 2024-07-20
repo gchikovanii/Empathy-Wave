@@ -4,6 +4,7 @@ using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Commands.Orders;
 using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Extensions;
+using EmphatyWave.Application.Services.Cloudinaries.Models;
 using EmphatyWave.Persistence.DataSeeding;
 using EmphatyWave.Persistence.Infrastructure.GlobalException;
 using MediatR;
@@ -28,6 +29,8 @@ builder.Services.AddStripeSettings(builder.Configuration);
 builder.Services.AddFluentValidation();
 builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.Configure<CloudinarySetting>(builder.Configuration.GetSection("CloudinarySettings"));
+
 #region MediatR
 builder.Services.AddMediatR(cfg =>
 {

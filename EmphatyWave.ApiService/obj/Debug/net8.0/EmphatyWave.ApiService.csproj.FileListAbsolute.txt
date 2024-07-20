@@ -221,3 +221,4 @@ D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\Serilog.Sinks.File.dll
 D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\ka-GE\EmphatyWave.Domain.resources.dll
 D:\EmphatyWave\EmphatyWave.ApiService\obj\Debug\net8.0\EmphatyWave.ApiService.MvcApplicationPartsAssemblyInfo.cs
+D:\EmphatyWave\EmphatyWave.ApiService\bin\Debug\net8.0\CloudinaryDotNet.dll

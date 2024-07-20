@@ -79,6 +79,15 @@ namespace EmphatyWave.Domain.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Already Exists.
+        /// </summary>
+        public static string AlreadyExists {
+            get {
+                return ResourceManager.GetString("AlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Inputed category doesn&apos;t exists!.
         /// </summary>
         public static string CategoryNotExists {

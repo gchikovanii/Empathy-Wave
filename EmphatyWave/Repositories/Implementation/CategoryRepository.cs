@@ -9,7 +9,10 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
     public class CategoryRepository(IBaseRepository<Category> repo) : ICategoryRepository
     {
         private readonly IBaseRepository<Category> _repo = repo;
-
+        public async Task<Category> GetCategoryByName(CancellationToken token, string categoryName)
+        {
+            return await _repo.GetQuery(i => i.Name == categoryName).FirstOrDefaultAsync(token).ConfigureAwait(false) ?? new Category { };
+        }
         public async Task<ICollection<Category>> GetCategories(CancellationToken token)
         {
             return await _repo.GetQuery().ToListAsync(token).ConfigureAwait(false);
@@ -28,7 +31,5 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             _repo.DeleteData(category);
         }
-
-       
     }
 }

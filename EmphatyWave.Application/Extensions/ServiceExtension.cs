@@ -2,6 +2,10 @@
 using EmphatyWave.Application.Jobs;
 using EmphatyWave.Application.Services.Account;
 using EmphatyWave.Application.Services.AdminPanel;
+using EmphatyWave.Application.Services.Cloudinaries.Abstraction;
+using EmphatyWave.Application.Services.Cloudinaries.Implementation;
+using EmphatyWave.Application.Services.PromoCodeImages.Abstraction;
+using EmphatyWave.Application.Services.PromoCodeImages.Implementation;
 using EmphatyWave.Application.Services.PromoCodes.Abstraction;
 using EmphatyWave.Application.Services.PromoCodes.Implementation;
 using EmphatyWave.Application.Services.Stripe.Abstraction;
@@ -31,6 +35,8 @@ namespace EmphatyWave.Application.Extensions
             services.AddScoped<IUserPromoCodeRepository, UserPromoCodeRepository>();
             services.AddScoped<IAdminPanelService, AdminPanelService>();
             services.AddScoped<IPromoCodeService, PromoCodeService>();
+            services.AddScoped<IProductImageService, ProductImageService>();
+            services.AddScoped<ICloudinaryService, CloudinaryService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient(provider =>
               new TokenGenerator(config["TokenGenerator:Key"], 5));

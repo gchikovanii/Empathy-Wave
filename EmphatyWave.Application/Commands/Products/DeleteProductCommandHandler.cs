@@ -1,4 +1,5 @@
-﻿using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
+﻿using EmphatyWave.Application.Services.Cloudinaries.Abstraction;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Products;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
@@ -8,10 +9,11 @@ using System.Transactions;
 namespace EmphatyWave.Application.Commands.Products
 {
     public class DeleteProductCommandHandler(IProductRepository repo, IProductImageRepository imageRepo,
-        IUnitOfWork unit) : IRequestHandler<DeleteProductCommand, Result>
+        IUnitOfWork unit, ICloudinaryService cloudinaryService) : IRequestHandler<DeleteProductCommand, Result>
     {
         private readonly IProductRepository _repo = repo;
         private readonly IUnitOfWork _unit = unit;
+        private readonly ICloudinaryService _cloudinaryService = cloudinaryService;
         private readonly IProductImageRepository _imageRepo = imageRepo;
 
         public async Task<Result> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
@@ -28,6 +30,7 @@ namespace EmphatyWave.Application.Commands.Products
                 foreach (var image in listOfImages)
                 {
                     await _imageRepo.DeleteProductImage(cancellationToken, image.Id).ConfigureAwait(false);
+                    await _cloudinaryService.DeleteImage(image.PublicId);
                 }
 
                 var saves = await _unit.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
