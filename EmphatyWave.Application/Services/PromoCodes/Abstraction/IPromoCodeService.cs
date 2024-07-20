@@ -7,7 +7,7 @@ namespace EmphatyWave.Application.Services.PromoCodes.Abstraction
     public interface IPromoCodeService
     {
         Task<ICollection<PromoCodeDto>> GetAllPromoCodes(CancellationToken token);
-        Task<ICollection<UserPromoCode>> GetCurrentUserPromoCodes(CancellationToken token, string userId);
+        Task<ICollection<UserPromoCodeDto>> GetCurrentUserPromoCodes(CancellationToken token, string userId);
         Task<Result> IssuePromoCode(CancellationToken token, PromoCodeDto promoCodeDto);
         Task<Result> ApplyPromoCodes(CancellationToken token, Guid promoCodeId, DateTimeOffset? dateTime);
         Task<Result> ApplyPromoCode(CancellationToken token, ApplyPromoCodeDto promoCode);
@@ -17,5 +17,6 @@ namespace EmphatyWave.Application.Services.PromoCodes.Abstraction
         Task<PromoCode> GetPromoCodeInfo(CancellationToken token, Guid promoCodeId);
         Task<UserPromoCode> RedeemPromoCodeAsync(CancellationToken token, string userId, Guid promoCodeId);
         Task<PromoCode> GetPromoCodeByPromoName(CancellationToken token, string promoName);
+        Task ChangeStatusoOfPromoCode(CancellationToken cancellationToken);
     }
 }

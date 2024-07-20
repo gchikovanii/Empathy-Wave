@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\extensions\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\extensions\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\jobs\\changepromocodestatuswroker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\jobs\\changepromocodestatuswroker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\services\\promocodes\\implementation\\promocodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\services\\promocodes\\implementation\\promocodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|d:\\emphatywave\\emphatywave\\repositories\\implementation\\promocoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|solutionrelative:emphatywave\\repositories\\implementation\\promocoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\services\\promocodes\\abstraction\\ipromocodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\services\\promocodes\\abstraction\\ipromocodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|d:\\emphatywave\\emphatywave\\repositories\\abstraction\\ipromocoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|solutionrelative:emphatywave\\repositories\\abstraction\\ipromocoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\jobs\\pendingpaymentworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\jobs\\pendingpaymentworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|d:\\emphatywave\\emphatywave\\infrastructure\\errorsaggregate\\promocodeerrors\\promocodeerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,17 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "AdminPanelController.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\AdminPanelController.cs",
               "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\AdminPanelController.cs",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\AdminPanelController.cs",
               "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\AdminPanelController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAiwCYAAABKAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvyYAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T04:42:20.249Z",
               "IsPinned": true,
@@ -40,7 +64,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceExtension.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Extensions\\ServiceExtension.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Extensions\\ServiceExtension.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Extensions\\ServiceExtension.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Extensions\\ServiceExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:34:11.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PromoCodeRepository.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave\\Repositories\\Implementation\\PromoCodeRepository.cs",
+              "RelativeDocumentMoniker": "EmphatyWave\\Repositories\\Implementation\\PromoCodeRepository.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave\\Repositories\\Implementation\\PromoCodeRepository.cs",
+              "RelativeToolTip": "EmphatyWave\\Repositories\\Implementation\\PromoCodeRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAwCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:06:59.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangePromoCodeStatusWroker.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Jobs\\ChangePromoCodeStatusWroker.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Jobs\\ChangePromoCodeStatusWroker.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Jobs\\ChangePromoCodeStatusWroker.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Jobs\\ChangePromoCodeStatusWroker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:02:55.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPromoCodeService.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\PromoCodes\\Abstraction\\IPromoCodeService.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\PromoCodes\\Abstraction\\IPromoCodeService.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\PromoCodes\\Abstraction\\IPromoCodeService.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Services\\PromoCodes\\Abstraction\\IPromoCodeService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA3wBMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:02:30.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PromoCodeService.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\PromoCodes\\Implementation\\PromoCodeService.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\PromoCodes\\Implementation\\PromoCodeService.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\PromoCodes\\Implementation\\PromoCodeService.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Services\\PromoCodes\\Implementation\\PromoCodeService.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAA6wKYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T05:17:40.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPromoCodeRepository.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave\\Repositories\\Abstraction\\IPromoCodeRepository.cs",
+              "RelativeDocumentMoniker": "EmphatyWave\\Repositories\\Abstraction\\IPromoCodeRepository.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave\\Repositories\\Abstraction\\IPromoCodeRepository.cs",
+              "RelativeToolTip": "EmphatyWave\\Repositories\\Abstraction\\IPromoCodeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:06:44.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PendingPaymentWorker.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Jobs\\PendingPaymentWorker.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Jobs\\PendingPaymentWorker.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Jobs\\PendingPaymentWorker.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Jobs\\PendingPaymentWorker.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwDQAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:04:05.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PromoCodeErrors.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave\\Infrastructure\\ErrorsAggregate\\PromoCodeErrors\\PromoCodeErrors.cs",
               "RelativeDocumentMoniker": "EmphatyWave\\Infrastructure\\ErrorsAggregate\\PromoCodeErrors\\PromoCodeErrors.cs",
@@ -48,21 +163,7 @@
               "RelativeToolTip": "EmphatyWave\\Infrastructure\\ErrorsAggregate\\PromoCodeErrors\\PromoCodeErrors.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAACeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T05:17:48.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PromoCodeService.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\PromoCodes\\Implementation\\PromoCodeService.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\PromoCodes\\Implementation\\PromoCodeService.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\PromoCodes\\Implementation\\PromoCodeService.cs",
-              "RelativeToolTip": "EmphatyWave.Application\\Services\\PromoCodes\\Implementation\\PromoCodeService.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwCUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T05:17:40.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T05:17:48.819Z"
             }
           ]
         }

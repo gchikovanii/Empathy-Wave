@@ -1,5 +1,4 @@
 ﻿using EmphatyWave.Domain;
-using EmphatyWave.Persistence.Repositories.Implementation;
 
 namespace EmphatyWave.Persistence.Repositories.Abstraction
 {
@@ -10,5 +9,6 @@ namespace EmphatyWave.Persistence.Repositories.Abstraction
         Task CreatePromoCodeAsync(CancellationToken token, PromoCode promoCode);
         Task<PromoCode> GetPromoCodeByPromoCode(CancellationToken token, string promoCode);
         void DeletePromoCode(PromoCode promoCode);
+        Task<ICollection<PromoCode>> ChangeStatus(CancellationToken token);
     }
 }

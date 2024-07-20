@@ -1,5 +1,4 @@
-﻿using EmphatyWave.Application.Commands.Products;
-using EmphatyWave.Application.Helpers;
+﻿using EmphatyWave.Application.Helpers;
 using EmphatyWave.Application.Jobs;
 using EmphatyWave.Application.Services.Account;
 using EmphatyWave.Application.Services.AdminPanel;
@@ -38,6 +37,8 @@ namespace EmphatyWave.Application.Extensions
             services.AddScoped<JwtProvider>();
             services.AddHostedService<ExpiredPasswordRecoveryTokenWorker>();
             services.AddHostedService<ExpiredVerificationTokenWorker>();
+            services.AddHostedService<ChangePromoCodeStatusWroker>();
+            services.AddHostedService<PendingPaymentWorker>();
         }
     }
 }

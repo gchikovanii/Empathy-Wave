@@ -30,11 +30,10 @@ namespace EmphatyWave.Application.Services.PromoCodes.Implementation
             return result.Adapt<ICollection<PromoCodeDto>>();
         }
         #region Admin Panel Promo Code
-        public async Task<ICollection<UserPromoCode>> GetCurrentUserPromoCodes(CancellationToken token, string userId)
+        public async Task<ICollection<UserPromoCodeDto>> GetCurrentUserPromoCodes(CancellationToken token, string userId)
         {
-            //UserPromoCodeDto to Return
             var userPromo = await _userPromoRepo.GetCurrentUserPromoCodes(token, userId);
-            return userPromo;
+            return userPromo.Adapt<ICollection<UserPromoCodeDto>>();
         }
         public async Task<Result> IssuePromoCode(CancellationToken token, PromoCodeDto promoCodeDto)
         {
@@ -165,6 +164,28 @@ namespace EmphatyWave.Application.Services.PromoCodes.Implementation
             var userPromo = await _userPromoRepo.CheckIfUserHasPromoCode(token, promoCodeId, userId).ConfigureAwait(false);
             userPromo.RedeemedAt = DateTime.UtcNow;
             return userPromo;
+        }
+
+        public async Task ChangeStatusoOfPromoCode(CancellationToken cancellationToken)
+        {
+            using var transaction = await _unit.BeginTransaction(System.Transactions.IsolationLevel.RepeatableRead, cancellationToken).ConfigureAwait(false);
+            try
+            {
+                var promoCodes = await _promoCodeRepository.ChangeStatus(cancellationToken).ConfigureAwait(false);
+
+                foreach (var promoCode in promoCodes)
+                {
+                    promoCode.IsActive = false;
+                }
+
+                await _unit.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                _logger.LogError(ex, "Error while changing status {Error}", ex.Message);
+            }
         }
         #endregion
     }

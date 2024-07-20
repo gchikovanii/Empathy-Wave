@@ -28,5 +28,12 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
         {
             _repo.DeleteData(promoCode);
         }
+
+        public async Task<ICollection<PromoCode>> ChangeStatus(CancellationToken token)
+        {
+            var date = DateTime.UtcNow;
+            var promoCodes = await _repo.GetQuery(i => i.IsActive == true && i.ExpirationDate >= date).ToListAsync(token).ConfigureAwait(false);
+            return promoCodes;
+        }
     }
 }
