@@ -20,8 +20,8 @@ namespace EmphatyWave.Application.Commands.Categories
         {
             ValidationResult result = await _validator.ValidateAsync(request, cancellationToken).ConfigureAwait(false);
             var category = await _repo.GetCategoryByName(cancellationToken, request.Name).ConfigureAwait(false);
-            if (category == null)
-                return Result.Failure(CategoryErrors.CategoryNotExists);
+            if (category != null)
+                return Result.Failure(CategoryErrors.AlreadyExists);
             if (!result.IsValid)
             {
                 var errorMessages = result.Errors.Select(e => e.ErrorMessage);

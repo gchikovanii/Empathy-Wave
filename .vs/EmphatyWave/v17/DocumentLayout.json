@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|d:\\emphatywave\\emphatywave\\infrastructure\\errorsaggregate\\categories\\categoryerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmphatyWave.Persistence.csproj|solutionrelative:emphatywave\\infrastructure\\errorsaggregate\\categories\\categoryerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\categories\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\categories\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\commands\\products\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\commands\\products\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|d:\\emphatywave\\emphatywave.application.tests\\categories\\commands\\createcategorycommandhandlerttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|solutionrelative:emphatywave.application.tests\\categories\\commands\\createcategorycommandhandlerttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoryErrors.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave\\Infrastructure\\ErrorsAggregate\\Categories\\CategoryErrors.cs",
-              "RelativeDocumentMoniker": "EmphatyWave\\Infrastructure\\ErrorsAggregate\\Categories\\CategoryErrors.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave\\Infrastructure\\ErrorsAggregate\\Categories\\CategoryErrors.cs",
-              "RelativeToolTip": "EmphatyWave\\Infrastructure\\ErrorsAggregate\\Categories\\CategoryErrors.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABcAAAA",
+              "Title": "CreateCategoryCommandHandler.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommandHandler.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommandHandler.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommandHandler.cs",
+              "RelativeToolTip": "EmphatyWave.Application\\Commands\\Categories\\CreateCategoryCommandHandler.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBUAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T08:20:14.233Z",
+              "WhenOpened": "2024-07-21T08:57:23.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateProductCommandHandler.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\CreateProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application\\Commands\\Products\\CreateProductCommandHandler.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Commands\\Products\\CreateProductCommandHandler.cs",
-              "RelativeToolTip": "EmphatyWave.Application\\Commands\\Products\\CreateProductCommandHandler.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwC0AAABIAAAA",
+              "Title": "CreateCategoryCommandHandlertTests.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\Categories\\Commands\\CreateCategoryCommandHandlertTests.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application.Tests\\Categories\\Commands\\CreateCategoryCommandHandlertTests.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\Categories\\Commands\\CreateCategoryCommandHandlertTests.cs",
+              "RelativeToolTip": "EmphatyWave.Application.Tests\\Categories\\Commands\\CreateCategoryCommandHandlertTests.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAswFsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T08:16:11.568Z",
+              "WhenOpened": "2024-07-21T08:39:14.588Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwB8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T07:38:26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\appsettings.json",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\appsettings.json",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\appsettings.json",
-              "RelativeToolTip": "EmphatyWave.ApiService\\appsettings.json",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-20T07:35:12.75Z"
             }
           ]
         }
