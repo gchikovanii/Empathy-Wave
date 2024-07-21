@@ -82,7 +82,6 @@ namespace EmphatyWave.Application.Commands.Orders
 
             try
             {
-
                 if (!string.IsNullOrEmpty(request.PromoCodeName))
                 {
                     var promoCode = await ApplyPromoCodeAsync(request.PromoCodeName, request.UserId, totalAmount, cancellationToken);

@@ -5,10 +5,7 @@ using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
 using FluentAssertions;
-using FluentValidation;
-using MediatR;
 using Moq;
-using System.Reflection.Metadata;
 
 namespace EmphatyWave.Application.Tests.Categories.Commands
 {

@@ -29,5 +29,7 @@ namespace EmphatyWave.Domain
         public ICollection<ProductImage>? Images { get; set; }
         public Guid CategoryId { get; set; }
         public Category Category { get; set; }
+        public bool IsEmpty => Id == Guid.Empty;
+
     }
 }

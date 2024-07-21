@@ -3,6 +3,7 @@ using EmphatyWave.Application.Services.PromoCodeImages.Abstraction;
 using EmphatyWave.Application.Services.PromoCodeImages.DTOs;
 using EmphatyWave.Domain;
 using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Categories;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
 using FluentAssertions;
@@ -126,7 +127,6 @@ namespace EmphatyWave.Application.Tests.Products.Commands
             result.Error.code.Should().Be("Product.AlreadyExists");
             result.Error.descripton.Should().Be("Already Exists");
         }
-
 
     }
 }

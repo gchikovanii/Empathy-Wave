@@ -7886,6 +7886,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "EmphatyWave.Application >= 1.0.0",
+      "EmphatyWave.Domain >= 1.0.0",
       "EmphatyWave.Persistence >= 1.0.0",
       "FluentAssertions >= 6.12.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
@@ -7930,6 +7931,9 @@
           "projectReferences": {
             "D:\\EmphatyWave\\EmphatyWave.Application\\EmphatyWave.Application.csproj": {
               "projectPath": "D:\\EmphatyWave\\EmphatyWave.Application\\EmphatyWave.Application.csproj"
+            },
+            "D:\\EmphatyWave\\EmphatyWave.Domain\\EmphatyWave.Domain.csproj": {
+              "projectPath": "D:\\EmphatyWave\\EmphatyWave.Domain\\EmphatyWave.Domain.csproj"
             },
             "D:\\EmphatyWave\\EmphatyWave\\EmphatyWave.Persistence.csproj": {
               "projectPath": "D:\\EmphatyWave\\EmphatyWave\\EmphatyWave.Persistence.csproj"

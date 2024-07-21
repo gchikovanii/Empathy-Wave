@@ -1,92 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|d:\\emphatywave\\emphatywave.application.tests\\products\\queries\\getproductbyidqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|solutionrelative:emphatywave.application.tests\\products\\queries\\getproductbyidqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|d:\\emphatywave\\emphatywave.application.tests\\products\\queries\\getproductsqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|solutionrelative:emphatywave.application.tests\\products\\queries\\getproductsqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|d:\\emphatywave\\emphatywave.application.tests\\categories\\queries\\getcategoriesqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|solutionrelative:emphatywave.application.tests\\categories\\queries\\getcategoriesqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\queries\\products\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\queries\\products\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetProductByIdQueryHandler.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Queries\\Products\\GetProductByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application\\Queries\\Products\\GetProductByIdQueryHandler.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Queries\\Products\\GetProductByIdQueryHandler.cs",
-              "RelativeToolTip": "EmphatyWave.Application\\Queries\\Products\\GetProductByIdQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T12:03:39.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetCategoriesQueryHandlerTests.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\Categories\\Queries\\GetCategoriesQueryHandlerTests.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application.Tests\\Categories\\Queries\\GetCategoriesQueryHandlerTests.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\Categories\\Queries\\GetCategoriesQueryHandlerTests.cs",
-              "RelativeToolTip": "EmphatyWave.Application.Tests\\Categories\\Queries\\GetCategoriesQueryHandlerTests.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAgwDQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T11:53:40.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetProductsQueryHandlerTests.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\Products\\Queries\\GetProductsQueryHandlerTests.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application.Tests\\Products\\Queries\\GetProductsQueryHandlerTests.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\Products\\Queries\\GetProductsQueryHandlerTests.cs",
-              "RelativeToolTip": "EmphatyWave.Application.Tests\\Products\\Queries\\GetProductsQueryHandlerTests.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAwwCEAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T11:53:30.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetProductByIdQueryHandlerTests.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\Products\\Queries\\GetProductByIdQueryHandlerTests.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application.Tests\\Products\\Queries\\GetProductByIdQueryHandlerTests.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\Products\\Queries\\GetProductByIdQueryHandlerTests.cs",
-              "RelativeToolTip": "EmphatyWave.Application.Tests\\Products\\Queries\\GetProductByIdQueryHandlerTests.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwDIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T11:53:00.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

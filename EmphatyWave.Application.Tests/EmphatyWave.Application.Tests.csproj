@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EmphatyWave.Application\EmphatyWave.Application.csproj" />
+    <ProjectReference Include="..\EmphatyWave.Domain\EmphatyWave.Domain.csproj" />
     <ProjectReference Include="..\EmphatyWave\EmphatyWave.Persistence.csproj" />
   </ItemGroup>
 

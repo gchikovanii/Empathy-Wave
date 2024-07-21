@@ -10,7 +10,7 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
 
         public async Task<Order> GetOrderById(CancellationToken token, Guid id)
         {
-            return await _repository.GetDataById(token, id).ConfigureAwait(false);
+            return await _repository.GetDataById(token, id).ConfigureAwait(false) ?? new Order { };
         }
 
         public async Task<ICollection<Order>> GetOrders(CancellationToken token, int pageNumber, int pageSize)

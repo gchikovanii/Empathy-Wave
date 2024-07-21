@@ -17,5 +17,6 @@ namespace EmphatyWave.Domain
         public string UserId { get; set; }
         public string? StripeToken { get; set; }
         public User User { get; set; }
+        public bool IsEmpty => Id == Guid.Empty && string.IsNullOrEmpty(UserId);
     }
 }
