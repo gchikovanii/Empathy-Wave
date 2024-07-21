@@ -87,6 +87,7 @@ namespace EmphatyWave.Application.Tests.Categories.Commands
             
             //Act
             var result = await _handler.Handle(command, default);
+
             result.IsFailure.Should().BeTrue();
             result.Error.Should().Be(UnitError.CantSaveChanges);
         }

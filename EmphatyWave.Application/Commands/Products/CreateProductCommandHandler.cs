@@ -3,11 +3,11 @@ using EmphatyWave.Application.Services.PromoCodeImages.DTOs;
 using EmphatyWave.Domain;
 using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Categories;
 using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Common;
+using EmphatyWave.Persistence.Infrastructure.ErrorsAggregate.Products;
 using EmphatyWave.Persistence.Repositories.Abstraction;
 using EmphatyWave.Persistence.UOW;
 using FluentValidation;
 using FluentValidation.Results;
-using Mapster;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -43,7 +43,7 @@ namespace EmphatyWave.Application.Commands.Products
                     return Result.Failure(CategoryErrors.CategoryNotExists);
                 var prodExists = await _repository.GetProductByName(cancellationToken, request.Name).ConfigureAwait(false);
                 if (prodExists != null)
-                    return Result.Failure(CategoryErrors.AlreadyExists);
+                    return Result.Failure(ProductErrors.AlreadyExists);
                 var product = new Product
                 {
                     Price = request.Price,
