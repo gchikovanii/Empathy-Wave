@@ -20,7 +20,7 @@ namespace EmphatyWave.Application.Tests.Orders.Queries
         }
 
         [Fact]
-        public async Task Handle_Should_ReturnOrderDtos_WhenOrdersExistForUser()
+        public async Task GetOrdersAsync_Should_ReturnOrderDtos_WhenOrdersExistForUser()
         {
             // Arrange
             var query = new GetOrdersForUserQuery
@@ -74,7 +74,7 @@ namespace EmphatyWave.Application.Tests.Orders.Queries
         }
 
         [Fact]
-        public async Task Handle_Should_ReturnEmptyList_WhenNoOrdersExistForUser()
+        public async Task GetOrdersAsync_Should_ReturnEmptyList_WhenNoOrdersExistForUser()
         {
             // Arrange
             var query = new GetOrdersForUserQuery
@@ -96,7 +96,7 @@ namespace EmphatyWave.Application.Tests.Orders.Queries
         }
 
         [Fact]
-        public async Task Handle_Should_ThrowException_WhenRepositoryThrowsException()
+        public async Task GetOrdersAsync_Should_ThrowException_WhenRepositoryThrowsException()
         {
             // Arrange
             var query = new GetOrdersForUserQuery

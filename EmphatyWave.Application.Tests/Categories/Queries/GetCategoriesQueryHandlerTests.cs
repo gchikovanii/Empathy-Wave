@@ -17,7 +17,7 @@ namespace EmphatyWave.Application.Tests.Categories.Queries
             _handler = new GetCategoriesQueryHandler(_categoryRepoMock.Object);
         }
         [Fact]
-        public async Task Handle_Should_ReturnEmptyCollection_WhenNoCategories()
+        public async Task GetCategoriesAsync_Should_ReturnEmptyCollection_WhenNoCategories()
         {
             //Arrange
             var query = new GetCategoriesQuery();

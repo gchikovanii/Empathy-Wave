@@ -20,7 +20,7 @@ namespace EmphatyWave.Application.Tests.Orders.Queries
         }
 
         [Fact]
-        public async Task Handle_Should_ReturnOrderDto_WhenOrderExists()
+        public async Task GetOrderById_Should_ReturnOrderDto_WhenOrderExists()
         {
             // Arrange
             var query = new GetOrderByIdQuery { Id = Guid.NewGuid() };
@@ -53,7 +53,7 @@ namespace EmphatyWave.Application.Tests.Orders.Queries
         }
 
         [Fact]
-        public async Task Handle_Should_ReturnNull_WhenOrderDoesNotExist()
+        public async Task GetOrderById_Should_ReturnNull_WhenOrderDoesNotExist()
         {
             // Arrange
             var query = new GetOrderByIdQuery { Id = Guid.NewGuid() };
@@ -70,7 +70,7 @@ namespace EmphatyWave.Application.Tests.Orders.Queries
         }
 
         [Fact]
-        public async Task Handle_Should_ThrowException_WhenRepositoryThrowsException()
+        public async Task GetOrderById_Should_ThrowException_WhenRepositoryThrowsException()
         {
             // Arrange
             var query = new GetOrderByIdQuery { Id = Guid.NewGuid() };

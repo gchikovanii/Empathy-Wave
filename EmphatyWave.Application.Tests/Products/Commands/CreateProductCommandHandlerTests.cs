@@ -98,7 +98,7 @@ namespace EmphatyWave.Application.Tests.Products.Commands
             result.Error.descripton.Should().Contain("Incorrect data.");
         }
         [Fact]
-        public async Task CreateProductAsync_Should_ReturnFailure_WhenpRroductAlreadyExists()
+        public async Task CreateProductAsync_Should_ReturnFailure_WhenProductAlreadyExists()
         {
             // Arrange
             var command = new CreateProductCommand
@@ -230,6 +230,9 @@ namespace EmphatyWave.Application.Tests.Products.Commands
             result.IsFailure.Should().BeTrue();
             result.Error.Should().Be(UnitError.CantSaveChanges);
         }
+
+
+
         [Fact]
         public async Task CreateProductAsync_Should_ReturnSuccess()
         {
