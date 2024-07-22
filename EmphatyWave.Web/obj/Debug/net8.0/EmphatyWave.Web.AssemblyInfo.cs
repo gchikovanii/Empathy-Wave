@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmphatyWave.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d869b960e027f327dac819ac01a98617a2ade741")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90f493f767083a40d40562ae0677d4709f449d9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmphatyWave.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmphatyWave.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

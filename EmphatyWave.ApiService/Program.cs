@@ -1,4 +1,5 @@
 using EmphatyWave.ApiService.Infrastructure.Extensions;
+using EmphatyWave.ApiService.Infrastructure.HealtChecks;
 using EmphatyWave.Application.Behaviours;
 using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Commands.Orders;
@@ -7,16 +8,22 @@ using EmphatyWave.Application.Extensions;
 using EmphatyWave.Application.Services.Cloudinaries.Models;
 using EmphatyWave.Persistence.DataSeeding;
 using EmphatyWave.Persistence.Infrastructure.GlobalException;
+using HealthChecks.UI.Client;
 using MediatR;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Identity;
 using Serilog;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.AddRedisOutputCache("cache");
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
-
+builder.Services.AddHealthChecks()
+    .AddCheck<TimeIntervalOfProcessingOrderHelthCheck>("Order Processing Time", tags: new[] { "service" })
+    .AddCheck<TimeIntervalOfFetchingCategoriesHelthCheck>("Category Fetching Speed", tags: new[] { "service" })
+    .AddSqlServer(builder.Configuration.GetConnectionString("SqlConnectionString"));
 builder.Services.AddControllers();
 builder.AddServiceDefaults();
 builder.Services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme);
@@ -67,11 +74,19 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseOutputCache();
-app.UseExceptionHandler();
 //Mapping controllers(pointing to controllers that are created in project)
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
+    endpoints.MapHealthChecks("/Healthes", new HealthCheckOptions
+    {
+        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+    });
+    endpoints.MapHealthChecks("/Healthes/Services", new HealthCheckOptions
+    {
+        Predicate = reg => reg.Tags.Contains("service"),
+        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+    });
 });
 app.UseSerilogRequestLogging();
 app.MapDefaultEndpoints();

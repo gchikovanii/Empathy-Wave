@@ -7,4 +7,6 @@ builder.AddProject<Projects.EmphatyWave_Web>("webfrontend")
     .WithExternalHttpEndpoints()
     .WithReference(apiService);
 
+builder.AddProject<Projects.HealthChecker>("healthchecker");
+
 builder.Build().Run();

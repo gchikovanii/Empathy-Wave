@@ -24,7 +24,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmphatyWave.Application", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5AFC68A9-7A22-439E-A10D-E41A07441894}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmphatyWave.Application.Tests", "EmphatyWave.Application.Tests\EmphatyWave.Application.Tests.csproj", "{1312EB97-483E-42ED-83B7-62E45867FC0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmphatyWave.Application.Tests", "EmphatyWave.Application.Tests\EmphatyWave.Application.Tests.csproj", "{1312EB97-483E-42ED-83B7-62E45867FC0D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthChecker", "HealthChecker\HealthChecker.csproj", "{FF1DBE69-A982-460B-9AF5-329C9B356DCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +66,10 @@ Global
 		{1312EB97-483E-42ED-83B7-62E45867FC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1312EB97-483E-42ED-83B7-62E45867FC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1312EB97-483E-42ED-83B7-62E45867FC0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1DBE69-A982-460B-9AF5-329C9B356DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1DBE69-A982-460B-9AF5-329C9B356DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1DBE69-A982-460B-9AF5-329C9B356DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1DBE69-A982-460B-9AF5-329C9B356DCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{78717C26-58C6-42CF-9C07-40D1D7B7FA40} = {085BAD47-1CB5-4ECB-8E98-700541880708}
 		{5AFC68A9-7A22-439E-A10D-E41A07441894} = {E51EB42F-7E1A-4FBB-A48D-B9F4CCF63BCE}
 		{1312EB97-483E-42ED-83B7-62E45867FC0D} = {5AFC68A9-7A22-439E-A10D-E41A07441894}
+		{FF1DBE69-A982-460B-9AF5-329C9B356DCC} = {B415C0CA-7745-4A25-B2F4-AEC085DF0388}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5032FB0-5C2A-430C-B8D1-001D38B1209C}
