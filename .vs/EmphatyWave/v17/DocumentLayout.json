@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|d:\\emphatywave\\emphatywave.application.tests\\coverageresults\\index.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|solutionrelative:emphatywave.application.tests\\coverageresults\\index.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|d:\\emphatywave\\emphatywave.application.tests\\coverageresults\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmphatyWave.Application.Tests.csproj|solutionrelative:emphatywave.application.tests\\coverageresults\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\emphatywave.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\emphatywave.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.htm",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\coverageresults\\index.htm",
+              "RelativeDocumentMoniker": "EmphatyWave.Application.Tests\\coverageresults\\index.htm",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\coverageresults\\index.htm",
+              "RelativeToolTip": "EmphatyWave.Application.Tests\\coverageresults\\index.htm",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-22T08:33:34.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\coverageresults\\index.html",
+              "RelativeDocumentMoniker": "EmphatyWave.Application.Tests\\coverageresults\\index.html",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\coverageresults\\index.html",
+              "RelativeToolTip": "EmphatyWave.Application.Tests\\coverageresults\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-22T08:33:31.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmphatyWave.Application",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\EmphatyWave.Application.csproj",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\EmphatyWave.Application.csproj",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\EmphatyWave.Application.csproj",
+              "RelativeToolTip": "EmphatyWave.Application\\EmphatyWave.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-22T08:25:45.866Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

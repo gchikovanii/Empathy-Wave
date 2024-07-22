@@ -16,3 +16,4 @@ D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\EmphatyWave.Domain.Localizati
 D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\EmphatyWave.Domain.Localization.ErrorMessages.ka-GE.resources
 D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\EmphatyWave.Domain.csproj.GenerateResource.cache
 D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\ka-GE\EmphatyWave.Domain.resources.dll
+D:\EmphatyWave\EmphatyWave.Domain\obj\Debug\net8.0\ka-GE\EmphatyWave.Domain.resources.cs
