@@ -15,8 +15,8 @@ namespace EmphatyWave.Application.Commands.Orders
         public async Task<Result> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
         {
             var order = await _repo.GetOrderById(cancellationToken, request.Id).ConfigureAwait(false);
-            
-            if (order.IsEmpty)
+
+            if (order == null)
                 return Result.Failure(OrderErrors.OrderNotExists);
             if (order.UserId != request.UserId)
                 return Result.Failure(OrderErrors.InaccessibleOrder);

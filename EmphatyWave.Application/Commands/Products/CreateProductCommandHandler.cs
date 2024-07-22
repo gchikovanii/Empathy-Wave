@@ -42,7 +42,7 @@ namespace EmphatyWave.Application.Commands.Products
                 if (category == null)
                     return Result.Failure(CategoryErrors.CategoryNotExists);
                 var prodExists = await _repository.GetProductByName(cancellationToken, request.Name).ConfigureAwait(false);
-                if (prodExists.IsEmpty)
+                if (prodExists != null)
                     return Result.Failure(ProductErrors.AlreadyExists);
                 var product = new Product
                 {
@@ -70,7 +70,7 @@ namespace EmphatyWave.Application.Commands.Products
                 if (!imageResult)
                 {
                     transaction.Rollback();
-                    return Result.Failure(new Error("Image Upload Error", "Image hasn't uploaded, but product added successfully"));
+                    return Result.Failure(new Error("Image.UploadError", "Image hasn't uploaded, but product added successfully"));
                 }
 
                 var saves = await _unit.SaveChangesAsync(cancellationToken).ConfigureAwait(false);

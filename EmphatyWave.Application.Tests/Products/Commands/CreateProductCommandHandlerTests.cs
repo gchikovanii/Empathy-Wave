@@ -11,6 +11,7 @@ using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.Extensions.Logging;
 using Moq;
+using System.Data;
 
 namespace EmphatyWave.Application.Tests.Products.Commands
 {
@@ -94,7 +95,7 @@ namespace EmphatyWave.Application.Tests.Products.Commands
             // Assert
             result.IsFailure.Should().BeTrue();
             result.Error.code.Should().Be("ValidationError");
-            result.Error.descripton.Should().Contain("Incorrect data."); 
+            result.Error.descripton.Should().Contain("Incorrect data.");
         }
         [Fact]
         public async Task CreateProductAsync_Should_ReturnFailure_WhenpRroductAlreadyExists()
@@ -114,8 +115,21 @@ namespace EmphatyWave.Application.Tests.Products.Commands
             _categoryRepoMock
                .Setup(repo => repo.GetCategoryById(It.IsAny<CancellationToken>(), command.CategoryId))
                .ReturnsAsync(new Category());
+            Product existingProduct = new Product
+            {
+                Id = Guid.NewGuid(),
+                SKU = "ASD332",
+                CategoryId = command.CategoryId,
+                Description = "Existing product description",
+                Discount = 5,
+                Price = 20,
+                Name = "Existing Product Name",
+                Quantity = 100,
+                Title = "Existing Product Title"
+            };
+
             _productRepositoryMock.Setup(i => i.GetProductByName(It.IsAny<CancellationToken>(), command.Name))
-                .ReturnsAsync(new Product());
+                .ReturnsAsync(existingProduct);
             _validatorMock.Setup(i => i.ValidateAsync(command, It.IsAny<CancellationToken>()))
                .ReturnsAsync(new ValidationResult());
 
@@ -128,5 +142,136 @@ namespace EmphatyWave.Application.Tests.Products.Commands
             result.Error.descripton.Should().Be("Already Exists");
         }
 
+        [Fact]
+        public async Task CreateProductAsync_Should_ReturnFailure_WhenImageUploadFails()
+        {
+            // Arrange
+            var command = new CreateProductCommand
+            {
+                SKU = "ASD332",
+                CategoryId = Guid.NewGuid(),
+                Description = "asdasdasdasdStringassd",
+                Discount = 0,
+                Price = 15,
+                Name = "Product Name",
+                Quantity = 30,
+                Title = "Product Title",
+                Images = new List<string> { "base64String" } // Mock image data
+            };
+
+            var mockTransaction = new Mock<IDbTransaction>();
+            _unitMock
+                .Setup(u => u.BeginTransaction(It.IsAny<System.Transactions.IsolationLevel>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(mockTransaction.Object);
+
+            _categoryRepoMock
+               .Setup(repo => repo.GetCategoryById(It.IsAny<CancellationToken>(), command.CategoryId))
+               .ReturnsAsync(new Category());
+
+            _validatorMock.Setup(i => i.ValidateAsync(command, It.IsAny<CancellationToken>()))
+               .ReturnsAsync(new ValidationResult());
+
+            _productRepositoryMock.Setup(i => i.GetProductByName(It.IsAny<CancellationToken>(), command.Name))
+                .ReturnsAsync((Product)null);
+            _productImageMockService
+                .Setup(service => service.UplaodImages(It.IsAny<CancellationToken>(), It.IsAny<List<CreateProductImageDto>>()))
+                .ReturnsAsync(false);
+
+            // Act
+            var result = await _handler.Handle(command, CancellationToken.None);
+
+            // Assert
+            result.IsFailure.Should().BeTrue();
+            result.Error.code.Should().Be("Image.UploadError");
+            result.Error.descripton.Should().Be("Image hasn't uploaded, but product added successfully");
+
+            // Verify rollback was called
+            mockTransaction.Verify(t => t.Rollback(), Times.Once);
+        }
+
+        [Fact]
+        public async Task CreateProductAsync_Should_ReturnFailure_WhenSaveChangesFailed()
+        {
+            // Arrange
+            var command = new CreateProductCommand
+            {
+                SKU = "ASD332",
+                CategoryId = Guid.NewGuid(),
+                Description = "asdasdasdasdStringassd",
+                Discount = 0,
+                Price = 15,
+                Name = "Product Name",
+                Quantity = 30,
+                Title = "Product Title",
+                Images = new List<string> { "base64String" } // Mock image data
+            };
+
+            var mockTransaction = new Mock<IDbTransaction>();
+            _unitMock
+                .Setup(u => u.BeginTransaction(It.IsAny<System.Transactions.IsolationLevel>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(mockTransaction.Object);
+
+            _categoryRepoMock
+               .Setup(repo => repo.GetCategoryById(It.IsAny<CancellationToken>(), command.CategoryId))
+               .ReturnsAsync(new Category());
+
+            _validatorMock.Setup(i => i.ValidateAsync(command, It.IsAny<CancellationToken>()))
+               .ReturnsAsync(new ValidationResult());
+
+            _productRepositoryMock.Setup(i => i.GetProductByName(It.IsAny<CancellationToken>(), command.Name))
+                .ReturnsAsync((Product)null);
+            _productImageMockService
+                .Setup(service => service.UplaodImages(It.IsAny<CancellationToken>(), It.IsAny<List<CreateProductImageDto>>()))
+                .ReturnsAsync(true);
+
+            var result = await _handler.Handle(command, CancellationToken.None);
+            _unitMock.Setup(i => i.SaveChangesAsync(It.IsAny<CancellationToken>())).Returns(Task.FromResult(false));
+            mockTransaction.Verify(t => t.Rollback(), Times.Once);
+            result.IsFailure.Should().BeTrue();
+            result.Error.Should().Be(UnitError.CantSaveChanges);
+        }
+        [Fact]
+        public async Task CreateProductAsync_Should_ReturnSuccess()
+        {
+            // Arrange
+            var command = new CreateProductCommand
+            {
+                SKU = "ASD332",
+                CategoryId = Guid.NewGuid(),
+                Description = "asdasdasdasdStringassd",
+                Discount = 0,
+                Price = 15,
+                Name = "Product Name",
+                Quantity = 30,
+                Title = "Product Title",
+                Images = new List<string> { "base64String" } 
+            };
+
+            var mockTransaction = new Mock<IDbTransaction>();
+            _unitMock
+                .Setup(u => u.BeginTransaction(It.IsAny<System.Transactions.IsolationLevel>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(mockTransaction.Object);
+
+            _categoryRepoMock
+               .Setup(repo => repo.GetCategoryById(It.IsAny<CancellationToken>(), command.CategoryId))
+               .ReturnsAsync(new Category());
+
+            _validatorMock.Setup(i => i.ValidateAsync(command, It.IsAny<CancellationToken>()))
+               .ReturnsAsync(new ValidationResult());
+
+            _productRepositoryMock.Setup(i => i.GetProductByName(It.IsAny<CancellationToken>(), command.Name))
+                .ReturnsAsync((Product)null); 
+
+            _productImageMockService
+                .Setup(service => service.UplaodImages(It.IsAny<CancellationToken>(), It.IsAny<List<CreateProductImageDto>>()))
+                .ReturnsAsync(true);
+
+            _unitMock.Setup(i => i.SaveChangesAsync(It.IsAny<CancellationToken>())).ReturnsAsync(true); 
+            // Act
+            var result = await _handler.Handle(command, CancellationToken.None);
+            // Assert
+            result.IsSuccess.Should().BeTrue();
+            mockTransaction.Verify(t => t.Commit(), Times.Once);
+        }
     }
 }

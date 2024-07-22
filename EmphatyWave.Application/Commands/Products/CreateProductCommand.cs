@@ -17,7 +17,7 @@ namespace EmphatyWave.Application.Commands.Products
         public Guid CategoryId { get; set; }
         public List<string>? Images { get; set; }
 
-        public List<IFormFile>? GetImageFiles()
+        public virtual List<IFormFile>? GetImageFiles()
         {
             try
             {
