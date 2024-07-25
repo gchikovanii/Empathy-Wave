@@ -29,7 +29,7 @@ To get started with our eCommerce application, follow these steps:
 # Contact
 For any inquiries, feedback, or support, please contact us at:
 
-Email: support@emphatywave.com
+Email: gchikovanii25@gmail.com
 Location: Tbilisi, Georgia
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
