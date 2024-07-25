@@ -30,6 +30,7 @@ To get started with our eCommerce application, follow these steps:
 For any inquiries, feedback, or support, please contact us at:
 
 Email: gchikovanii25@gmail.com
+
 Location: Tbilisi, Georgia
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
