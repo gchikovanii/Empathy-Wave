@@ -26,11 +26,12 @@ Health Checks: Custom health checks using the IHealthCheck interface
 Getting Started
 To get started with our eCommerce application, follow these steps:
 
-# Contact
-For any inquiries, feedback, or support, please contact us at:
 
-Email: gchikovanii25@gmail.com
+## License
 
-Location: Tbilisi, Georgia
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is proprietary and all rights are reserved. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
+
+For any inquiries, please contact:
+
+- **Email**: gchikovanii25@gmail.com
+- **Location**: Tbilisi, Georgia
