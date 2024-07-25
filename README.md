@@ -15,16 +15,21 @@ Technology Stack
 # To support our eCommerce platform and enhance user experience, we use the following technologies:
 
 Backend: ASP.NET Core
-Frontend: Angular with TypeScript
+
+Frontend: Blazor
+
 Database: SQL Server
-Mobile App: Flutter (planned)
-Cloud Services: Google Cloud Platform (GCP) for Translation API, Redis for caching
+
+
+Cloud Services: Microsoft Azure, Redis for caching
+
 Logging: Serilog
+
 Validation: FluentValidation
+
 Caching: Redis
+
 Health Checks: Custom health checks using the IHealthCheck interface
-Getting Started
-To get started with our eCommerce application, follow these steps:
 
 
 ## License
