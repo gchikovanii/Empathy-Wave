@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\geo.png"
     },
     {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\logoo.png",
+      "PackagePath": "staticwebassets\\logoo.png"
+    },
+    {
       "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\us.png",
       "PackagePath": "staticwebassets\\us.png"
     },
