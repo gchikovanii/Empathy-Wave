@@ -1,29 +1,451 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">EmphatyWave</a>
+﻿<nav class="navbar">
+    <img src="emplogo.png" alt="Logo" class="logo logo-small" />
+    <div class="nav-content">
+        <ul class="nav-links">
+            <img src="emplogo.png" alt="Logo" class="logo logo-big" />
+            <li><a href="#" class="active custom-text">Brand</a></li>
+            <li><a class="custom-text" href="#">Shop</a></li>
+            <li><a class="custom-text" href="#">Contact</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="icons">
+            <span class="icon profile"><i class="bi bi-person"></i></span>
+            <span class="icon cart">
+                <i class="bi bi-cart"></i>
+                <span class="count">3</span>
+            </span>
+            <span class="icon heart">
+                <i class="bi bi-heart"></i>
+                <span class="count">5</span>
+            </span>
+            <div class="dropdown">
+                <img src="geo.png" alt="Country Flag" class="flag" id="flag">
+                <div class="dropdown-content">
+                    <img src="geo.png" alt="Geo Flag" onclick="changeFlag('geo')" class="flag-option" id="geo-flag">
+                    <img src="us.png" alt="US Flag" onclick="changeFlag('us')" class="flag-option" id="us-flag">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
+<style>
+ @@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css');
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
+.logo-small {
+    display: none;
+}
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #095aab;
+    padding: 20px 40px;
+    color: #fff;
+    position: relative;
+}
+
+.logo {
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #FF69B4;
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 9px;
+    border: 1px solid transparent;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: 500px;
+}
+
+.search-container input:focus {
+    border-color: #FF69B4;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #FF69B4;
+    color: white;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #FF1493;
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 30px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+}
+
+.icon .count {
+    position: absolute;
+    top: -5px;
+    right: -5px; 
+    background-color: #FF69B4;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.icon:hover {
+    color: #FF69B4;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.flag {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 1;
+}
+
+.flag-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.dropdown.active .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger span {
+    height: 4px;
+    width: 30px;
+    background: #FF69B4;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.custom-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+@@media screen and (max-width: 768px) and (orientation: portrait){
+    .logo-small {
+        display: block;
+    }
+
+    .logo-big {
+        display: none;
+    }
+
+    .nav-content {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1;
+        background-color: #095aab;
+    }
+
+    .nav-links,
+    .icons {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a,
+    .icon {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .nav-content.active {
+        display: flex;
+    }
+
+    .icons {
+        margin-top: 20px;
+    }
+    .icon .count {
+        top: 15px; 
+        right: 10px; 
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+    }
+}
+
+@@media (max-width: 480px) and (orientation: portrait) {
+    .icons {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .icon {
+        position: relative;
+    }
+
+    .icon .count {
+        top: 15px; 
+        right: 10px; 
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown {
+        margin-left: 0;
+    }
+
+    .dropdown .flag {
+        margin-right: 10px;
+    }
+
+    .icon {
+        margin-left: 10px;
+    }
+}
+@@media screen and (max-width: 1000px) and (orientation: landscape) {
+    .logo-big {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
+    }
+
+    .nav-content {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1;
+        background-color: #095aab;
+    }
+
+    .nav-links,
+    .icons {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a,
+    .icon {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        width: calc(100% - 95px); 
+    }
+
+    .search-container button {
+        width: 95px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .nav-content.active {
+        display: flex;
+    }
+
+    .icons {
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+
+    .icon .count {
+        top: 15px; 
+        right: 10px; 
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+    }
+}
+</style>
+
+<script>
+    function changeFlag(flag) {
+        const flagImg = document.getElementById('flag');
+        const geoFlag = document.getElementById('geo-flag');
+        const usFlag = document.getElementById('us-flag');
+
+        if (flag === 'geo') {
+            flagImg.src = 'geo.png';
+            geoFlag.style.display = 'none';
+            usFlag.style.display = 'block';
+        } else if (flag === 'us') {
+            flagImg.src = 'us.png';
+            geoFlag.style.display = 'block';
+            usFlag.style.display = 'none';
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const geoFlag = document.getElementById('geo-flag');
+        const usFlag = document.getElementById('us-flag');
+        geoFlag.style.display = 'none';
+        usFlag.style.display = 'block';
+    });
+
+    document.querySelector('.dropdown').addEventListener('click', () => {
+        document.querySelector('.dropdown').classList.toggle('active');
+    });
+
+    document.querySelector('.burger').addEventListener('click', () => {
+        document.querySelector('.nav-content').classList.toggle('active');
+        document.querySelector('.burger').classList.toggle('active');
+    });
+</script>

@@ -17,8 +17,20 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\emplogo.png",
+      "PackagePath": "staticwebassets\\emplogo.png"
+    },
+    {
       "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\geo.png",
+      "PackagePath": "staticwebassets\\geo.png"
+    },
+    {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\us.png",
+      "PackagePath": "staticwebassets\\us.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EmphatyWave.Web.Microsoft.AspNetCore.StaticWebAssets.props",

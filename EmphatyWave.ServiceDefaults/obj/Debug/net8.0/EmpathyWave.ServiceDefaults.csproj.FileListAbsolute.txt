@@ -1,0 +1,13 @@
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\bin\Debug\net8.0\EmpathyWave.ServiceDefaults.deps.json
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\bin\Debug\net8.0\EmpathyWave.ServiceDefaults.dll
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\bin\Debug\net8.0\EmpathyWave.ServiceDefaults.pdb
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmpathyWave.ServiceDefaults.csproj.AssemblyReference.cache
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmpathyWave.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmpathyWave.ServiceDefaults.AssemblyInfoInputs.cache
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmpathyWave.ServiceDefaults.AssemblyInfo.cs
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmpathyWave.ServiceDefaults.csproj.CoreCompileInputs.cache
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmpathyWave.ServiceDefaults.sourcelink.json
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmpathyWave.ServiceDefaults.dll
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\refint\EmpathyWave.ServiceDefaults.dll
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\EmpathyWave.ServiceDefaults.pdb
+D:\EmphatyWave\EmphatyWave.ServiceDefaults\obj\Debug\net8.0\ref\EmpathyWave.ServiceDefaults.dll

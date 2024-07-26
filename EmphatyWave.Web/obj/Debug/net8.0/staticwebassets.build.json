@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+iRH7RNjZgSYlHWMgFlTWZRfdZbx7EWtvXk02lNX1AM=",
+  "Hash": "2sCOvmq9idEnXP5ryZ558mVaftXDGQWDnNZWhyG05tY=",
   "Source": "EmphatyWave.Web",
   "BasePath": "_content/EmphatyWave.Web",
   "Mode": "Default",
@@ -112,6 +112,25 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\emplogo.png",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "emplogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\emplogo.png"
+    },
+    {
       "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\favicon.png",
       "SourceId": "EmphatyWave.Web",
       "SourceType": "Discovered",
@@ -129,6 +148,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\geo.png",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "geo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\geo.png"
+    },
+    {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\us.png",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "us.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\us.png"
     }
   ]
 }

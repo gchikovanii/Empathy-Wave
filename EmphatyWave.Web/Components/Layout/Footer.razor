@@ -1,0 +1,143 @@
+﻿<footer class="footer" style="position:fixed; bottom:0; left:0; width:100%;">
+    <div class="footer-content">
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <div class="newsletter-container">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact-info">
+        <p>Support: <a href="mailto:empathywave.shop@gmail.com">empathywave.shop@gmail.com</a></p>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: #095aab;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .social-icons a {
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #FF69B4;
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .newsletter h3 {
+        margin-bottom: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .newsletter-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .newsletter-container input {
+        padding: 10px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 300px;
+        max-width: 100%;
+        transition: border-color 0.3s ease;
+    }
+
+    .newsletter-container input:focus {
+        border-color: #FF69B4;
+        outline: none;
+    }
+
+    .newsletter-container button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FF69B4;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .newsletter-container button:hover {
+        background-color: #FF1493;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contact-info a {
+        color: white;
+        text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    @@media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .newsletter-container {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .newsletter-container input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .newsletter-container button {
+            width: 100%;
+        }
+
+        .social-icons {
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+}
+</style>

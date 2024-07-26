@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\layout\\footer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\layout\\footer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\emphatywave.apphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\emphatywave.apphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF1DBE69-A982-460B-9AF5-329C9B356DCC}|HealthChecker\\HealthChecker.csproj|d:\\emphatywave\\healthchecker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FF1DBE69-A982-460B-9AF5-329C9B356DCC}|HealthChecker\\HealthChecker.csproj|solutionrelative:healthchecker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\Program.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\Program.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\Program.cs",
-              "RelativeToolTip": "EmphatyWave.AppHost\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T10:17:59.069Z",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T13:04:19.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\appsettings.json",
-              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\appsettings.json",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\appsettings.json",
-              "RelativeToolTip": "EmphatyWave.AppHost\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-22T10:17:56.956Z",
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAKoBAAAAAAAAAAAUwMIBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T13:04:15.139Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EmphatyWave.AppHost",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj",
-              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj",
-              "RelativeToolTip": "EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-22T10:17:54.431Z",
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\App.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\App.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\App.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T12:53:39.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Footer.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\Footer.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Layout\\Footer.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\Footer.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Layout\\Footer.razor",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAI0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T12:42:09.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\EmphatyWave\\HealthChecker\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "HealthChecker\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\EmphatyWave\\HealthChecker\\Properties\\launchSettings.json",
-              "RelativeToolTip": "HealthChecker\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAABnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-22T10:15:41.811Z",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T11:18:04.781Z",
               "EditorCaption": ""
             }
           ]

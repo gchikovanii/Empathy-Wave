@@ -1,0 +1,360 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\EmphatyWave\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmpathyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\empathywave.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmpathyWave.Application.csproj|solutionrelative:emphatywave.application\\empathywave.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmpathyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\empathywave.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmpathyWave.Web.csproj|solutionrelative:emphatywave.web\\empathywave.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmpathyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\empathywave.apiservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmpathyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\empathywave.apiservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmpathyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\localization\\errormessages.ka-ge.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmpathyWave.Domain.csproj|solutionrelative:emphatywave.domain\\localization\\errormessages.ka-ge.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmpathyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\empathywave.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmpathyWave.Domain.csproj|solutionrelative:emphatywave.domain\\empathywave.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmpathyWave.Persistence.csproj|d:\\emphatywave\\emphatywave\\empathywave.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F937CBD0-D90F-4E2E-AE40-337D37FF9C74}|EmphatyWave\\EmpathyWave.Persistence.csproj|solutionrelative:emphatywave\\empathywave.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmpathyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\empathywave.apphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmpathyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\empathywave.apphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmpathyWave.Application.Tests.csproj|d:\\emphatywave\\emphatywave.application.tests\\empathywave.application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1312EB97-483E-42ED-83B7-62E45867FC0D}|EmphatyWave.Application.Tests\\EmpathyWave.Application.Tests.csproj|solutionrelative:emphatywave.application.tests\\empathywave.application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF1DBE69-A982-460B-9AF5-329C9B356DCC}|HealthChecker\\HealthChecker.csproj|d:\\emphatywave\\healthchecker\\healthchecker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF1DBE69-A982-460B-9AF5-329C9B356DCC}|HealthChecker\\HealthChecker.csproj|solutionrelative:healthchecker\\healthchecker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmpathyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmpathyWave.Domain.csproj|solutionrelative:emphatywave.domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmpathyWave.Domain.csproj|d:\\emphatywave\\emphatywave.domain\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54885E21-2089-41F6-AB5A-5F4234432B79}|EmphatyWave.Domain\\EmpathyWave.Domain.csproj|solutionrelative:emphatywave.domain\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|d:\\emphatywave\\emphatywave.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30745526-0382-4874-A941-355A276772AD}|EmphatyWave.AppHost\\EmphatyWave.AppHost.csproj|solutionrelative:emphatywave.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF1DBE69-A982-460B-9AF5-329C9B356DCC}|HealthChecker\\HealthChecker.csproj|d:\\emphatywave\\healthchecker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FF1DBE69-A982-460B-9AF5-329C9B356DCC}|HealthChecker\\HealthChecker.csproj|solutionrelative:healthchecker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmpathyWave.ApiService",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\EmpathyWave.ApiService.csproj",
+              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\EmpathyWave.ApiService.csproj",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\EmpathyWave.ApiService.csproj",
+              "RelativeToolTip": "EmphatyWave.ApiService\\EmpathyWave.ApiService.csproj",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-26T04:34:00.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpathyWave.Application",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\EmpathyWave.Application.csproj",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\EmpathyWave.Application.csproj",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\EmpathyWave.Application.csproj",
+              "RelativeToolTip": "EmphatyWave.Application\\EmpathyWave.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-26T04:33:50.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorMessages.ka-GE.resx",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\Localization\\ErrorMessages.ka-GE.resx",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\Localization\\ErrorMessages.ka-GE.resx",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\Localization\\ErrorMessages.ka-GE.resx",
+              "RelativeToolTip": "EmphatyWave.Domain\\Localization\\ErrorMessages.ka-GE.resx",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAAAHIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-07-26T04:33:06.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Program.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Program.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Program.cs",
+              "RelativeToolTip": "EmphatyWave.Web\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T04:33:43.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpathyWave.Web.csproj",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\EmpathyWave.Web.csproj",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\EmpathyWave.Web.csproj",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\EmpathyWave.Web.csproj",
+              "RelativeToolTip": "EmphatyWave.Web\\EmpathyWave.Web.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-26T04:34:30.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmpathyWave.Domain",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\EmpathyWave.Domain.csproj",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\EmpathyWave.Domain.csproj",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\EmpathyWave.Domain.csproj",
+              "RelativeToolTip": "EmphatyWave.Domain\\EmpathyWave.Domain.csproj",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-26T04:34:54.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmphatyWave.AppHost.csproj",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\EmpathyWave.AppHost.csproj",
+              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\EmpathyWave.AppHost.csproj",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\EmpathyWave.AppHost.csproj",
+              "RelativeToolTip": "EmphatyWave.AppHost\\EmpathyWave.AppHost.csproj",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-22T10:17:54.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmpathyWave.Application.Tests",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\EmpathyWave.Application.Tests.csproj",
+              "RelativeDocumentMoniker": "EmphatyWave.Application.Tests\\EmpathyWave.Application.Tests.csproj",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application.Tests\\EmpathyWave.Application.Tests.csproj",
+              "RelativeToolTip": "EmphatyWave.Application.Tests\\EmpathyWave.Application.Tests.csproj",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwBoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-26T04:34:07.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HealthChecker",
+              "DocumentMoniker": "D:\\EmphatyWave\\HealthChecker\\HealthChecker.csproj",
+              "RelativeDocumentMoniker": "HealthChecker\\HealthChecker.csproj",
+              "ToolTip": "D:\\EmphatyWave\\HealthChecker\\HealthChecker.csproj",
+              "RelativeToolTip": "HealthChecker\\HealthChecker.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-26T04:34:34.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmpathyWave.Persistence",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave\\EmpathyWave.Persistence.csproj",
+              "RelativeDocumentMoniker": "EmphatyWave\\EmpathyWave.Persistence.csproj",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave\\EmpathyWave.Persistence.csproj",
+              "RelativeToolTip": "EmphatyWave\\EmpathyWave.Persistence.csproj",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-26T04:33:19.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\Order.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\Order.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\Order.cs",
+              "RelativeToolTip": "EmphatyWave.Domain\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T04:34:27.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\Program.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\Program.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\Program.cs",
+              "RelativeToolTip": "EmphatyWave.AppHost\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:17:59.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Domain\\Category.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Domain\\Category.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Domain\\Category.cs",
+              "RelativeToolTip": "EmphatyWave.Domain\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T04:30:12.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:38:56.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:38:44.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:38:41.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\App.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\App.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\App.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:38:34.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Routes.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Routes.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Routes.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:38:31.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.AppHost\\appsettings.json",
+              "RelativeDocumentMoniker": "EmphatyWave.AppHost\\appsettings.json",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.AppHost\\appsettings.json",
+              "RelativeToolTip": "EmphatyWave.AppHost\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-22T10:17:56.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\EmphatyWave\\HealthChecker\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "HealthChecker\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\EmphatyWave\\HealthChecker\\Properties\\launchSettings.json",
+              "RelativeToolTip": "HealthChecker\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAwAAAAAAAAAAIBJwBgAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-22T10:15:41.811Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

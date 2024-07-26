@@ -1,0 +1,12 @@
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\EmpathyWave.AppHost.csproj.AssemblyReference.cache
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\EmpathyWave.AppHost.GeneratedMSBuildEditorConfig.editorconfig
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\EmpathyWave.AppHost.AssemblyInfoInputs.cache
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\EmpathyWave.AppHost.AssemblyInfo.cs
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\EmpathyWave.AppHost.csproj.CoreCompileInputs.cache
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\EmpathyWave_ApiService.ProjectMetadata.g.cs
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\EmpathyWave_Domain.ProjectMetadata.g.cs
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\EmphatyWave_Web.ProjectMetadata.g.cs
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\EmpathyWave_Persistence.ProjectMetadata.g.cs
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\HealthChecker.ProjectMetadata.g.cs
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
+D:\EmphatyWave\EmphatyWave.AppHost\obj\Debug\net8.0\EmpathyWave.AppHost.sourcelink.json
