@@ -67,3 +67,14 @@ D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\EmphatyWave.Web.pdb
 D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\EmphatyWave.Web.genruntimeconfig.cache
 D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\ref\EmphatyWave.Web.dll
 D:\EmphatyWave\EmphatyWave.Web\obj\Debug\net8.0\EmphatyWave.Web.sourcelink.json
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\EmphatyWave.Domain.dll
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\EmphatyWave.Domain.pdb
+D:\EmphatyWave\EmphatyWave.Web\bin\Debug\net8.0\ka-GE\EmphatyWave.Domain.resources.dll

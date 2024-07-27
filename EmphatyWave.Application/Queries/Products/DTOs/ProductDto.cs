@@ -13,6 +13,7 @@ namespace EmphatyWave.Application.Queries.Products.DTOs
         public decimal? Discount { get; set; }
         public int Quantity { get; set; }
         public string SKU { get; set; }
+        public double Rating { get; set; }
         public ICollection<ProductImage> Images { get; set; }
         public Guid CategoryId { get; set; }
     }

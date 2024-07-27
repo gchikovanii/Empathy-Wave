@@ -1,7 +1,468 @@
 ﻿@page "/"
+@using EmphatyWave.Domain
+@using EmphatyWave.Web.Services.Categories
+@using EmphatyWave.Web.Services.Products
+@inject ProductService ProductService
+@inject CategoryService CategoryService
 
-<PageTitle>Emapthy Wave</PageTitle>
+@rendermode InteractiveServer
 
-<h1>Hello, world!</h1>
+<PageTitle>Empathy Wave</PageTitle>
 
-Welcome to your new app.
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+            @* For Category *@
+            <div class="card shadow mb-4">
+                <div class="card-body">
+                    <h3 class="h5 card-title">Categories</h3>
+                    <div class="list-group">
+                        @foreach (var category in categories)
+                        {
+                            <a href="#"
+                               class="list-group-item list-group-item-action @(selectedCategory == category.Name ? "active" : "")"
+                               @onclick="() => SelectCategory(category.Name)">
+                                @category.Name
+                            </a>
+                        }
+                    </div>
+                    <button class="btn btn-outline-pink mt-3" @onclick="ResetFilters">Reset Filters</button>
+                </div>
+            </div>
+
+            @* For Price Filter *@
+            <div class="card shadow mb-4">
+                <div class="card-body">
+                    <h3 class="h5 card-title">Price Range</h3>
+                    <div class="d-flex mb-3">
+                        <div class="col-md-6 me-2">
+                            <label for="priceRangeMin1">Min</label>
+                            <input class="form-control" id="priceRangeMin1" @bind="minPrice" placeholder="$0" type="number">
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <label for="priceRangeMax1">Max</label>
+                            <input class="form-control" id="priceRangeMax1" @bind="maxPrice" placeholder="$1,0000" type="number">
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-outline-pink" @onclick="ApplyFilters">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-9">
+            @* For Product Cards *@
+            <div class="row mt-3">
+                @if (products == null)
+                {
+                    <p><em>Loading...</em></p>
+                }
+                else
+                {
+                    @if (products?.Items != null && products.Items.Any())
+                    {
+                        @foreach (var product in products.Items)
+                        {
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <div class="card-product shadow">
+                                    @if (product.Images.Count() == 0)
+                                    {
+                                        <img class="product-image" src="item-1.png" alt="@product.Name" onerror="this.onerror=null; this.src='default-image.png'">
+                                    }
+                                    else
+                                    {
+                                        <img class="product-image" src="@product.Images.FirstOrDefault()?.Url" alt="@product.Name">
+                                    }
+                                    <div class="card-product-footer border-top border-gray-300 p-4">
+                                        <a href="#" class="h5">@product.Name</a>
+                                        <h3 class="h6 fw-light text-gray mt-2">@product.Description</h3>
+                                        <div class="d-flex mt-3 align-items-center">
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                if (i <= Math.Floor(product.Rating))
+                                                {
+                                                    <span class="star fas fa-star text-pink me-1"></span>
+                                                }
+                                                else if (i == Math.Ceiling(product.Rating) && product.Rating % 1 != 0)
+                                                {
+                                                    <span class="star fas fa-star-half-alt text-pink me-1"></span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="star far fa-star text-pink me-1"></span>
+                                                }
+                                            }
+                                            <span class="badge bg-pink ms-1">@product.Rating</span>
+                                        </div>
+                                        <div class="price-button-container d-flex justify-content-between align-items-center mt-3">
+                                            <span class="h5 mb-0 text-gray price">@product.Price.ToString("C")</span>
+
+                                            <a class="btn btn-xs btn-outline-pink btn-pink-h" href="#">
+                                                <span class="fas fa-cart-plus me-2"></span> Purchase
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p><em>No products available or error fetching products.</em></p>
+                    }
+                }
+            </div>
+
+            @* Pagination Controls *@
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                        <a class="page-link page-link-pink" href="#" @onclick="(e) => ChangePage(currentPage - 1)">Previous</a>
+                    </li>
+                    @for (int i = 1; i <= totalPages; i++)
+                    {
+                        <li class="page-item @(i == currentPage ? "active" : "")">
+                            <a class="page-link page-link-pink @(i == currentPage ? "active-page" : "")" href="#" @onclick="(e) => ChangePage(i)">@i</a>
+                        </li>
+                    }
+                    <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                        <a class="page-link page-link-pink" href="#" @onclick="(e) => ChangePage(currentPage + 1)">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+@code {
+    private decimal? minPrice;
+    private decimal? maxPrice;
+    private string? selectedCategory;
+    private string? searchQuery;
+    private PagedResult<Product> products = new PagedResult<Product> { Items = new List<Product>() };
+    private int currentPage = 1;
+    private int pageSize = 3;
+    private int totalPages = 1;
+    private List<Category> categories = new();
+
+    [Parameter]
+    public string? SearchQuery { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCategories();
+        if (!string.IsNullOrEmpty(SearchQuery))
+        {
+            searchQuery = SearchQuery;
+            await LoadProducts(currentPage);
+        }
+        else
+        {
+            await LoadProducts(currentPage);
+        }
+    }
+
+    private async Task LoadCategories()
+    {
+        var cats = await CategoryService.GetAllCategories();
+        categories = cats.ToList();
+    }
+
+    private async Task LoadProducts(int pageNumber)
+    {
+        currentPage = pageNumber;
+        var result = await ProductService.GetFilteredProducts(pageNumber, pageSize, minPrice, maxPrice, selectedCategory, searchQuery);
+        products = result;
+        totalPages = (int)Math.Ceiling((double)result.TotalCount / pageSize);
+    }
+
+    private async Task ApplyFilters()
+    {
+        currentPage = 1;
+        await LoadProducts(currentPage);
+    }
+
+    private async Task ChangePage(int pageNumber)
+    {
+        if (pageNumber < 1 || pageNumber > totalPages) return;
+        await LoadProducts(pageNumber);
+    }
+
+    private async Task SelectCategory(string category)
+    {
+        selectedCategory = category;
+        await ApplyFilters();
+    }
+
+    private async Task ResetFilters()
+    {
+        minPrice = null;
+        maxPrice = null;
+        selectedCategory = null;
+        await ApplyFilters();
+    }
+}
+
+
+<style>
+
+    .page-link-pink {
+        color: #fff; /* White text for Previous/Next buttons */
+        background-color: #FF1493; /* Pink background for Previous/Next buttons */
+        border-color: #FF1493; /* Pink border for Previous/Next buttons */
+    }
+
+        .page-link-pink:hover {
+            background-color: #e6007e; /* Slightly darker pink for hover */
+            border-color: #e6007e; /* Slightly darker pink for hover */
+        }
+
+    /* Disabled state for Previous and Next buttons */
+    .page-item.disabled .page-link {
+        color: #fff; /* White text */
+        background-color: #FF1493; /* Pink background */
+        border-color: #FF1493; /* Pink border */
+        cursor: not-allowed; /* Indicate that it's not clickable */
+    }
+
+    /* Page numbers */
+    .page-item .page-link {
+        color: #FF1493; /* Pink text for page numbers */
+        background-color: #fff; /* White background for page numbers */
+        border-color: #ddd; /* Light gray border for page numbers */
+    }
+
+        .page-item .page-link:hover {
+            background-color: #f1f1f1; /* Light gray background on hover */
+            color: #FF1493; /* Pink text on hover */
+            border-color: #ddd; /* Light gray border on hover */
+        }
+
+    /* Active page number */
+    .page-item.active .page-link {
+        background-color: #FF1493; /* Pink background for active page */
+        border-color: #FF1493; /* Pink border for active page */
+        color: #fff; /* White text for active page */
+    }
+    .list-group-item {
+        cursor: pointer;
+    }
+
+        .list-group-item.active {
+            background-color: #FF69B4;
+            color: white; 
+            border-color: #FF69B4;
+        }
+
+    .btn-outline-pink {
+        color: #FF69B4;
+        border-color: #FF69B4;
+    }
+
+        .btn-outline-pink:hover {
+            background-color: #FF1493;
+            border-color: #FF1493;
+            color: #fff;
+        }
+
+        .btn-outline-pink.mt-3 {
+            width: 100%;
+        }
+
+    .star {
+        font-size: 1.25em;
+        color: #FF69B4;
+    }
+    a{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .badge.bg-pink {
+        background-color: #FF69B4;
+        color: #fff;
+        font-size: 0.85em;
+        padding: 0.4em 0.6em;
+    }
+
+    .page-link-pink {
+        color: #fff;
+        background-color: #FF1493;
+    }
+
+        .page-link-pink:hover {
+            background-color: #FF1493;
+            color: #fff;
+        }
+
+    .active-page {
+        background-color: #FF69B4;
+        color: #fff;
+        border-color: #FF69B4;
+    }
+
+    input[type="number"], select, option {
+        border: 1px solid #FF69B4;
+        background-color: #FFFAFA;
+        color: #333;
+    }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"]:focus, select:focus {
+            border-color: #FF1493;
+            box-shadow: 0 0 0 0.2rem rgba(255, 20, 147, 0.25);
+        }
+
+    .form-check-label:checked {
+        color: #FF1493;
+    }
+    .card-product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .card-product img {
+            max-height: 150px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .card-product img:hover {
+                transform: scale(1.05);
+            }
+
+    .card-product-footer {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+        .card-product-footer a.h5 {
+            margin: 0;
+            font-size: 1.25em;
+            text-decoration: none;
+            color: #333;
+            height: 2.5em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .card-product-footer .h6 {
+            margin: 0;
+            font-size: 1em;
+            color: #666;
+            height: 3em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .card-product-footer .d-flex {
+            margin-top: auto;
+            align-items: center;
+        }
+
+            .card-product-footer .d-flex .h5 {
+                font-size: 1.25em;
+                margin-right: 0.5em;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+    .price {
+        font-size: 1em; 
+        margin-right: 0.5em;
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+    .price-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+    .btn-pink-h:hover {
+        background-color: #FF1493;
+        color: #fff;
+    }
+
+    .btn-outline-pink {
+        color: #FF69B4;
+        border-color: #FF69B4;
+    }
+
+        .btn-outline-pink:hover {
+            background-color: #FF1493;
+            border-color: #FF1493;
+            color: #fff;
+        }
+
+    .star {
+        font-size: 1.25em;
+        color: #FF69B4;
+    }
+
+    .badge.bg-pink {
+        background-color: #FF69B4;
+        color: #fff;
+        font-size: 0.85em;
+        padding: 0.4em 0.6em;
+    }
+
+    .page-link-pink {
+        color: #fff;
+        background-color: #FF1493;
+    }
+
+        .page-link-pink:hover {
+            background-color: #FF1493;
+            color: #fff;
+        }
+
+    .active-page {
+        background-color: #FF69B4;
+        color: #fff;
+        border-color: #FF69B4;
+    }
+
+    select.category-select {
+        background-color: #FF1493; 
+        color: #fff; 
+    }
+
+    input[type="number"], select, option {
+        border: 1px solid #FF69B4;
+        background-color: #FFFAFA;
+        color: #333;
+    }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"]:focus, select:focus {
+            border-color: #FF1493;
+            box-shadow: 0 0 0 0.2rem rgba(255, 20, 147, 0.25);
+    }
+
+    .form-check-label:checked {
+        color: #FF1493; 
+    }
+
+</style>
+

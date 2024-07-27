@@ -15,5 +15,6 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.7\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.7\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
   </ImportGroup>
 </Project>

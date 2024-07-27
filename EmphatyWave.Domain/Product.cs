@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace EmphatyWave.Domain
 {
@@ -26,7 +27,9 @@ namespace EmphatyWave.Domain
         [Required(ErrorMessage = "SKU is Required!")]
         [MinLength(5,ErrorMessage = "SKU is At least 5 in length!")]
         public string SKU { get; set; }
-        public ICollection<ProductImage>? Images { get; set; }
+        public double Rating { get; set; }
+        
+        public ICollection<ProductImage>? Images { get; set; } = new List<ProductImage>();
         public Guid CategoryId { get; set; }
         public Category Category { get; set; }
 

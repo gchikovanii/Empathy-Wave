@@ -42,7 +42,7 @@ namespace EmphatyWave.Application.Commands.Products
                 if (category == null)
                     return Result.Failure(CategoryErrors.CategoryNotExists);
                 var prodExists = await _repository.GetProductByName(cancellationToken, request.Name).ConfigureAwait(false);
-                if (prodExists != null)
+                if (prodExists == null && prodExists.Name == null)
                     return Result.Failure(ProductErrors.AlreadyExists);
                 var product = new Product
                 {

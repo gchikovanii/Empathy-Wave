@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BKRsB9ysGb0VM1TPPRl2c+4xPuBGma6NMfg7HDVri50=",
+  "Hash": "o+eLxNhVXudjmnTmoWafzrxRCOjF0UBV3rXCo/r6/0M=",
   "Source": "EmphatyWave.Web",
   "BasePath": "_content/EmphatyWave.Web",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\geo.png"
+    },
+    {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\item-1.png",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "item-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\item-1.png"
     },
     {
       "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\logoo.png",

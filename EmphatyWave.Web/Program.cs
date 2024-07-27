@@ -1,5 +1,7 @@
 using EmphatyWave.Web;
 using EmphatyWave.Web.Components;
+using EmphatyWave.Web.Services.Categories;
+using EmphatyWave.Web.Services.Products;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,9 @@ builder.AddServiceDefaults();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddOutputCache();
+builder.Services.AddOutputCache(); 
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<CategoryService>();
 
 builder.Services.AddHttpClient<WeatherApiClient>(client =>
     {

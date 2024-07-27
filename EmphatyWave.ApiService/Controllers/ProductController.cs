@@ -1,4 +1,5 @@
-﻿using EmphatyWave.Application.Commands.Products;
+﻿using EmphatyWave.ApiService.Infrastructure.Request;
+using EmphatyWave.Application.Commands.Products;
 using EmphatyWave.Application.Queries.Products;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -20,11 +21,16 @@ namespace EmphatyWave.ApiService.Controllers
             }
             return Ok(result);
         }
+
         [OutputCache(Duration = 7200)]
         [HttpGet]
-        public async Task<IActionResult> GetAllProducts(int pageSize, int pageNumber)
+
+        public async Task<IActionResult> GetFilteredProducts(int pageNumber, int pageSize, decimal? minPrice, decimal? maxPrice, string? categoryName, string? searchKeyword)
         {
-            return Ok(await _mediator.Send(new GetProductsQuery { PageNumber = pageNumber, PageSize = pageSize }).ConfigureAwait(false));
+            return Ok(await _mediator.Send(new GetProductsQuery { PageNumber = pageNumber, PageSize = pageSize,
+                MinPrice = minPrice, MaxPrice = maxPrice,
+                CategoryName = categoryName, SearchKeyword = searchKeyword
+            }));
         }
         [HttpPost]
         public async Task<IActionResult> CreateProduct(CreateProductCommand command)
