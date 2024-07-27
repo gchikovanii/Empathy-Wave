@@ -37,7 +37,7 @@ namespace EmphatyWave.Persistence.Repositories.Implementation
             if (categoryName != null)
                 query = query.Where(i => i.Category.Name == categoryName);
             if (!string.IsNullOrEmpty(searchKeyword))
-                query = query.Where(i => i.Name.Contains(searchKeyword));
+                query = query.Where(i => i.Name.ToLower().Contains(searchKeyword.ToLower()));
 
             var totalCount = await query.CountAsync(token);
             var products = await query

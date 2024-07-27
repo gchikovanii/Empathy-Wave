@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\logoo.png"
     },
     {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\not-found.png",
+      "PackagePath": "staticwebassets\\not-found.png"
+    },
+    {
       "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\us.png",
       "PackagePath": "staticwebassets\\us.png"
     },

@@ -10,6 +10,15 @@
 <PageTitle>Empathy Wave</PageTitle>
 
 <div class="container mt-3">
+
+    <div class="d-flex s-flex">
+        <div class="search-container">
+            <input class="form-control" id="searchQuery1" type="text" @bind="searchQuery" placeholder="Search...">
+            <button @onclick="ApplyFilters">Search</button>
+        </div>
+    </div>
+
+
     <div class="row">
         <div class="col-12 col-md-4 col-lg-3">
             @* For Category *@
@@ -26,7 +35,7 @@
                             </a>
                         }
                     </div>
-                    <button class="btn btn-outline-pink mt-3" @onclick="ResetFilters">Reset Filters</button>
+                    <button class="btn btn-outline-pink mt-3 remweird" @onclick="ResetFilters">Reset Filters</button>
                 </div>
             </div>
 
@@ -37,20 +46,22 @@
                     <div class="d-flex mb-3">
                         <div class="col-md-6 me-2">
                             <label for="priceRangeMin1">Min</label>
-                            <input class="form-control" id="priceRangeMin1" @bind="minPrice" placeholder="$0" type="number">
+                            <input class="form-control" id="priceRangeMin1" @bind="minPrice" placeholder="0" type="number">
                         </div>
                         <div class="col-md-6 text-right">
                             <label for="priceRangeMax1">Max</label>
-                            <input class="form-control" id="priceRangeMax1" @bind="maxPrice" placeholder="$1,0000" type="number">
+                            <input class="form-control" id="priceRangeMax1" @bind="maxPrice" placeholder="1,0000" type="number">
                         </div>
                     </div>
                     <div class="d-grid">
-                        <button class="btn btn-outline-pink" @onclick="ApplyFilters">Apply</button>
+                        <button class="btn btn-outline-pink remweird" @onclick="ApplyFilters">Apply</button>
                     </div>
                 </div>
             </div>
         </div>
 
+
+   
         <div class="col-12 col-md-8 col-lg-9">
             @* For Product Cards *@
             <div class="row mt-3">
@@ -109,7 +120,9 @@
                     }
                     else
                     {
-                        <p><em>No products available or error fetching products.</em></p>
+                        <div class="d-flex justify-content-center">
+                            <img src="not-found.png" style="max-width: auto; height: auto;" />
+                        </div>
                     }
                 }
             </div>
@@ -200,6 +213,7 @@
         minPrice = null;
         maxPrice = null;
         selectedCategory = null;
+        searchQuery = null;
         await ApplyFilters();
     }
 }
@@ -207,43 +221,48 @@
 
 <style>
 
+    .s-flex {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    
+
     .page-link-pink {
-        color: #fff; /* White text for Previous/Next buttons */
-        background-color: #FF1493; /* Pink background for Previous/Next buttons */
-        border-color: #FF1493; /* Pink border for Previous/Next buttons */
+        color: #fff; 
+        background-color: #FF1493;
+        border-color: #FF1493; 
     }
 
         .page-link-pink:hover {
-            background-color: #e6007e; /* Slightly darker pink for hover */
-            border-color: #e6007e; /* Slightly darker pink for hover */
+            background-color: #e6007e; 
+            border-color: #e6007e; 
         }
 
-    /* Disabled state for Previous and Next buttons */
     .page-item.disabled .page-link {
-        color: #fff; /* White text */
-        background-color: #FF1493; /* Pink background */
-        border-color: #FF1493; /* Pink border */
-        cursor: not-allowed; /* Indicate that it's not clickable */
+        color: #fff; 
+        background-color: #FF1493;
+        border-color: #FF1493; 
+        cursor: not-allowed; 
     }
 
-    /* Page numbers */
     .page-item .page-link {
-        color: #FF1493; /* Pink text for page numbers */
-        background-color: #fff; /* White background for page numbers */
-        border-color: #ddd; /* Light gray border for page numbers */
+        color: #FF1493; 
+        background-color: #fff;
+        border-color: #ddd; 
     }
 
         .page-item .page-link:hover {
-            background-color: #f1f1f1; /* Light gray background on hover */
-            color: #FF1493; /* Pink text on hover */
-            border-color: #ddd; /* Light gray border on hover */
+            background-color: #f1f1f1;
+            color: #FF1493; 
+            border-color: #ddd; 
         }
 
-    /* Active page number */
     .page-item.active .page-link {
-        background-color: #FF1493; /* Pink background for active page */
-        border-color: #FF1493; /* Pink border for active page */
-        color: #fff; /* White text for active page */
+        background-color: #FF1493;
+        border-color: #FF1493;
+        color: #fff; 
     }
     .list-group-item {
         cursor: pointer;
@@ -463,6 +482,45 @@
     .form-check-label:checked {
         color: #FF1493; 
     }
+
+
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+        .search-container input {
+            padding: 9px; 
+            border: 1px solid #FF69B4; 
+            border-radius: 5px 0 0 5px; 
+            font-size: 16px;
+            background-color: #FFFAFA; 
+            color: #333; 
+            width: 500px; 
+            transition: border-color 0.3s ease;
+        }
+
+            .search-container input:focus {
+                border-color: #FF1493; 
+                box-shadow: 0 0 0 0.2rem rgba(255, 20, 147, 0.25);
+                outline: none !important; 
+            }
+
+        .search-container button {
+            padding: 10px 15px;
+            border: 1px solid #FF69B4;
+            border-radius: 0 5px 5px 0;
+            background-color: #FF69B4;
+            color: white;
+            cursor: pointer;
+        }
+
+            .search-container button:hover {
+                background-color: #FF1493;
+                color: #fff;
+            }
 
 </style>
 
