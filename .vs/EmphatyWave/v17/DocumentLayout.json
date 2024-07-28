@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\services\\contacts\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\services\\contacts\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\shop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\shop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +22,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\appsettings.json",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\appsettings.json",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\appsettings.json",
-              "RelativeToolTip": "EmphatyWave.ApiService\\appsettings.json",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBkAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-28T16:11:00.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\ContactController.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\ContactController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T15:35:34.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactService.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Contacts\\ContactService.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Services\\Contacts\\ContactService.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Contacts\\ContactService.cs",
-              "RelativeToolTip": "EmphatyWave.Web\\Services\\Contacts\\ContactService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T15:35:34.653Z",
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T17:30:11.551Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -75,9 +46,22 @@
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Contact.razor",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Contact.razor",
               "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Contact.razor",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHUAAAB6AAAA",
+              "ViewState": "AQIAAPAAAAAAAAAAAAAUwP8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-28T09:53:43.914Z",
+              "WhenOpened": "2024-07-28T17:49:12.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shop.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Shop.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Shop.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Shop.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Shop.razor",
+              "ViewState": "AQIAAEMCAAAAAAAAAAAUwFwCAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T17:39:56.379Z",
               "EditorCaption": ""
             }
           ]
