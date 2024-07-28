@@ -1,5 +1,6 @@
 using EmphatyWave.ApiService.Infrastructure.Extensions;
 using EmphatyWave.ApiService.Infrastructure.HealtChecks;
+using EmphatyWave.ApiService.Infrastructure.Request;
 using EmphatyWave.Application.Behaviours;
 using EmphatyWave.Application.Commands.Categories;
 using EmphatyWave.Application.Commands.Orders;
@@ -24,6 +25,7 @@ builder.Services.AddHealthChecks()
     .AddCheck<TimeIntervalOfProcessingOrderHelthCheck>("Order Processing Time", tags: new[] { "service" })
     .AddCheck<TimeIntervalOfFetchingCategoriesHelthCheck>("Category Fetching Speed", tags: new[] { "service" })
     .AddSqlServer(builder.Configuration.GetConnectionString("SqlConnectionString"));
+builder.Services.Configure<GoogleAppSettings>(builder.Configuration.GetSection("GoogleAppSettings"));
 builder.Services.AddControllers();
 builder.AddServiceDefaults();
 builder.Services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme);
