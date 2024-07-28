@@ -1,5 +1,6 @@
 ﻿@page "/contact"
-
+@using EmphatyWave.Web.Services.Contacts
+@inject ContactService ContactService
 
 <section class="py-3 py-md-5 py-xl-8">
     <div class="container">
@@ -82,23 +83,43 @@
                             </div>
                             <div class="col-12 col-lg-6">
                                 <div class="p-4 p-md-5 p-xxl-6">
+                                    @if (dataSent)
+                                    {
+                                        <div id="successAlert" class="alert alert-pink mt-3" role="alert">
+                                            Your message has been sent successfully!
+                                        </div>
+                                    }
                                     <h3 class="mb-4 display-6 text-pink">Write to Us</h3>
-                                    <form>
+                                    <EditForm Model="ContactFormModel" OnValidSubmit="SendData" FormName="contact">
+                                        <DataAnnotationsValidator />
+                                        <ValidationSummary />
                                         <div class="row">
                                             <div class="col-12 mb-4">
-                                                <input type="text" class="form-control form-control-lg rounded-pill border-pink text-pink" placeholder="Your Name">
+                                                <label for="fullName" class="form-label">Full Name:</label>
+                                                <InputText id="fullName" class="form-control form-control-lg rounded-pill border-pink text-pink" @bind-Value="ContactFormModel.FullName" />
                                             </div>
                                             <div class="col-12 mb-4">
-                                                <input type="email" class="form-control form-control-lg rounded-pill border-pink text-pink" placeholder="Your Email">
+                                                <label for="email" class="form-label">Email:</label>
+                                                <InputText id="email" class="form-control form-control-lg rounded-pill border-pink text-pink" @bind-Value="ContactFormModel.Email" />
                                             </div>
                                             <div class="col-12 mb-4">
-                                                <textarea class="form-control form-control-lg rounded-4 border-pink text-pink" rows="6" placeholder="Your Message"></textarea>
+                                                <label for="number" class="form-label">Phone Number:</label>
+                                                <InputText id="number" class="form-control form-control-lg rounded-pill border-pink text-pink" @bind-Value="ContactFormModel.Phone" />
+                                            </div>
+                                            <div class="col-12 mb-4">
+                                                <label for="subject" class="form-label">Subject:</label>
+                                                <InputText id="subject" class="form-control form-control-lg rounded-pill border-pink text-pink" @bind-Value="ContactFormModel.Subject" />
+                                            </div>
+                                            <div class="col-12 mb-4">
+                                                <label for="message" class="form-label">Message:</label>
+                                                <InputTextArea id="message" class="form-control form-control-lg rounded-4 border-pink text-pink" @bind-Value="ContactFormModel.Message" />
                                             </div>
                                             <div class="col-12 text-end">
                                                 <button type="submit" class="btn btn-pink btn-lg rounded-pill text-light">Send Message</button>
                                             </div>
+                                            
                                         </div>
-                                    </form>
+                                    </EditForm>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +130,29 @@
     </div>
 </section>
 
-<style >
+@code {
+    private bool dataSent;
+
+    [SupplyParameterFromForm]
+    public ContactForm ContactFormModel { get; set; } = new();
+
+    private async Task SendData()
+    {
+        await ContactService.SendToEmail(ContactFormModel);
+        dataSent = true;
+        ContactFormModel = new ContactForm();
+    }
+}
+
+
+
+<style>
+    .alert-pink {
+        background-color: #ff69b4; 
+        color: white; 
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
     .text-pink {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: #ff69b4;
@@ -159,4 +202,5 @@
          color: #ff69b4;
         }
 </style>
+
 

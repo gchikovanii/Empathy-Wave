@@ -14,7 +14,7 @@ namespace EmphatyWave.ApiService.Controllers
             _googleAppSettings = googleAppSettings.Value;
         }
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] ContactForm formData)
+        public async Task<IActionResult> SendEmail([FromBody] ContactForm formData)
         {
             try
             {
