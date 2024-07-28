@@ -1,5 +1,525 @@
 ﻿@page "/"
 
 
-<PageTitle>Empathy Wave</PageTitle>
+<div class="about-container">
+    <div class="hero">
+        <h1>Welcome to Emphaty Wave</h1>
+        <p>Your trusted source for self-care products made from local and endemic flowers and plants.</p>
+    </div>
+
+    <div class="content-section">
+        <section class="mission" id="our-mission">
+            <h2 class="mb-5">Our Mission</h2>
+            <div class="mission-content">
+                <div class="mission-item">
+                    <i class="fa-regular fa-face-grin-stars"></i>
+                    <h3>Quality</h3>
+                    <p>Promoting wellness and self-care through high-quality, eco-friendly products that harness the power of nature.</p>
+                </div>
+                <div class="mission-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Sustainability</h3>
+                    <p>Commitment to eco-friendly practices with minimal environmental impact.</p>
+                </div>
+                <div class="mission-item">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Continuously researching and developing to enhance your self-care experience.</p>
+                </div>
+                <div class="mission-item">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Supporting local communities with fair wages and local sourcing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="history-content">
+                <div class="history-image">
+                    <img src="self_care.jpg" style="max-height:500px; max-width: 500px" alt="Our History Image" />
+                </div>
+                <div class="history-text">
+                    <h2>Our History</h2>
+                    <p>
+                        Emphaty Wave began as a small initiative to bring the natural benefits of local and endemic plants to a broader audience. Our founders, passionate about nature and wellness, started crafting products that prioritize quality and sustainability.
+                        From our humble beginnings, we have grown into a trusted brand known for our commitment to eco-friendly practices and community support. Each product is carefully developed to promote wellness and self-care, using the power of nature to enhance everyday life. We believe in the importance of sustainability and strive to minimize our environmental impact through every step of our process.
+                        Our journey has been fueled by continuous innovation, allowing us to create unique products that meet the evolving needs of our customers. We are proud to support local communities, ensuring fair wages and local sourcing, which strengthens the bond between our brand and the places we operate.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="unique">
+            <h2>What Sets Us Apart</h2>
+            <div class="unique-content">
+                <div class="unique-item">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>Premium Ingredients</h3>
+                    <p>We use only the highest quality, locally sourced ingredients to ensure our products are the best for your skin and the environment.</p>
+                </div>
+                <div class="unique-item">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3>Ethical Practices First</h3>
+                    <p>Our commitment to ethical practices ensures fair wages and conditions for all our partners and employees.</p>
+                </div>
+                <div class="unique-item">
+                    <i class="fa-solid fa-recycle"></i>
+                    <h3>Eco-Friendly Packaging</h3>
+                    <p>Our packaging is designed to be as eco-friendly as possible, minimizing waste and environmental impact.</p>
+                </div>
+                <div class="unique-item">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>Award-Winning Formulas</h3>
+                    <p>Our innovative products have been recognized and awarded for their effectiveness and sustainability.</p>
+                </div>
+            </div>
+        </section>
+        <section class="georgia">
+            <h2>Representing Georgia</h2>
+            <div class="georgia-content">
+                <div class="georgia-text">
+                    <h3>Our Heritage</h3>
+                    <p>At Emphaty Wave, we take pride in our Georgian roots. We are committed to showcasing the natural beauty and rich biodiversity of Georgia through our products.</p>
+                    <h3>Endemic Flowers</h3>
+                    <p>We grow and harvest local and endemic flowers right here in Georgia, ensuring that each product is infused with the unique qualities of our homeland.</p>
+                    <h3>Sustainable Practices</h3>
+                    <p>Our dedication to sustainability means we use eco-friendly methods and materials throughout our production process, minimizing our environmental impact.</p>
+                </div>
+                <div class="georgia-image">
+                    <img src="mountain.jpg" style="max-height:500px; max-width: 500px" alt="Georgia Flowers Image" />
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-content">
+                <div class="team-member">
+                    <img src="chikovani.png" alt="Team Member 1" />
+                    <h3>Giorgi Chikovani</h3>
+                    <p>Founder & CEO</p>
+                    <p>Giorgi is the visionary behind Emphaty Wave, leading the company with his passion for nature and wellness.</p>
+                </div>
+                <div class="team-member">
+                    <img src="without.jpeg" alt="Team Member 2" />
+                    <h3>Nana Botanist</h3>
+                    <p>Chief Botanist</p>
+                    <p>Nana's expertise in botany ensures that our products harness the full power of local and endemic plants.</p>
+                </div>
+                <div class="team-member">
+                    <img src="without.jpeg" alt="Team Member 3" />
+                    <h3>Marketer Marketing</h3>
+                    <p>Head of Marketing</p>
+                    <p>Marketers's innovative marketing strategies have helped Emphaty Wave reach a broader audience.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #FFF0F5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .hero {
+        background-color: #FF69B4;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    @@keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .content-section {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #FF69B4;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    p, ul {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 20px 0;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+   .mission {
+    background: linear-gradient(to right, #ff99cc, #ffccff);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .mission h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .mission-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: calc(25% - 20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .mission-item:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .mission-item i {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .mission-item h3 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .mission-item p {
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  @@media (max-width: 768px) {
+    .mission-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mission-item {
+      max-width: 100%;
+    }
+  }
+
+    .history {
+        margin-top: 50px;
+    }
+
+    .history-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .history-image, .history-text {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .history-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateX(-50px);
+        animation: slideIn 1s ease-out forwards;
+    }
+
+    .history-text {
+        opacity: 0;
+        transform: translateX(50px);
+        animation: slideInText 1s ease-out forwards;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    
+    .history-text h2 {
+        color: #FF1493;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .history-text p {
+        font-size: 1em;
+        margin: 0;
+            color: #A9A9A9;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    @@keyframes slideIn {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @@keyframes slideInText {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .unique-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .unique-item {
+        background-color: #FFF0F5;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        flex: 1;
+        min-width: 200px;
+        max-width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .unique-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .unique-item i {
+            font-size: 3em;
+            color: #FF69B4;
+            margin-bottom: 10px;
+        }
+
+        .unique-item h3 {
+            color: #FF69B4;
+            margin-bottom: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .unique-item p {
+            color: #A9A9A9;
+            margin-bottom: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+    .team {
+        margin-top: 50px;
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #FFF0F5;
+        border-radius: 10px;
+    }
+
+        .team h2 {
+            font-size: 2.5em;
+            color: #FF1493;
+            margin-bottom: 30px;
+            position: relative;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+            .team h2::after {
+                content: '';
+                width: 50px;
+                height: 3px;
+                background-color: #FF1493;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -10px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+    .team-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .team-member {
+        background-color: #fff;
+        color: #333;
+        padding: 30px;
+        border-radius: 15px;
+        flex: 1;
+        min-width: 250px;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .team-member h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #FF69B4;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .team-member p {
+            color: #A9A9A9;
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .georgia {
+        margin-top: 50px;
+        padding: 50px 20px;
+        background-color: #FFF0F5;
+        border-radius: 10px;
+        text-align: center;
+}
+
+.georgia h2 {
+    font-size: 2.5em;
+    color: #FF69B4;
+    margin-bottom: 30px;
+    position: relative;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+.georgia h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #FF69B4;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.georgia-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.georgia-text, .georgia-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.georgia-text {
+    text-align: left;
+}
+
+.georgia-text h3 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    color: #FF69B4;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+.georgia-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+            color: #A9A9A9;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+.georgia-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+@@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+</style>
 

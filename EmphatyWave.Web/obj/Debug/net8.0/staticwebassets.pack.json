@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\chikovani.png",
+      "PackagePath": "staticwebassets\\chikovani.png"
+    },
+    {
       "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\emplogo.png",
       "PackagePath": "staticwebassets\\emplogo.png"
     },
@@ -37,12 +41,24 @@
       "PackagePath": "staticwebassets\\logoo.png"
     },
     {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\mountain.jpg",
+      "PackagePath": "staticwebassets\\mountain.jpg"
+    },
+    {
       "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\not-found.png",
       "PackagePath": "staticwebassets\\not-found.png"
     },
     {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\self_care.jpg",
+      "PackagePath": "staticwebassets\\self_care.jpg"
+    },
+    {
       "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\us.png",
       "PackagePath": "staticwebassets\\us.png"
+    },
+    {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\without.jpeg",
+      "PackagePath": "staticwebassets\\without.jpeg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EmphatyWave.Web.Microsoft.AspNetCore.StaticWebAssets.props",

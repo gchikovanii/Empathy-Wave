@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5XCvBE1yLeRjRrgu0HiHGkupszfLHU7eRmvhLGP08Io=",
+  "Hash": "5pAVOx+Hr2ULKsOQNvG4bmuqDhDn7mlu/gNFzc0i9Zg=",
   "Source": "EmphatyWave.Web",
   "BasePath": "_content/EmphatyWave.Web",
   "Mode": "Default",
@@ -112,6 +112,25 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\chikovani.png",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "chikovani.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chikovani.png"
+    },
+    {
       "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\emplogo.png",
       "SourceId": "EmphatyWave.Web",
       "SourceType": "Discovered",
@@ -207,6 +226,25 @@
       "OriginalItemSpec": "wwwroot\\logoo.png"
     },
     {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\mountain.jpg",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "mountain.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mountain.jpg"
+    },
+    {
       "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\not-found.png",
       "SourceId": "EmphatyWave.Web",
       "SourceType": "Discovered",
@@ -226,6 +264,25 @@
       "OriginalItemSpec": "wwwroot\\not-found.png"
     },
     {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\self_care.jpg",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "self_care.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\self_care.jpg"
+    },
+    {
       "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\us.png",
       "SourceId": "EmphatyWave.Web",
       "SourceType": "Discovered",
@@ -243,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\us.png"
+    },
+    {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\without.jpeg",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "without.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\without.jpeg"
     }
   ]
 }

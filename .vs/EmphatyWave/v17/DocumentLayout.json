@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\shop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\shop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\services\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,24 +38,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Contact.razor",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Contact.razor",
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Contact.razor",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Contact.razor",
               "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Contact.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAEsAAACbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-28T05:02:32.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
@@ -68,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "App.razor",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\App.razor",
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\App.razor",
@@ -81,13 +81,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Shop.razor",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Shop.razor",
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Shop.razor",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Shop.razor",
               "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Shop.razor",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAMBAAAaAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwAkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-28T04:56:23.098Z",
               "EditorCaption": ""
@@ -100,7 +100,7 @@
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAPgBAAAAAAAAAAAiwP0BAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-27T08:32:32.736Z",
               "EditorCaption": ""
@@ -119,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\ProductController.cs",
