@@ -1,11 +1,13 @@
-﻿<nav class="navbar">
+﻿@inject NavigationManager NavigationManager;
+
+<nav class="navbar">
     <img src="logoo.png" alt="Logo" class="logo logo-small" />
     <div class="nav-content">
         <ul class="nav-links">
             <img src="logoo.png" alt="Logo" class="logo logo-big" />
-            <li><a href="#" class="active custom-text">Brand</a></li>
-            <li><a class="custom-text" href="#">Shop</a></li>
-            <li><a class="custom-text" href="#">Contact</a></li>
+            <li style="margin-left:20px"><NavLink class="custom-text" href="/" Match="NavLinkMatch.All">Home</NavLink></li>
+            <li><NavLink class="custom-text" href="/shop">Shop</NavLink></li>
+            <li><NavLink class="custom-text" href="/contact">Contact</NavLink></li>
         </ul>
         <div class="icons">
             <span class="icon profile"><i class="bi bi-person"></i></span>
@@ -33,6 +35,13 @@
     </div>
 </nav>
 
+
+@code {
+    private void GoToShop()
+    {
+        NavigationManager.NavigateTo("/shop");
+    }
+}
 
 <style>
  @@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css');
@@ -83,12 +92,11 @@
     padding: 10px 20px;
 }
 
-.nav-links a.active,
-.nav-links a:hover {
+            .nav-links a.active,
+            .nav-links a:hover {
                 color: #FF1493;
-    border-radius: 5px;
-}
-
+                border-radius: 5px;
+            }
 
 .icons {
     display: flex;
@@ -119,7 +127,7 @@
 }
 
 .icon:hover {
-            color: #095aab;
+            color: #FF1493;
 }
 
 .dropdown {
@@ -173,7 +181,7 @@
 
 .custom-text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 38px;
+    font-size: 52px;
     font-weight: bold;
 }
 
@@ -194,8 +202,7 @@
         top: 70px;
         left: 0;
         z-index: 1;
-            background-color: #FF69B4;
-            
+        background-color: #FF69B4;
     }
 
     .nav-links,
@@ -215,7 +222,7 @@
     .nav-links a,
     .icon {
         padding: 15px;
-        margin: 0;
+        margin: 0; 
     }
 
     .search-container {
