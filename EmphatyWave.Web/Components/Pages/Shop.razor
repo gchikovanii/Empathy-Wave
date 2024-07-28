@@ -10,7 +10,7 @@
 <PageTitle>Empathy Wave</PageTitle>
 
 <div class="container mt-4">
-
+    
     <div class="d-flex s-flex">
         <div class="search-container">
             <input class="form-control" id="searchQuery1" type="text" @bind="searchQuery" placeholder="Search...">
@@ -58,6 +58,11 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card shadow mb-4">
+                <img src="Scary.png"/>
+            </div>
+
         </div>
 
 
@@ -528,6 +533,13 @@
                 background-color: #FF1493;
                 color: #fff;
             }
+            . card-img-cust{
+        border: 1px solid #FF69B4;
+        box-shadow: 0 0 0 0.2rem rgba(255, 20, 147, 0.25);
+    }
 
+    .card:hover img {
+        box-shadow: 0 0 15px #FF69B4; 
+    }
 </style>
 

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\EmphatyWave.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\Scary.png",
+      "PackagePath": "staticwebassets\\Scary.png"
+    },
+    {
       "Id": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },

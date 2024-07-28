@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5pAVOx+Hr2ULKsOQNvG4bmuqDhDn7mlu/gNFzc0i9Zg=",
+  "Hash": "okFobATDf72MMFN+pAbk1y7YcnmsD3jfu31RaMSz+D8=",
   "Source": "EmphatyWave.Web",
   "BasePath": "_content/EmphatyWave.Web",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\not-found.png"
+    },
+    {
+      "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\Scary.png",
+      "SourceId": "EmphatyWave.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\",
+      "BasePath": "_content/EmphatyWave.Web",
+      "RelativePath": "Scary.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Scary.png"
     },
     {
       "Identity": "D:\\EmphatyWave\\EmphatyWave.Web\\wwwroot\\self_care.jpg",
