@@ -11,7 +11,7 @@ namespace EmphatyWave.Application.Services.Account
     public interface IAccountService
     {
         Task<ResultOrValue<string>> Register(RegisterDto dto);
-        Task<bool> ConfirmEmail(CancellationToken cancellationToken, string token);
+        Task<ResultOrValue<string>> ConfirmEmail(CancellationToken cancellationToken, string token);
         Task<ResultOrValue<string>> Login(LoginDto dto);
         Task<ResultOrValue<string>> RequestPasswordRecovery(string email);
         Task<ResultOrValue<string>> ResetPassword(RecoveryDto dto);

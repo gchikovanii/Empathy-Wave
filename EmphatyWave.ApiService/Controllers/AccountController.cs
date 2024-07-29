@@ -40,9 +40,12 @@ namespace EmphatyWave.ApiService.Controllers
             return Ok(result);
         }
         [HttpPost("confirmEmail")]
-        public async Task<IActionResult> ConfirmEmail(CancellationToken token, string email)
+        public async Task<IActionResult> ConfirmEmail(CancellationToken cancellationToken, string token)
         {
-            return Ok(await _accountService.ConfirmEmail(token,email).ConfigureAwait(false));
+            var result = await _accountService.ConfirmEmail(cancellationToken, token).ConfigureAwait(false);
+            if (result.IsSuccess == false)
+                return BadRequest(result);
+            return Ok(result);
         }
         [HttpPost("requestPasswordRecovery")]
         public async Task<IActionResult> RequestPasswordRecovery(string email)

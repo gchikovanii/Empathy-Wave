@@ -787,3 +787,5 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
 2024-07-29 14:31:30.379 +04:00 [ERR] Error - 500 - "2024-07-29T10:31:30.3795590Z" - Value cannot be null. (Parameter 'user')
+2024-07-29 18:46:21.195 +04:00 [ERR] Health check Category Fetching Speed with status "Unhealthy" completed after 3256.0547ms with message 'Response time is 3255ms'
+2024-07-29 18:46:21.272 +04:00 [ERR] Health check Order Processing Time with status "Unhealthy" completed after 3356.2ms with message 'Response time is 3355ms'
