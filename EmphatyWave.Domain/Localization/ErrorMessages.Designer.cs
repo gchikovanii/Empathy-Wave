@@ -320,5 +320,14 @@ namespace EmphatyWave.Domain.Localization {
                 return ResourceManager.GetString("UserNameAlreadyExists", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User not found.
+        /// </summary>
+        public static string UserNotFound {
+            get {
+                return ResourceManager.GetString("UserNotFound", resourceCulture);
+            }
+        }
     }
 }

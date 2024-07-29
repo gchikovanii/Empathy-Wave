@@ -57,13 +57,15 @@ namespace EmphatyWave.Application.Services.Account
         public async Task<ResultOrValue<string>> Login(LoginDto dto)
         {
             var user = await GetUserByEmail(dto.Email);
+            if (user == null)
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountError", ErrorMessages.AccountError)));
             var userRoles = await _userManager.GetRolesAsync(user).ConfigureAwait(false);
             var isPasswordValid = await _userManager.CheckPasswordAsync(user, dto.Password).ConfigureAwait(false);
-
+            if (!isPasswordValid)
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountError", ErrorMessages.AccountError)));
             if (user.EmailConfirmed == false)
                 return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountIsNotActivated", ErrorMessages.AccountAct)));
-            if (user == null || !isPasswordValid)
-                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountError", ErrorMessages.AccountError)));
+            
            
             //Restrictied to user or admin! Can be both!
             var token = _jwtProvider.CreateToken(user, userRoles.First());
@@ -143,8 +145,6 @@ namespace EmphatyWave.Application.Services.Account
         private async Task<User> GetUserByEmail(string email)
         {
             var user = await _userManager.FindByEmailAsync(email).ConfigureAwait(false);
-            if (user == null)
-                throw new Exception("User already exists");
             return user;
         }
     }

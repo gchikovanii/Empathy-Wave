@@ -204,4 +204,7 @@
   <data name="UserNameAlreadyExists" xml:space="preserve">
     <value>მომხარებელი მსგავსი სახელით უკვე დარეგისტრირებულია</value>
   </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>მომხარებელი ვერ მოიძებნა</value>
+  </data>
 </root>

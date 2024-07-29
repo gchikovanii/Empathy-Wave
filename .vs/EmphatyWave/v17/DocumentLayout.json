@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\services\\accounts\\logins\\loginservie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\services\\accounts\\logins\\loginservie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,67 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Home.razor",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAAIYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-28T17:30:11.551Z",
+              "Title": "LoginServie.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Accounts\\Logins\\LoginServie.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Services\\Accounts\\Logins\\LoginServie.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Accounts\\Logins\\LoginServie.cs",
+              "RelativeToolTip": "EmphatyWave.Web\\Services\\Accounts\\Logins\\LoginServie.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:10:01.287Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "EmphatyWave.Web\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AQIAAOUAAAAAAAAAAAAAAPIAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T06:26:29.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Contact.razor",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Contact.razor",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Contact.razor",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Contact.razor",
-              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Contact.razor",
-              "ViewState": "AQIAAMcAAAAAAAAAAAAEwNMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T06:12:57.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Login.razor",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Login.razor",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Login.razor",
               "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Login.razor",
-              "ViewState": "AQIAADcAAAAAAAAAAAAEwEQAAAAmAAAA",
+              "ViewState": "AQIAALYAAAAAAAAAAAAEwMUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T05:44:26.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "EmphatyWave.Web\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T05:40:28.819Z",
+              "WhenOpened": "2024-07-29T06:46:54.27Z",
               "EditorCaption": ""
             }
           ]
