@@ -21,8 +21,9 @@ builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<ContactService>(); 
 builder.Services.AddScoped<LoginService>();
-builder.Services.AddScoped<RegisterService>();
+builder.Services.AddScoped<RegisterService>(); 
 builder.Services.AddScoped<DemandPasswordRecoveryService>();
+builder.Services.AddScoped<RecoverPasswordService>();
 
 builder.Services.AddHttpClient<WeatherApiClient>(client =>
     {

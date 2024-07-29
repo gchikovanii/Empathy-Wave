@@ -141,11 +141,17 @@
   <data name="EmailAlreadyExists" xml:space="preserve">
     <value>User with current email already exists</value>
   </data>
+  <data name="ExpToken" xml:space="preserve">
+    <value>Token has been expired, please try again to recover.</value>
+  </data>
   <data name="FieldIsRequired" xml:space="preserve">
     <value>Field is required, please fill it correctly</value>
   </data>
   <data name="InaccessibleOrder" xml:space="preserve">
     <value>Inaccesisble order </value>
+  </data>
+  <data name="IncorrectReset" xml:space="preserve">
+    <value>Incorrect reset password token, please contact the support of website.</value>
   </data>
   <data name="InvalidError" xml:space="preserve">
     <value>Invalid Error</value>
@@ -191,6 +197,9 @@
   </data>
   <data name="PromoNotFound" xml:space="preserve">
     <value>Promo Code was not found</value>
+  </data>
+  <data name="ResetFailed" xml:space="preserve">
+    <value>Reseting password has been failed</value>
   </data>
   <data name="SaveChanges" xml:space="preserve">
     <value>Error occured while saving changes in database</value>

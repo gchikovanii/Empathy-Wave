@@ -141,11 +141,17 @@
   <data name="EmailAlreadyExists" xml:space="preserve">
     <value>მომხარებელი მსგავსი მეილით უკვე დარეგისტრირებულია</value>
   </data>
+  <data name="ExpToken" xml:space="preserve">
+    <value>გასაღების ვადა გაუვიდა, გთხოვთ აღდგენა თავიდან.</value>
+  </data>
   <data name="FieldIsRequired" xml:space="preserve">
     <value>ველი შევსება სავალდებულოა</value>
   </data>
   <data name="InaccessibleOrder" xml:space="preserve">
     <value>მიუწვდომელია შეკვეთის ისტორია</value>
+  </data>
+  <data name="IncorrectReset" xml:space="preserve">
+    <value>არასწორი პაროლის აღდგენის გასაღები, გთხოვთ დაუკავშირდეთ ვებგვერდის ადმინისტრაციას.</value>
   </data>
   <data name="InvalidError" xml:space="preserve">
     <value>შეცდომა</value>
@@ -191,6 +197,9 @@
   </data>
   <data name="PromoNotFound" xml:space="preserve">
     <value>პრომო კოდი ვერ მოიძებნა</value>
+  </data>
+  <data name="ResetFailed" xml:space="preserve">
+    <value>პაროლის აღდგენა ვერ მოხერხდა</value>
   </data>
   <data name="SaveChanges" xml:space="preserve">
     <value>შენახვისას დაფიქსირდა შეცდომა</value>

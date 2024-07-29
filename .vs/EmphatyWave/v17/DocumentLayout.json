@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\services\\account\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\services\\account\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\passwordrecovery.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\passwordrecovery.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\services\\accounts\\passwords\\recoverpasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\services\\accounts\\passwords\\recoverpasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\ContactController.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\ContactController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBcAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:30:27.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\Account\\AccountService.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\Account\\AccountService.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\Account\\AccountService.cs*",
-              "RelativeToolTip": "EmphatyWave.Application\\Services\\Account\\AccountService.cs*",
-              "ViewState": "AQIAAFIAAAAAAAAAAAA8wFwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:26:28.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Program.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Program.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Program.cs",
-              "RelativeToolTip": "EmphatyWave.Web\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAiwBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T12:56:10.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Registration.razor",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Registration.razor",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Registration.razor",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Registration.razor",
-              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Registration.razor",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAAIcAAAAMAAAA",
+              "Title": "PasswordRecovery.razor",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\PasswordRecovery.razor",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\PasswordRecovery.razor",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\PasswordRecovery.razor",
+              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\PasswordRecovery.razor",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T12:53:24.77Z",
+              "WhenOpened": "2024-07-29T13:50:36.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAgwDEAAAA1AAAA",
+              "DocumentIndex": 1,
+              "Title": "RecoverPasswordService.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Accounts\\Passwords\\RecoverPasswordService.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Web\\Services\\Accounts\\Passwords\\RecoverPasswordService.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Accounts\\Passwords\\RecoverPasswordService.cs",
+              "RelativeToolTip": "EmphatyWave.Web\\Services\\Accounts\\Passwords\\RecoverPasswordService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T12:40:23.063Z",
+              "WhenOpened": "2024-07-29T13:44:13.721Z",
               "EditorCaption": ""
             }
           ]

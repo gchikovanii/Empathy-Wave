@@ -98,6 +98,24 @@ namespace EmphatyWave.Application.Services.Account
             await SendRecoveryEmail(email, "Recovery Link", token);
             return ResultOrValue<string>.Success(token);
         }
+        public async Task<ResultOrValue<string>> ResetPassword(RecoveryDto dto)
+        {
+            var user = await GetUserByEmail(dto.Email);
+            if (user.ResetPasswordToken != dto.ResetPasswordToken)
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("IncorrectReset", ErrorMessages.IncorrectReset)));
+            if (user.ResetTokenExp <= DateTimeOffset.UtcNow)
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("ExpToken", ErrorMessages.ExpToken)));
+            var resetToken = await _userManager.GeneratePasswordResetTokenAsync(user).ConfigureAwait(false);
+            var resetPasswordResult = await _userManager.ResetPasswordAsync(user, resetToken, dto.NewPassword).ConfigureAwait(false);
+            if (!resetPasswordResult.Succeeded)
+            {
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("ResetFailed", ErrorMessages.ResetFailed)));
+            }
+            user.ResetTokenExp = null;
+            user.ResetPasswordToken = string.Empty;
+            var result = await _userManager.UpdateAsync(user).ConfigureAwait(false);
+            return ResultOrValue<string>.Success(resetToken);
+        }
         public async Task<bool> ConfirmEmail(CancellationToken cancellationToken, string token)
         {
             var user = await _userManager.Users.FirstOrDefaultAsync(i => i.VerificationToken == token, cancellationToken).ConfigureAwait(false);
@@ -113,24 +131,7 @@ namespace EmphatyWave.Application.Services.Account
         }
 
        
-        public async Task<bool> ResetPassword(RecoveryDto dto)
-        {
-            var user = await GetUserByEmail(dto.Email);
-            if (user.ResetPasswordToken != dto.ResetPasswordToken)
-                return false;
-            if (user.ResetTokenExp <= DateTimeOffset.UtcNow)
-                throw new Exception("Token Time Expired");
-            var resetToken = await _userManager.GeneratePasswordResetTokenAsync(user).ConfigureAwait(false);
-            var resetPasswordResult = await _userManager.ResetPasswordAsync(user, resetToken, dto.NewPassword).ConfigureAwait(false);
-            if (!resetPasswordResult.Succeeded)
-            {
-                throw new Exception("Failed to reset password");
-            }
-            user.ResetTokenExp = null;
-            user.ResetPasswordToken = string.Empty;
-            var result = await _userManager.UpdateAsync(user).ConfigureAwait(false);
-            return result.Succeeded;
-        }
+       
         public async Task RemoveExpiredTokensAsync(CancellationToken token, string option)
         {
             if (option == "Verification")
@@ -165,8 +166,6 @@ namespace EmphatyWave.Application.Services.Account
         }
 
 
-
-
         #region Get Recovery 
         private async Task SendRecoveryEmail(string userEmail, string subject, string token)
         {
@@ -177,7 +176,7 @@ namespace EmphatyWave.Application.Services.Account
                 mailMessage.From = new MailAddress("empathywave.shop@gmail.com");
                 mailMessage.To.Add(userEmail);
                 mailMessage.Subject = subject;
-                string recoveryLink = $"https://localhost:7047/recovery/?token={token}";
+                string recoveryLink = $"https://localhost:7047/recovery-activation/?token={token}";
                 string customHtml = @"
 <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
 <html dir=""ltr"" xmlns=""http://www.w3.org/1999/xhtml"" xmlns:o=""urn:schemas-microsoft-com:office:office"" lang=""en"" style=""padding:0;Margin:0"">

@@ -55,7 +55,10 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpPost("recoverPassword")]
         public async Task<IActionResult> RecoverPassword(RecoveryDto dto)
         {
-            return Ok(await _accountService.ResetPassword(dto).ConfigureAwait(false));
+            var result = await _accountService.ResetPassword(dto).ConfigureAwait(false);
+            if (result.IsSuccess == false)
+                return BadRequest(result);
+            return Ok(result);
         }
     }
 }

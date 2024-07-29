@@ -133,6 +133,15 @@ namespace EmphatyWave.Domain.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Token has been expired, please try again to recover..
+        /// </summary>
+        public static string ExpToken {
+            get {
+                return ResourceManager.GetString("ExpToken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Field is required, please fill it correctly.
         /// </summary>
         public static string FieldIsRequired {
@@ -147,6 +156,15 @@ namespace EmphatyWave.Domain.Localization {
         public static string InaccessibleOrder {
             get {
                 return ResourceManager.GetString("InaccessibleOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect reset password token, please contact the support of website..
+        /// </summary>
+        public static string IncorrectReset {
+            get {
+                return ResourceManager.GetString("IncorrectReset", resourceCulture);
             }
         }
         
@@ -282,6 +300,15 @@ namespace EmphatyWave.Domain.Localization {
         public static string PromoNotFound {
             get {
                 return ResourceManager.GetString("PromoNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reseting password has been failed.
+        /// </summary>
+        public static string ResetFailed {
+            get {
+                return ResourceManager.GetString("ResetFailed", resourceCulture);
             }
         }
         
