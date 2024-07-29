@@ -33,7 +33,10 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterDto dto)
         {
-            return Ok(await _accountService.Register(dto).ConfigureAwait(false));
+            var result = await _accountService.Register(dto).ConfigureAwait(false);
+            if (result.IsSuccess == false)
+                return BadRequest(result);
+            return Ok(result);
         }
         [HttpPost("confirmEmail")]
         public async Task<IActionResult> ConfirmEmail(CancellationToken token, string email)

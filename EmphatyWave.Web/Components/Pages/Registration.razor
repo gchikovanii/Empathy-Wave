@@ -1,4 +1,19 @@
 ﻿@page "/register"
+@using EmphatyWave.Web.Services.Accounts.Registrations
+@inject RegisterService RegisterService;
+@inject NavigationManager NavigationManager;
+@rendermode InteractiveServer
+
+
+
+<div class="loading-overlay" style="@(isLoading ? "display: flex;" : "display: none;")">
+    <div class="spinner">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+</div>
+
 
 <section class="p-3 p-md-4 p-xl-5">
     <div class="container">
@@ -19,58 +34,67 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="mb-5">
-                                    <h3>Log in</h3>
+                                    <h3>Registration</h3>
                                 </div>
                             </div>
                         </div>
                         <form action="#!">
                             <div class="row gy-3 gy-md-4 overflow-hidden">
-                                <div class="col-12">
-                                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
-                                </div>
-                                <div class="col-12">
-                                    <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
-                                    <input type="password" class="form-control" name="password" id="password" value="" required>
-                                </div>
-                                <div class="col-12">
-                                    <label for="password" class="form-label">Phone <span class="text-danger">*</span></label>
-                                    <input type="password" class="form-control" name="password" id="password" value="" required>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" name="remember_me" id="remember_me">
-                                        <label class="form-check-label text-secondary" for="remember_me">
-                                            Keep me logged in
-                                        </label>
+                                <EditForm Model="RegisterModel" OnValidSubmit="Register" FormName="RegisterName">
+                                    <DataAnnotationsValidator />
+                                    <ValidationSummary />
+
+                                    @if (!string.IsNullOrEmpty(errorMessage))
+                                    {
+                                        <div class="col-12">
+                                            <div class="alert alert-danger" role="alert">
+                                                @errorMessage
+                                            </div>
+
+                                        </div>
+                                    }
+                                    @if (isRegistrationSuccess)
+                                    {
+                                        <div class="col-12">
+                                            <div class="alert alert-success" role="alert">
+                                                Successfully registered, please check your inbox and confirm creation!
+                                            </div>
+                                        </div>
+                                    }
+                                    <div class="col-12 mt-2">
+                                        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                        <InputText id="email" type="email" class="form-control form-control-lg rounded-pill border-pink text-pink" placeholder="user@example.com" @bind-Value="RegisterModel.Email" />
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-grid">
-                                        <button class="btn bsb-btn-xl btn-primary-custom" type="submit">Log in now</button>
+                                    <div class="col-12 mt-2">
+                                        <label for="userName" class="form-label">User Name <span class="text-danger">*</span></label>
+                                        <InputText type="text" id="userName" typeof="userName" class="form-control form-control-lg rounded-pill border-pink text-pink" placeholder="UserName" @bind-Value="RegisterModel.UserName" />
                                     </div>
-                                </div>
+                                    <div class="col-12 mt-2">
+                                        <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                        <InputText id="password" type="password" placeholder="Pa$$w0rd" class="form-control form-control-lg rounded-pill border-pink text-pink" @bind-Value="RegisterModel.Password" />
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <div class="form-check">
+                                            <InputCheckbox @bind-Value="Accept" class="form-check-input" id="accept_terms" />
+                                            <label class="form-check-label text-secondary" for="accept_terms">
+                                                Accept privacy & terms
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <div class="d-grid">
+                                            <button class="btn bsb-btn-xl btn-primary-custom" type="submit" disabled="@(isLoading || !Accept)">Create Account</button>
+                                        </div>
+                                    </div>
+                                </EditForm>
+
                             </div>
                         </form>
                         <div class="row">
                             <div class="col-12">
-                                <p class="mt-2 mb-2">Or sign in with</p>
-                                <div class="d-grid mt-1">
-                                    <a href="#!" class="btn bsb-btn-xl a-cust btn-outline-primary-custom">
-                                        <svg xmlns="http://www.w3.org/2000/svg" style="color:#fff!important" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-                                            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
-                                        </svg>
-                                        <span class="ms-2 fs-6" style="color:#fff!important">Google</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
                                 <hr class="mt-5 mb-4 border-secondary-subtle">
                                 <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end">
-                                    <a href="#!" class="link-secondary text-decoration-none a-cust">Create new account</a>
-                                    <a href="#!" class="link-secondary text-decoration-none a-cust">Forgot password</a>
+                                    <a href="/login" class="link-secondary text-decoration-none a-cust">Already have an Account?</a>
                                 </div>
                             </div>
                         </div>
@@ -82,6 +106,41 @@
     </div>
 </section>
 
+@code {
+    private bool isLoading = false;
+    private string? errorMessage;
+    private bool Accept { get; set; }
+    private bool isRegistrationSuccess = false;
+
+    [SupplyParameterFromForm]
+    public RegisterModel RegisterModel { get; set; } = new();
+
+    private async Task Register()
+    {
+        isLoading = true;
+        errorMessage = string.Empty;
+
+        StateHasChanged();
+
+        var result = await RegisterService.RegisterUser(RegisterModel);
+
+        isLoading = false;
+
+        if (result.IsSuccess)
+        {
+            isRegistrationSuccess = true;
+            StateHasChanged();
+            await Task.Delay(5000); 
+            NavigationManager.NavigateTo("/login"); 
+        }
+        else
+        {
+            errorMessage = result.Result.Error.Message;
+        }
+
+        StateHasChanged();
+    }
+}
 
 <style>
     body {
@@ -121,12 +180,14 @@
         background-color: #ff6699;
         border-color: #FF1493;
         color: #fff;
+        outline: none;
     }
 
         .btn-primary-custom:hover, .btn-outline-primary-custom:hover {
             background-color: #FF1493;
             border-color: #cc0052;
             color: #fff;
+            outline: none;
         }
 
     .form-control {
@@ -138,6 +199,7 @@
         .form-control:focus {
             border-color: #FF1493;
             box-shadow: 0 0 0 0.2rem rgba(255, 0, 102, 0.25);
+            outline: none;
         }
 
     .form-check-input:checked {
@@ -161,4 +223,56 @@
             color: #ff0066;
         }
 
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .spinner {
+        display: flex;
+        gap: 10px;
+    }
+
+    .wave {
+        width: 15px;
+        height: 15px;
+        background-color: pink;
+        border-radius: 50%;
+        animation: wave 1s infinite ease-in-out;
+    }
+
+    .wave1 {
+        animation-delay: 0s;
+    }
+
+    .wave2 {
+        animation-delay: 0.2s;
+    }
+
+    .wave3 {
+        animation-delay: 0.4s;
+    }
+
+    .btn-primary-custom:focus, .btn-outline-primary-custom:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    @@keyframes wave {
+        0%, 100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+    }
 </style>

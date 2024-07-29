@@ -47,9 +47,9 @@ namespace EmphatyWave.Application.Services.Account
             var res = await _userManager.CreateAsync(user, dto.Password).ConfigureAwait(false);
             var role = RoleType.User.ToString();
             var userRole = await _userManager.AddToRoleAsync(user, role).ConfigureAwait(false);
-            if (!userRole.Succeeded || !res.Succeeded)
+            if (!userRole.Succeeded || !res.Succeeded || !res.Succeeded)
             {
-                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountIsNotActivated", ErrorMessages.AccountAct)));
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccountError", ErrorMessages.AccountError)));
             }
             var token = _jwtProvider.CreateToken(user, role);
             return ResultOrValue<string>.Success(token);

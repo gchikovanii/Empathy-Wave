@@ -1,6 +1,7 @@
 using EmphatyWave.Web;
 using EmphatyWave.Web.Components;
 using EmphatyWave.Web.Services.Accounts.Logins;
+using EmphatyWave.Web.Services.Accounts.Registrations;
 using EmphatyWave.Web.Services.Categories;
 using EmphatyWave.Web.Services.Contacts;
 using EmphatyWave.Web.Services.Products;
@@ -17,8 +18,9 @@ builder.Services.AddRazorComponents()
 builder.Services.AddOutputCache(); 
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<CategoryService>();
-builder.Services.AddScoped<ContactService>();
+builder.Services.AddScoped<ContactService>(); 
 builder.Services.AddScoped<LoginService>();
+builder.Services.AddScoped<RegisterService>();
 
 builder.Services.AddHttpClient<WeatherApiClient>(client =>
     {

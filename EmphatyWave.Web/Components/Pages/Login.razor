@@ -55,11 +55,11 @@
 
                                     <div class="col-12 mt-2">
                                         <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                                        <InputText id="email" typeof="email" class="form-control form-control-lg rounded-pill border-pink text-pink" placeholder="user@example.com" @bind-Value="LoginModel.Email" />
+                                        <InputText id="email" type="email" class="form-control form-control-lg rounded-pill border-pink text-pink" placeholder="user@example.com" @bind-Value="LoginModel.Email" />
                                     </div>
                                     <div class="col-12 mt-2">
                                         <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
-                                        <InputText id="password" typeof="password" class="form-control form-control-lg rounded-pill border-pink text-pink" @bind-Value="LoginModel.Password" />
+                                        <InputText id="password" @bind-Value="LoginModel.Password" type="password" placeholder="Password" class="form-control form-control-lg rounded-pill border-pink text-pink" />
                                     </div>
                                     <div class="col-12 mt-2">
                                         <div class="form-check">
@@ -269,5 +269,22 @@
         50% {
             transform: translateY(-15px);
         }
+    }
+
+    .form-control:focus {
+        border-color: #FF1493; 
+        box-shadow: 0 0 0 0.2rem rgba(255, 0, 102, 0.25); 
+        outline: none; 
+    }
+
+    .form-check-input:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+   
+    .btn-primary-custom:focus, .btn-outline-primary-custom:focus {
+        outline: none;
+        box-shadow: none;
     }
 </style>
