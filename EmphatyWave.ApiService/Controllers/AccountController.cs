@@ -3,6 +3,7 @@ using EmphatyWave.Application.Services.Account;
 using EmphatyWave.Application.Services.Account.DTOs;
 using EmphatyWave.Application.Services.PromoCodes.Abstraction;
 using EmphatyWave.Domain;
+using Humanizer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -46,7 +47,10 @@ namespace EmphatyWave.ApiService.Controllers
         [HttpPost("requestPasswordRecovery")]
         public async Task<IActionResult> RequestPasswordRecovery(string email)
         {
-            return Ok(await _accountService.RequestPasswordRecovery(email).ConfigureAwait(false));
+            var result = await _accountService.RequestPasswordRecovery(email).ConfigureAwait(false);
+            if (result.IsSuccess == false)
+                return BadRequest(result);
+            return Ok(result);
         }
         [HttpPost("recoverPassword")]
         public async Task<IActionResult> RecoverPassword(RecoveryDto dto)

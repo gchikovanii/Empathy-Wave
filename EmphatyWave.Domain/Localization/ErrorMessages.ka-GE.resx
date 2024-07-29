@@ -195,6 +195,9 @@
   <data name="SaveChanges" xml:space="preserve">
     <value>შენახვისას დაფიქსირდა შეცდომა</value>
   </data>
+  <data name="TokGen" xml:space="preserve">
+    <value>გასაღები უკვე დაგენერირებულია, გთხოვთ შეამოწმოთ მეილი ან სპამები</value>
+  </data>
   <data name="TotalPriceRange" xml:space="preserve">
     <value>ერთდჯერადად შესაძლებელია 150 000 ვალუტის პროდუქტის შეძენა</value>
   </data>

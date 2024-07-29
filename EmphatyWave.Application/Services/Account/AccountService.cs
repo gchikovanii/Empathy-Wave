@@ -72,6 +72,21 @@ namespace EmphatyWave.Application.Services.Account
             return ResultOrValue<string>.Success(token);
         }
 
+        public async Task<ResultOrValue<string>> RequestPasswordRecovery(string email)
+        {
+            var user = await GetUserByEmail(email);
+            if(user == null)
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("AccNotFound", ErrorMessages.UserNotFound)));
+            if (user.ResetPasswordToken != null && user.ResetTokenExp >= DateTimeOffset.UtcNow)
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("TokenAlready", ErrorMessages.TokGen)));
+            var token = _tokenGenerator.GenerateToken(email);
+            user.ResetPasswordToken = token;
+            user.ResetTokenExp = DateTimeOffset.UtcNow.AddHours(3);
+            var result = await _userManager.UpdateAsync(user);
+            if(!result.Succeeded)
+                return ResultOrValue<string>.Failure(Result.Failure(new Error("UnexcpextedError", ErrorMessages.UnexcpectedError)));
+            return ResultOrValue<string>.Success(token);
+        }
         public async Task<bool> ConfirmEmail(CancellationToken cancellationToken, string token)
         {
             var user = await _userManager.Users.FirstOrDefaultAsync(i => i.VerificationToken == token, cancellationToken).ConfigureAwait(false);
@@ -86,17 +101,7 @@ namespace EmphatyWave.Application.Services.Account
             return result.Succeeded;
         }
 
-        public async Task<bool> RequestPasswordRecovery(string email)
-        {
-            var user = await GetUserByEmail(email);
-            if (user.ResetPasswordToken != null && user.ResetTokenExp >= DateTimeOffset.UtcNow)
-                throw new Exception("Token is already generated!");
-            var token = _tokenGenerator.GenerateToken(email);
-            user.ResetPasswordToken = token;
-            user.ResetTokenExp = DateTimeOffset.UtcNow.AddHours(3);
-            var result = await _userManager.UpdateAsync(user);
-            return result.Succeeded;
-        }
+       
         public async Task<bool> ResetPassword(RecoveryDto dto)
         {
             var user = await GetUserByEmail(dto.Email);

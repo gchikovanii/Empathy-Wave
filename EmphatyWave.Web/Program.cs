@@ -1,6 +1,7 @@
 using EmphatyWave.Web;
 using EmphatyWave.Web.Components;
 using EmphatyWave.Web.Services.Accounts.Logins;
+using EmphatyWave.Web.Services.Accounts.Passwords;
 using EmphatyWave.Web.Services.Accounts.Registrations;
 using EmphatyWave.Web.Services.Categories;
 using EmphatyWave.Web.Services.Contacts;
@@ -21,6 +22,7 @@ builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<ContactService>(); 
 builder.Services.AddScoped<LoginService>();
 builder.Services.AddScoped<RegisterService>();
+builder.Services.AddScoped<DemandPasswordRecoveryService>();
 
 builder.Services.AddHttpClient<WeatherApiClient>(client =>
     {

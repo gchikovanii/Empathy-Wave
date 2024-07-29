@@ -13,7 +13,7 @@ namespace EmphatyWave.Application.Services.Account
         Task<ResultOrValue<string>> Register(RegisterDto dto);
         Task<bool> ConfirmEmail(CancellationToken cancellationToken, string token);
         Task<ResultOrValue<string>> Login(LoginDto dto);
-        Task<bool> RequestPasswordRecovery(string email);
+        Task<ResultOrValue<string>> RequestPasswordRecovery(string email);
         Task<bool> ResetPassword(RecoveryDto dto);
         Task RemoveExpiredTokensAsync(CancellationToken token, string option);
     }

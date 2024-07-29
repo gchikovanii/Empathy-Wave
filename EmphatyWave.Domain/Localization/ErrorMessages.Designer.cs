@@ -295,6 +295,15 @@ namespace EmphatyWave.Domain.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Token already generated, please check your email inbox or spam!.
+        /// </summary>
+        public static string TokGen {
+            get {
+                return ResourceManager.GetString("TokGen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total Price range is from 1 to 150K.
         /// </summary>
         public static string TotalPriceRange {

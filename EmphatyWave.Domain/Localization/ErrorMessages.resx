@@ -195,6 +195,9 @@
   <data name="SaveChanges" xml:space="preserve">
     <value>Error occured while saving changes in database</value>
   </data>
+  <data name="TokGen" xml:space="preserve">
+    <value>Token already generated, please check your email inbox or spam!</value>
+  </data>
   <data name="TotalPriceRange" xml:space="preserve">
     <value>Total Price range is from 1 to 150K</value>
   </data>

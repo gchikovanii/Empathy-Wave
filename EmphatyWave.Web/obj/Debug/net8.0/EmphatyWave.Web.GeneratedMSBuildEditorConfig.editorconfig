@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9hZGluZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/EmphatyWave/EmphatyWave.Web/Components/Pages/Confirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25maXJtYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/EmphatyWave/EmphatyWave.Web/Components/Pages/Contact.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,8 +54,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/EmphatyWave/EmphatyWave.Web/Components/Pages/PasswordRecovery.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQYXNzd29yZFJlY292ZXJ5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/EmphatyWave/EmphatyWave.Web/Components/Pages/Registration.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWdpc3RyYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EmphatyWave/EmphatyWave.Web/Components/Pages/RequestPasswordRecovery.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXF1ZXN0UGFzc3dvcmRSZWNvdmVyeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/EmphatyWave/EmphatyWave.Web/Components/Pages/Shop.razor]
