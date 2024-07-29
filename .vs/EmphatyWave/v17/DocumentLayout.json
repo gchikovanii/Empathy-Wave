@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "D:\\EmphatyWave\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\requestpasswordrecovery.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\requestpasswordrecovery.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|d:\\emphatywave\\emphatywave.application\\services\\account\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78717C26-58C6-42CF-9C07-40D1D7B7FA40}|EmphatyWave.Application\\EmphatyWave.Application.csproj|solutionrelative:emphatywave.application\\services\\account\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\services\\accounts\\passwords\\demandpasswordrecoveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\services\\accounts\\passwords\\demandpasswordrecoveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\services\\accounts\\registrations\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\services\\accounts\\registrations\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\components\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\components\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|d:\\emphatywave\\emphatywave.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E574489-7DD6-47A6-B9EF-C368103ABB37}|EmphatyWave.Web\\EmphatyWave.Web.csproj|solutionrelative:emphatywave.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|d:\\emphatywave\\emphatywave.apiservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15387A16-1A7A-4EED-92BA-C3BAC6C8904A}|EmphatyWave.ApiService\\EmphatyWave.ApiService.csproj|solutionrelative:emphatywave.apiservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,37 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DemandPasswordRecoveryService.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Accounts\\Passwords\\DemandPasswordRecoveryService.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Services\\Accounts\\Passwords\\DemandPasswordRecoveryService.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Accounts\\Passwords\\DemandPasswordRecoveryService.cs",
-              "RelativeToolTip": "EmphatyWave.Web\\Services\\Accounts\\Passwords\\DemandPasswordRecoveryService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAkAAAA2AAAA",
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\ContactController.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:14:45.49Z",
+              "WhenOpened": "2024-07-29T13:30:27.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterService.cs",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Accounts\\Registrations\\RegisterService.cs",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Services\\Accounts\\Registrations\\RegisterService.cs",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Services\\Accounts\\Registrations\\RegisterService.cs",
-              "RelativeToolTip": "EmphatyWave.Web\\Services\\Accounts\\Registrations\\RegisterService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAsAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\Account\\AccountService.cs",
+              "RelativeDocumentMoniker": "EmphatyWave.Application\\Services\\Account\\AccountService.cs",
+              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Application\\Services\\Account\\AccountService.cs*",
+              "RelativeToolTip": "EmphatyWave.Application\\Services\\Account\\AccountService.cs*",
+              "ViewState": "AQIAAFIAAAAAAAAAAAA8wFwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:14:39.883Z",
+              "WhenOpened": "2024-07-29T13:26:28.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Program.cs",
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Program.cs",
@@ -77,28 +73,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Registration.razor",
               "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Registration.razor",
               "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\Registration.razor",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\Registration.razor",
               "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\Registration.razor",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAAI0AAAAFAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAIcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-29T12:53:24.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RequestPasswordRecovery.razor",
-              "DocumentMoniker": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\RequestPasswordRecovery.razor",
-              "RelativeDocumentMoniker": "EmphatyWave.Web\\Components\\Pages\\RequestPasswordRecovery.razor",
-              "ToolTip": "D:\\EmphatyWave\\EmphatyWave.Web\\Components\\Pages\\RequestPasswordRecovery.razor",
-              "RelativeToolTip": "EmphatyWave.Web\\Components\\Pages\\RequestPasswordRecovery.razor",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAUwF8AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T12:42:21.648Z",
               "EditorCaption": ""
             },
             {
@@ -109,7 +92,7 @@
               "RelativeDocumentMoniker": "EmphatyWave.ApiService\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\EmphatyWave\\EmphatyWave.ApiService\\Controllers\\AccountController.cs",
               "RelativeToolTip": "EmphatyWave.ApiService\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAgwDQAAAAeAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAgwDEAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T12:40:23.063Z",
               "EditorCaption": ""
